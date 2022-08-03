@@ -30,14 +30,14 @@ const TalkToSales = () => {
               </label>
               <input
                 className={`w-[90%] h-14 rounded px-4 py-2 lg:w-1/2 ${
-                  errors.email ? 'border-2 border-error' : 'border-gray-300 border-2'
+                  errors.email.message ? 'border-2 border-error' : 'border-gray-300 border-2'
                 }`}
                 placeholder="example@example.com"
                 type="email"
-                {...register('email', { required: true })}
+                {...register('email', { required: 'This Field is required' })}
               />
               {errors.email && (
-                <span className="text-error font-bold text-xs mt-2">This field is required</span>
+                <span className="text-error font-bold text-xs mt-2">{errors.email.message}</span>
               )}
               <label htmlFor="phone" className="mt-5 font-bold text-neutral">
                 Your Phone Number

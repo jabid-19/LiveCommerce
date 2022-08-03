@@ -61,7 +61,7 @@ const tableData = [
 const Comparisons = () => {
   const [tooltip, showTooltip] = useState(true)
   return (
-    <div className="w-auto mx-6 mt-12 lg:min-h-[85vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto">
+    <div className="w-auto mb-12 mx-6 mt-12 lg:min-h-[85vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto md:mb-0">
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>
