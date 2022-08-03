@@ -10,7 +10,7 @@ const TalkToSales = () => {
     formState: { errors },
   } = useForm()
   const onSubmit = (data) => {}
-  console.log(errors)
+
   return (
     <div className="w-auto mx-6 mt-12 lg:min-h-[85vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto">
       <div className="flex flex-col-reverse items-center w-full md:flex-row">
@@ -30,7 +30,7 @@ const TalkToSales = () => {
               </label>
               <input
                 className={`w-[90%] h-14 rounded px-4 py-2 lg:w-1/2 ${
-                  errors.email.message ? 'border-2 border-error' : 'border-gray-300 border-2'
+                  errors?.email?.message ? 'border-2 border-error' : 'border-gray-300 border-2'
                 }`}
                 placeholder="example@example.com"
                 type="email"
