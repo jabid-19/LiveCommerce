@@ -40,11 +40,13 @@ const AuthenticationMain = () => {
   }
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="mt-20 md:mt-0 mx-auto md:mx-0 hidden md:flex">
+    <div className="flex flex-col-reverse md:flex-row">
+      <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
         <Image width={387} height={581} src={LoginImage} alt="Open Shopping" />
       </div>
-      <div className="min-w-[90%] md:min-w-[50%] mx-auto my-20 px-8 flex flex-col justify-center">
+      <div
+        data-aos="fade-left"
+        className="min-w-[90%] md:min-w-[50%] mx-auto my-20 px-8 flex flex-col justify-center">
         <div className="btn-group max-w-4xl">
           <button
             className={
