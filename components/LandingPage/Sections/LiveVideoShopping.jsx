@@ -1,7 +1,7 @@
 import { AiOutlineArrowRight } from 'react-icons/ai'
 const LiveVideoShopping = () => {
   return (
-    <div className="hero min-h-[75vh] bg-base-100 mx-auto py-8 lg:px-36 lg:mt-0">
+    <div className="hero min-h-[75vh] bg-base-100 mx-auto py-8 lg:px-36 lg:py-0">
       <div className="hero-content flex-col lg:flex-row">
         <iframe
           width="300px"
