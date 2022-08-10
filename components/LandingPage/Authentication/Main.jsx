@@ -42,7 +42,7 @@ const AuthenticationMain = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row">
       <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
-        <Image width={387} height={581} src={LoginImage} alt="Open Shopping" />
+        <Image width={387} height={581} src={LoginImage} alt="Open Shopping" priority={true} />
       </div>
       <div
         data-aos="fade-left"

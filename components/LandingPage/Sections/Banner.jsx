@@ -14,6 +14,7 @@ const Banner = () => {
               height={580}
               src={girlShopping}
               alt="Girl Shopping"
+              priority={true}
             />
           </div>
         </div>
