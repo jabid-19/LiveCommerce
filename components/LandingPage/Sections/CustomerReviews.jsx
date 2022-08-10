@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import profile1 from '../../../public/customers/profile1.jpg'
 import profile2 from '../../../public/customers/profile2.jpg'
 import profile3 from '../../../public/customers/profile3.jpg'
@@ -16,6 +17,7 @@ const CustomerReviews = () => {
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
+                  loader={imageLoader}
                   className="object-fill"
                   width={580}
                   height={580}
@@ -50,6 +52,7 @@ const CustomerReviews = () => {
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
+                  loader={imageLoader}
                   className="object-fill"
                   width={580}
                   height={580}
@@ -84,6 +87,7 @@ const CustomerReviews = () => {
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
+                  loader={imageLoader}
                   className="object-fill"
                   width={580}
                   height={580}

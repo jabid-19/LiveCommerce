@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import team1 from '../../../public/team/team1.jpg'
 import team2 from '../../../public/team/team2.jpg'
 import team3 from '../../../public/team/team3.avif'
@@ -53,6 +54,7 @@ const TeamWorkSlider = () => {
           className="mySwiper">
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -62,6 +64,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -71,6 +74,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -80,6 +84,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -89,6 +94,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -98,6 +104,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -107,6 +114,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -116,6 +124,7 @@ const TeamWorkSlider = () => {
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}

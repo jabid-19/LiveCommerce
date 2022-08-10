@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import onlineMessage from '../../../public/blogs/online-message.webp'
 import webDesign from '../../../public/blogs/website-design.webp'
 import digitalContent from '../../../public/blogs/digital-content.webp'
@@ -14,6 +15,7 @@ const Blogs = () => {
             className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100">
             <figure className="hover:opacity-80">
               <Image
+                loader={imageLoader}
                 className="object-fill w-full"
                 width={826}
                 height={468}
@@ -43,6 +45,7 @@ const Blogs = () => {
             className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100">
             <figure className="hover:opacity-80">
               <Image
+                loader={imageLoader}
                 className="object-fill w-full"
                 width={826}
                 height={468}
@@ -72,6 +75,7 @@ const Blogs = () => {
             className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100">
             <figure className="hover:opacity-80">
               <Image
+                loader={imageLoader}
                 className="object-fill w-full"
                 width={826}
                 height={468}

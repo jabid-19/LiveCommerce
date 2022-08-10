@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import girlShopping from '../../../public/shopping/girl-shopping.jpg'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
@@ -9,6 +10,7 @@ const Banner = () => {
         <div data-aos="fade-left" className="avatar">
           <div className="w-72 lg:w-96 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
             <Image
+              loader={imageLoader}
               className="object-fill"
               width={580}
               height={580}

@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import team1 from '../../../public/team/team1.jpg'
 import team2 from '../../../public/team/team2.jpg'
 import team3 from '../../../public/team/team3.avif'
@@ -83,6 +84,7 @@ const TeamWorkSlickSlider = () => {
         <Slider {...settings}>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -92,6 +94,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -101,6 +104,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -110,6 +114,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -119,6 +124,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -128,6 +134,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -137,6 +144,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}
@@ -146,6 +154,7 @@ const TeamWorkSlickSlider = () => {
           </div>
           <div className="mb-8">
             <Image
+              loader={imageLoader}
               className="object-fill hover:scale-105"
               width={870}
               height={580}

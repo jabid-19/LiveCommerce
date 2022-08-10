@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import girlRedCoat from '../../../public/shopping/girl-red-coat.jpg'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
@@ -9,6 +10,7 @@ const GetStartedShopping = () => {
         <div data-aos="fade-left">
           <div className="w-50 lg:w-80 lg:ml-12">
             <Image
+              loader={imageLoader}
               className="object-fill"
               width={435}
               height={580}

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import girlShopping from '../../../public/shopping/girl-shopping.jpg'
 import guyShopping from '../../../public/shopping/guy-shopping.jpg'
 import tshirtShopping from '../../../public/shopping/tshirt-shopping.jpg'
@@ -18,6 +19,7 @@ const PersonalShopping = () => {
                 <div className="avatar">
                   <div className="w-72 lg:w-48 rounded">
                     <Image
+                      loader={imageLoader}
                       className="object-fill"
                       width={580}
                       height={580}
@@ -29,6 +31,7 @@ const PersonalShopping = () => {
                 <div className="avatar hidden lg:block">
                   <div className="w-48 rounded">
                     <Image
+                      loader={imageLoader}
                       className="object-fill"
                       width={580}
                       height={580}
@@ -42,6 +45,7 @@ const PersonalShopping = () => {
                 <div className="avatar">
                   <div className="w-48 rounded">
                     <Image
+                      loader={imageLoader}
                       className="object-fill"
                       width={580}
                       height={580}
@@ -53,6 +57,7 @@ const PersonalShopping = () => {
                 <div className="avatar">
                   <div className="w-48 rounded">
                     <Image
+                      loader={imageLoader}
                       className="object-fill"
                       width={580}
                       height={580}

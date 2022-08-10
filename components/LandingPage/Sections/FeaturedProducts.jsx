@@ -7,6 +7,7 @@ import { HiShoppingBag } from 'react-icons/hi'
 import { Autoplay, EffectCoverflow, Navigation } from 'swiper'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
 import item1 from '../../../public/featured-products/clothes.avif'
 import item2 from '../../../public/featured-products/shoes.avif'
 import item3 from '../../../public/featured-products/jewelry.avif'
@@ -59,32 +60,74 @@ const FeaturedProducts = () => {
             className="mySwiper">
             <SwiperSlide>
               <div className="">
-                <Image src={item1} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item1}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                <Image src={item2} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item2}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                <Image src={item3} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item3}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                <Image src={item4} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item4}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                <Image src={item5} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item5}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                <Image src={item6} width={300} height={400} alt="" className="object-cover" />
+                <Image
+                  loader={imageLoader}
+                  src={item6}
+                  width={300}
+                  height={400}
+                  alt=""
+                  className="object-cover"
+                />
               </div>
             </SwiperSlide>
           </Swiper>
