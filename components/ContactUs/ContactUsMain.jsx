@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import BigScreenContactImage from '../../public/contact/contact.avif'
+import BigScreenContactImage from '../../public/contact/camera.avif'
 import SmallScreenContactImage from '../../public/contact/contact-us-animate.svg'
 import { useForm } from 'react-hook-form'
 
@@ -16,7 +16,7 @@ const ContactUsMain = () => {
       <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
         <Image
           loader={imageLoader}
-          width={560}
+          width={580}
           height={754}
           src={BigScreenContactImage}
           alt="Open Shopping"
