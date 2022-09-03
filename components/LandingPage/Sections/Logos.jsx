@@ -31,7 +31,6 @@ const Logos = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          // initialSlide: 3,
         },
       },
     ],
@@ -41,7 +40,6 @@ const Logos = () => {
       <hr className="border-black"></hr>
       <div className="py-8">
         <Slider {...settings}>
-          {/* <div className="grid grid-cols-4 gap-4 lg:flex lg:justify-between align-center px-4 py-8"> */}
           <div>
             <Image
               loader={imageLoader}
@@ -112,7 +110,6 @@ const Logos = () => {
               alt=""
             />
           </div>
-          {/* </div> */}
         </Slider>
       </div>
       <hr className="border-black"></hr>

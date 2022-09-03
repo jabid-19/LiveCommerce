@@ -8,7 +8,6 @@ const ContactUsMain = () => {
   const {
     register,
     handleSubmit,
-    // watch,
     formState: { errors },
   } = useForm()
   const onSubmit = (data) => console.log(data)
@@ -28,36 +27,8 @@ const ContactUsMain = () => {
         data-aos="fade-left"
         className="min-w-[90%] md:min-w-[50%] mx-auto my-20 px-8 flex flex-col justify-center">
         <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-primary via-accent to-secondary">
-          {' '}
           Contact Us
         </h2>
-        {/* <form>
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 max-w-4xl mt-10">
-            <input type="text" placeholder="Fist Name" className="input input-bordered w-full" />
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="input input-bordered w-full mt-10 lg:mt-0"
-            />
-          </div>
-          <input
-            type="email"
-            placeholder="Email"
-            className="input input-bordered w-full max-w-4xl my-10"
-          />
-          <br />
-          <input
-            type="password"
-            placeholder="Password"
-            className="input input-bordered w-full max-w-4xl"
-          />
-          <br />
-          <input
-            type="submit"
-            value="Sign Up"
-            className="btn btn-secondary text-white w-full max-w-4xl mt-10"
-          />
-        </form> */}
         <form onSubmit={handleSubmit(onSubmit)} className="mt-10">
           <div className="mb-5">
             <label className="text-xl font-semibold text-neutral pl-2 mb-4">Full Name</label>
@@ -168,7 +139,6 @@ const ContactUsMain = () => {
           <input
             className="btn btn-secondary font-bold w-full min-w-xs normal-case text-white rounded cursor-pointer"
             type="submit"
-            // value={`${status.loading ? 'Loading...' : 'Submit'}`}
           />
         </form>
       </div>
