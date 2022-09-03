@@ -127,13 +127,16 @@ const Navbar = () => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          <Link href="login">
+          {/* <Link href="login">
             <li className="mr-2">
               <a>Login</a>
             </li>
           </Link>
           <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary text-white mr-4">Get started</a>
+          </Link> */}
+          <Link href="contact">
+            <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link>
         </ul>
       </div>
