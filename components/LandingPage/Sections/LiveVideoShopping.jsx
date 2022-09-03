@@ -1,17 +1,27 @@
 import { AiOutlineArrowRight } from 'react-icons/ai'
+// import video from '../../../public/video/videoplayback.mp4'
+// import imageLoader from '../../../helper/imageLoader'
 const LiveVideoShopping = () => {
   return (
     <div className="hero min-h-[75vh] bg-base-100 mx-auto py-8 lg:px-36 lg:py-0">
       <div className="hero-content flex-col lg:flex-row">
-        <iframe
-          width="300px"
-          height="400px"
+        {/* <iframe
+          width="300"
+          height="400"
+          src="https://www.youtube.com/embed/MLsOPVxY4y0?playlist=MLsOPVxY4y0&loop=1&autoplay=1&mute=1"
           title="YouTube video player"
-          data-aos="fade-down-right"
-          src="https://www.youtube.com/embed/MLsOPVxY4y0"
-          className="max-w-sm rounded-lg shadow-2xl lg:mr-12"
-          allowFullScreen="allowFullScreen"
-          frameBorder="0"></iframe>
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen></iframe> */}
+        <video
+          style={{ width: '300px', height: '400px', backgroundColor: 'gray' }}
+          controls
+          playsInline
+          autoPlay
+          loop
+          muted>
+          <source src="/video/Bambuser-FrontPage-OnetoMany+(1).mp4" type="video/mp4" />
+        </video>
         <div data-aos="fade-down-left">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
             Live Video Shopping One-to-Many

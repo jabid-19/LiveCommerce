@@ -9,7 +9,7 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div data-aos="fade-left" className="avatar">
           <div className="w-72 lg:w-96 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <Image
+            {/* <Image
               loader={imageLoader}
               className="object-fill"
               width={580}
@@ -17,7 +17,16 @@ const Banner = () => {
               src={girlShopping}
               alt="Girl Shopping"
               priority={true}
-            />
+            /> */}
+            <video
+              style={{ width: '385px', height: '385px', backgroundColor: 'gray' }}
+              // controls
+              playsInline
+              autoPlay
+              loop
+              muted>
+              <source src="/video/Bambuser-FrontPage-OnetoMany+(1).mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
         <div data-aos="fade-right">
