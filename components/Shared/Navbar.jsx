@@ -53,7 +53,7 @@ const Navbar = () => {
           <ul
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
+            {/* <li>
               <a>Item 1</a>
             </li>
             <li tabIndex="0">
@@ -79,14 +79,17 @@ const Navbar = () => {
             </li>
             <li>
               <a>Item 3</a>
-            </li>
-            <Link href="login">
+            </li> */}
+            {/* <Link href="login">
               <li className="mr-2">
                 <a>Login</a>
               </li>
             </Link>
             <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
+            </Link> */}
+            <Link href="contact">
+              <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link>
           </ul>
         </div>
@@ -94,7 +97,7 @@ const Navbar = () => {
           <a className="btn btn-ghost normal-case text-xl">LiveCommerce</a>
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      {/* <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
             <a>Item 1</a>
@@ -124,7 +127,7 @@ const Navbar = () => {
             <a>Item 3</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           {/* <Link href="login">

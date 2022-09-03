@@ -1,4 +1,4 @@
-import AuthenticationMain from '../components/LandingPage/Authentication/Main'
+import AuthenticationMain from '../components/Authentication/Main'
 
 const Login = () => {
   return (

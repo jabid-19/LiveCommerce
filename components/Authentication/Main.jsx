@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import LoginForm from './Sections/LoginForm'
 import RegisterForm from './Sections/RegisterForm'
 import Image from 'next/image'
-import imageLoader from '../../../helper/imageLoader'
-import LoginImage from '../../../public/login/login.avif'
+import imageLoader from '../../helper/imageLoader'
+import LoginImage from '../../public/login/login.avif'
 
 const AuthenticationMain = () => {
   const router = useRouter()
