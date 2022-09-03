@@ -21,7 +21,9 @@ const LiveVideoSlider = () => {
 
   return (
     <div className="container mx-auto mt-12 lg:mt-32 lg:py-12">
-      <h3 className="text-2xl lg:text-4xl font-bold mb-12">Get Idea About Live Shopping</h3>
+      <h3 className="text-2xl lg:text-4xl font-bold mb-12 text-black">
+        Get Idea About Live Shopping
+      </h3>
       <div data-aos="zoom-in">
         <Swiper
           navigation={true}

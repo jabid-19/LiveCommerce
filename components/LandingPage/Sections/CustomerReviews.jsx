@@ -8,7 +8,7 @@ import StarRatings from 'react-star-ratings'
 const CustomerReviews = () => {
   return (
     <div>
-      <h3 className="text-2xl lg:text-4xl font-bold">Latest Customer Reviews</h3>
+      <h3 className="text-2xl lg:text-4xl font-bold text-black">Latest Customer Reviews</h3>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-14 my-14">
         <div
           data-aos="flip-left"
@@ -28,7 +28,7 @@ const CustomerReviews = () => {
             </div>
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-center">Flora Watson</h2>
+            <h2 className="card-title justify-center  text-black">Flora Watson</h2>
             <div>
               <StarRatings
                 rating={5}
@@ -36,9 +36,9 @@ const CustomerReviews = () => {
                 starDimension="20px"
                 starSpacing="5px"
               />
-              <span className="ml-2">(5)</span>
+              <span className="ml-2 text-black">(5)</span>
             </div>
-            <p>
+            <p className="text-black">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aperiam eius
               facere? Voluptate iste, ea necessitatibus id non consequuntur at, repellat repellendus
               porro facilis nostrum aperiam! Nemo beatae earum quae.
@@ -63,7 +63,7 @@ const CustomerReviews = () => {
             </div>
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-center">Will Smith</h2>
+            <h2 className="card-title justify-center text-black">Will Smith</h2>
             <div>
               <StarRatings
                 rating={4}
@@ -71,9 +71,9 @@ const CustomerReviews = () => {
                 starDimension="20px"
                 starSpacing="5px"
               />
-              <span className="ml-2">(4)</span>
+              <span className="ml-2 text-black">(4)</span>
             </div>
-            <p>
+            <p className="text-black">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aperiam eius
               facere? Voluptate iste, ea necessitatibus id non consequuntur at, repellat repellendus
               porro facilis nostrum aperiam! Nemo beatae earum quae.
@@ -98,7 +98,7 @@ const CustomerReviews = () => {
             </div>
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-center">Emily Clark</h2>
+            <h2 className="card-title justify-center text-black">Emily Clark</h2>
             <div>
               <StarRatings
                 rating={5}
@@ -106,9 +106,9 @@ const CustomerReviews = () => {
                 starDimension="20px"
                 starSpacing="5px"
               />
-              <span className="ml-2">(5)</span>
+              <span className="ml-2 text-black">(5)</span>
             </div>
-            <p>
+            <p className="text-black">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aperiam eius
               facere? Voluptate iste, ea necessitatibus id non consequuntur at, repellat repellendus
               porro facilis nostrum aperiam! Nemo beatae earum quae.

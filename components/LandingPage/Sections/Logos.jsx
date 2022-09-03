@@ -1,3 +1,9 @@
+import React, { Component } from 'react'
+import Slider from 'react-slick'
+// Import css files
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
+
 import Image from 'next/image'
 import imageLoader from '../../../helper/imageLoader'
 import Alibaba from '../../../public/logos/Alibaba.svg'
@@ -9,68 +15,107 @@ import Walmart from '../../../public/logos/Walmart.svg'
 import Target from '../../../public/logos/Target.svg'
 
 const Logos = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // initialSlide: 3,
+        },
+      },
+    ],
+  }
   return (
     <div>
-      <hr className="border-gray-400"></hr>
-      <div className="grid grid-cols-4 gap-4 lg:flex lg:justify-between align-center px-4 py-8">
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Alibaba}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Amazon}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Daraz}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Ebay}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Rakuten}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Walmart}
-          alt=""
-        />
-        <Image
-          loader={imageLoader}
-          className="object-fill"
-          width={80}
-          height={50}
-          src={Target}
-          alt=""
-        />
+      <hr className="border-black"></hr>
+      <div className="py-8">
+        <Slider {...settings}>
+          {/* <div className="grid grid-cols-4 gap-4 lg:flex lg:justify-between align-center px-4 py-8"> */}
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={80}
+              height={50}
+              src={Alibaba}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={80}
+              height={50}
+              src={Amazon}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={80}
+              height={50}
+              src={Daraz}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={80}
+              height={50}
+              src={Ebay}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={80}
+              height={50}
+              src={Rakuten}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={100}
+              height={50}
+              src={Walmart}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              loader={imageLoader}
+              className="object-fill"
+              width={100}
+              height={50}
+              src={Target}
+              alt=""
+            />
+          </div>
+          {/* </div> */}
+        </Slider>
       </div>
-      <hr className="border-gray-400"></hr>
+      <hr className="border-black"></hr>
     </div>
   )
 }

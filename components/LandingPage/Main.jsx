@@ -18,10 +18,11 @@ const LandingPageMain = () => {
   return (
     <div className="text-center">
       <Banner />
+      <Logos />
       <Cards />
       <FeaturedProducts />
       <LiveVideoShopping />
-      <Rechart />
+      {/* <Rechart /> */}
       {/* <LiveVideoSlickSLider /> */}
       <LiveVideoSlider />
       <PersonalShopping />
