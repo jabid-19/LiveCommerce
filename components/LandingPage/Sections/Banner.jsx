@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const Banner = () => {
   return (
-    <div className="hero lg:min-h-[80vh] bg-base-100 py-8">
+    <div className="hero lg:min-h-[80vh] bg-base-100 py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div data-aos="fade-left" className="avatar">
           <div className="w-72 lg:w-96 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -21,15 +21,15 @@ const Banner = () => {
           </div>
         </div>
         <div data-aos="fade-right">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
             World-Leading Live Video Shopping
           </h1>
-          <p className="py-6">
+          <p className="py-6 text-black">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore maiores
             odio blanditiis minima a praesentium. Recusandae totam quaerat molestias ea quisquam
             facere iste explicabo illo excepturi similique!
           </p>
-          <button className="btn btn-outline mr-4">
+          <button className="btn btn-outline mr-4 text-black">
             Get Started
             <AiOutlineArrowRight className="w-4 h-4 ml-2" />
           </button>

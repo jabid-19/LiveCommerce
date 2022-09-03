@@ -13,17 +13,17 @@ const LiveVideoShopping = () => {
           allowFullScreen="allowFullScreen"
           frameBorder="0"></iframe>
         <div data-aos="fade-down-left">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
             Live Video Shopping One-to-Many
           </h1>
-          <p className="py-6">
+          <p className="py-6 text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam eveniet
             corporis, provident corrupti impedit delectus ipsum, a molestiae, architecto ullam
             pariatur commodi velit maiores inventore necessitatibus debitis enim ducimus?
           </p>
           <div className="mb-8">
             <button className="btn btn-primary text-white mr-4">Get Started</button>
-            <button className="btn btn-outline">
+            <button className="btn btn-outline text-black">
               Learn More
               <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
             </button>

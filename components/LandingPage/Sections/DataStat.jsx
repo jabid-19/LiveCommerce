@@ -17,8 +17,8 @@ const DataStat = () => {
               d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
           </svg>
         </div>
-        <h4 className="font-bold text-2xl">Data and Insights</h4>
-        <p>
+        <h4 className="font-bold text-2xl text-black">Data and Insights</h4>
+        <p className="text-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maiores sapiente harum esse
           architecto unde doloribus! Nihil dignissimos laboriosam illo est maiores, eligendi aliquid
           voluptatum vel minus nisi corrupti et?
@@ -43,8 +43,8 @@ const DataStat = () => {
               d="M13 10V3L4 14h7v7l9-11h-7z"></path>
           </svg>
         </div>
-        <h4 className="font-bold text-2xl">ADA Compliance</h4>
-        <p>
+        <h4 className="font-bold text-2xl text-black">ADA Compliance</h4>
+        <p className="text-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam voluptatum quos
           ullam. Architecto autem quod exercitationem dolores eum blanditiis, quia repudiandae
           reiciendis cumque quaerat explicabo, laudantium repellendus nulla rerum.
@@ -69,8 +69,8 @@ const DataStat = () => {
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
         </div>
-        <h4 className="font-bold text-2xl">Global Coverage</h4>
-        <p>
+        <h4 className="font-bold text-2xl text-black">Global Coverage</h4>
+        <p className="text-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iure eum, sed dolore,
           soluta iusto ex commodi beatae consectetur doloremque atque rerum nam ea ullam odit
           accusantium maxime tempora at!

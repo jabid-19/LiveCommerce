@@ -20,10 +20,10 @@ const GetStartedShopping = () => {
           </div>
         </div>
         <div data-aos="fade-right">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
             Get Started With Live Shopping Today
           </h1>
-          <p className="py-6">
+          <p className="py-6 text-black">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore maiores
             odio blanditiis minima a praesentium. Recusandae totam quaerat molestias ea quisquam
             facere iste explicabo illo excepturi similique!
