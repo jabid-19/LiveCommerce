@@ -16,6 +16,7 @@ const LiveVideoShopping = () => {
         <video
           style={{ height: '500px' }}
           // controls
+          poster="/video/live-video.png"
           playsInline
           autoPlay
           loop

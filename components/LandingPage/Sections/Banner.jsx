@@ -5,7 +5,13 @@ const Banner = () => {
     <div className="hero lg:min-h-[80vh] bg-base-100 py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div data-aos="fade-left" className="rainbow w-1/2">
-          <video className="w-full h-full" playsInline autoPlay loop muted>
+          <video
+            className="w-full h-full"
+            poster="/video/woman-video.png"
+            playsInline
+            autoPlay
+            loop
+            muted>
             <source src="/video/woman-video.mp4" type="video/mp4" />
           </video>
         </div>
