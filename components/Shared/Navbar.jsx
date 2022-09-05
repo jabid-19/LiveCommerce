@@ -35,7 +35,7 @@ const Navbar = () => {
   //   }, [lastScrollY])
 
   return (
-    <div className="navbar bg-base-100 shadow-md shadow-primary py-8 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-md shadow-primary py-2 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -99,8 +99,8 @@ const Navbar = () => {
         <Link href="/">
           <a className="ml-3">
             <Image
-              width={123}
-              height={69}
+              width={153}
+              height={89}
               src={Logo}
               alt="Live Commerce's Logo"
               loader={imageLoader}
