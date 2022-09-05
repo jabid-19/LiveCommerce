@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import imageLoader from '../../helper/imageLoader'
+import Logo from '../../public/navbar-logo/LiveCommerce.png'
 // import { useEffect, useState } from 'react'
 
 const Navbar = () => {
@@ -94,7 +97,15 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/">
-          <a className="btn btn-ghost normal-case text-xl">LiveCommerce</a>
+          <a className="ml-3">
+            <Image
+              width={123}
+              height={69}
+              src={Logo}
+              alt="Live Commerce's Logo"
+              loader={imageLoader}
+            />
+          </a>
         </Link>
       </div>
       {/* <div className="navbar-center hidden lg:flex">

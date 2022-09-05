@@ -14,15 +14,15 @@ const LiveVideoShopping = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen></iframe> */}
         <video
-          style={{ width: '300px', height: '400px', backgroundColor: 'gray' }}
-          controls
+          style={{ height: '500px' }}
+          // controls
           playsInline
           autoPlay
           loop
           muted>
-          <source src="/video/Bambuser-FrontPage-OnetoMany+(1).mp4" type="video/mp4" />
+          <source src="/video/live-video.mp4" type="video/mp4" />
         </video>
-        <div data-aos="fade-down-left">
+        <div data-aos="fade-down-left" className="lg:ml-12">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
             Live Video Shopping One-to-Many
           </h1>
