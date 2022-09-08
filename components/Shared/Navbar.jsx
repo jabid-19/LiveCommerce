@@ -1,39 +1,10 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import imageLoader from '../../helper/imageLoader'
 import Logo from '../../public/navbar-logo/LiveCommerce.png'
 // import { useEffect, useState } from 'react'
 
 const Navbar = () => {
-  //   const [show, setShow] = useState(true)
-  //   const [lastScrollY, setLastScrollY] = useState(0)
-
-  //   const controlNavbar = () => {
-  //     if (typeof window !== 'undefined') {
-  //       if (window.scrollY > lastScrollY) {
-  //         // if scroll down hide the navbar
-  //         setShow(false)
-  //       } else {
-  //         // if scroll up show the navbar
-  //         setShow(true)
-  //       }
-
-  //       // remember current page location to use in the next move
-  //       setLastScrollY(window.scrollY)
-  //     }
-  //   }
-
-  //   useEffect(() => {
-  //     if (typeof window !== 'undefined') {
-  //       window.addEventListener('scroll', controlNavbar)
-
-  //       // cleanup function
-  //       return () => {
-  //         window.removeEventListener('scroll', controlNavbar)
-  //       }
-  //     }
-  //   }, [lastScrollY])
-
   return (
     <div className="navbar bg-base-100 shadow-md shadow-primary py-2 sticky top-0 z-50">
       <div className="navbar-start">
