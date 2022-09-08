@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="hero lg:min-h-[80vh] bg-base-100 py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div data-aos="fade-left" className="rainbow w-1/2">
+        <div data-aos="fade-left" className="rainbow w-10/12 lg:w-1/2">
           <video
             className="w-full h-full"
             poster="/video/woman-video.png"
@@ -39,7 +39,7 @@ const Banner = () => {
             </video>
           </div>
         </div> */}
-        <div data-aos="fade-right" className="w-1/2">
+        <div data-aos="fade-right" className="w-10/12 lg:w-1/2">
           <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold text-black">
             World-Leading Live Video Shopping
           </h1>

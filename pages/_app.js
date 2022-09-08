@@ -4,6 +4,8 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import Navbar from '../components/Shared/Navbar'
 import Footer from '../components/Shared/Footer'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -17,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   )
 }

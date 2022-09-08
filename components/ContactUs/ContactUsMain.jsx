@@ -3,14 +3,76 @@ import imageLoader from '../../helper/imageLoader'
 import BigScreenContactImage from '../../public/contact/camera.avif'
 import SmallScreenContactImage from '../../public/contact/contact-us-animate.svg'
 import { useForm } from 'react-hook-form'
+// import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+import axios from 'axios'
+// import { toast } from 'react-toastify'
 
 const ContactUsMain = () => {
+  const form = useRef()
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = async (data) => {
+    console.log('data', data)
+    console.log('form data', form.current)
+    try {
+      // make axios post request
+      const response = await axios({
+        method: 'post',
+        url: '/api/sendemail',
+        data: data,
+        headers: { 'Content-Type': 'application/json' },
+      })
+      console.log('response', response)
+      // if (response.status == 200) {
+      //   reset()
+      //   toast.success('Email sent')
+      // }
+    } catch (error) {
+      console.log(error)
+      // toast.error("Couldn't send email")
+    }
+    // emailjs
+    //   .sendForm(
+    //     `${process.env.SERVICE_ID}`,
+    //     `${process.env.TEMPLATE_ID}`,
+    //     form.current,
+    //     `${process.env.PUBLIC_KEY}`
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text)
+    //       console.log('Email sent')
+    //       toast.success('Email sent')
+    //       reset()
+    //     },
+    //     (error) => {
+    //       console.log(error.text)
+    //       console.log("Couldn't send email")
+    //       toast.error("Couldn't send email")
+    //     }
+    //   )
+
+    // emailjs
+    //   .send(
+    //     `${process.env.SERVICE_ID}`,
+    //     `${process.env.TEMPLATE_ID}`,
+    //     data,
+    //     `${process.env.PUBLIC_KEY}`
+    //   )
+    //   .then(
+    //     (response) => {
+    //       console.log('SUCCESS!', response.status, response.text)
+    //     },
+    //     (err) => {
+    //       console.log('FAILED...', err)
+    //     }
+    //   )
+  }
   return (
     <div className="flex flex-col md:flex-row">
       <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
@@ -29,7 +91,7 @@ const ContactUsMain = () => {
         <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-primary via-accent to-secondary">
           Contact Us
         </h2>
-        <form onSubmit={handleSubmit(onSubmit)} className="mt-10">
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className="mt-10">
           <div className="mb-5">
             <label className="text-xl font-semibold text-neutral pl-2 mb-4">Full Name</label>
             <input
