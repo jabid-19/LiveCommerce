@@ -7,6 +7,9 @@
     transform: rotate(1turn);
   }
 }
+// * {
+//   background: rgb(0 100 0 / 0.1) !important;
+// }
 
 .rainbow {
   position: relative;
@@ -205,5 +208,47 @@
       background: white;
       border-radius: 5px;
     }
+  }
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 20s linear infinite;
+}
+
+article.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.company {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

@@ -1,0 +1,44 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+
+  .slides {
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+
+    &.paused {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+
+    .company {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .slidesUl {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+
+        .slidesLI {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

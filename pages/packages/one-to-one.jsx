@@ -1,10 +1,10 @@
 import React from 'react'
-import OneToOneIndex from '../../components/Packages/OneToOne'
+import PackagesMain from '../../components/Packages/Main'
 
 const OneToOneMain = () => {
   return (
     <div className="relative w-full">
-      <OneToOneIndex />
+      <PackagesMain />
     </div>
   )
 }
