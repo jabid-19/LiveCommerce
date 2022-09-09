@@ -33,31 +33,6 @@ const CompaniesIndex = () => {
         </div>
       </div>
     </div>
-    //     <section>
-    //         <article>
-    //             <div>
-    //             {Companies.map((company, index) => (
-    //                 <ul key={index}>
-    //                     <li>
-    //                         <Image src={company} height="100" width="250" alt="" />
-    //                     </li>
-    //                 </ul>
-    //             ))}
-
-    //         </div>
-    //       <div>
-    //             {Companies.map((company, index) => (
-    //                 <ul key={index}>
-    //                     <li>
-    //                         <Image src={company} height="100" width="250" alt="" />
-    //                     </li>
-    //                 </ul>
-    //             ))}
-
-    //         <div></div>
-    //     </div>
-    //   </article>
-    // </section>
   )
 }
 
