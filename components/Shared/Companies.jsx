@@ -17,7 +17,7 @@ const CompaniesIndex = () => {
           {Companies.map((company, index) => (
             <div className={styles.sliderUl} key={index}>
               <div className={styles.sliderLI}>
-                <Image src={company} height={100} width={100} alt="" />
+                <Image src={company} height={100} width={100} alt="company logo" />
               </div>
             </div>
           ))}
@@ -26,7 +26,7 @@ const CompaniesIndex = () => {
           {Companies.map((company, index) => (
             <div className={styles.sliderUl} key={index}>
               <div className={styles.sliderLI}>
-                <Image src={company} height={100} width={100} alt="" />
+                <Image src={company} height={100} width={100} alt="company logo" />
               </div>
             </div>
           ))}
