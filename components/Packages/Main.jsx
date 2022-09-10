@@ -1,5 +1,5 @@
 import React from 'react'
-import CompaniesIndex from './section/Companies'
+import CompaniesIndex from '../Shared/Companies'
 import Features from './section/Features'
 import OneToOneIndex from './section/OneToOne'
 

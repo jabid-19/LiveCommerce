@@ -48,14 +48,12 @@ const OneToOneIndex = () => {
           </div>
           <div className="hidden md:block">
             <div
-              className="absolute bg-white w-1/3 rounded-full flex px-4 py-2 items-center gap-4 left-[0%] top-[70%] lg:left-[-10%] lg:w-1/2 lg:top-[60%] lg:px-4 lg:py-4 lg:flex-row xl:left-[5%] xl:w-1/3"
+              className="absolute bg-white w-1/3 rounded-full flex px-4 py-2 items-center gap-4 left-[0%] top-[70%] lg:left-[-10%] lg:w-1/2 lg:top-[70%] lg:px-4 lg:py-4 lg:flex-row xl:left-[5%] xl:w-1/3"
               data-aos="fade-up">
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
-                    iconsChange
-                      ? 'bg-primary duration-300'
-                      : ' bg-black text-secondary duration-300'
+                    iconsChange ? 'bg-black text-secondary duration-300' : 'bg-primary duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BsMic size={20} />
