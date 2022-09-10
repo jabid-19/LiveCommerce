@@ -1,19 +1,20 @@
-.slider {
+.sliderSection {
   width: 100%;
   overflow: hidden;
 
-  .slides {
+  .slidesContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 200%;
-    animation: bannermove 20s linear infinite;
+    animation: bannerMove 50s linear infinite;
 
     &.paused {
       -webkit-animation-play-state: paused;
       animation-play-state: paused;
     }
 
-    .company {
+    .companyLogo {
       width: 100%;
       display: flex;
       justify-content: space-around;
@@ -33,7 +34,7 @@
     }
   }
 
-  @keyframes bannermove {
+  @keyframes bannerMove {
     0% {
       transform: translateX(0);
     }

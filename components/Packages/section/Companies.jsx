@@ -11,9 +11,9 @@ import styles from '../../../styles/Companies.module.scss'
 const CompaniesIndex = () => {
   const Companies = [Alibaba, Amazon, Daraz, Ebay, Rakuten, Walmart, Target]
   return (
-    <div className={styles.slider}>
-      <div className={styles.slides}>
-        <div className={styles.company}>
+    <div className={styles.sliderSection}>
+      <div className={styles.slidesContainer}>
+        <div className={styles.companyLogo}>
           {Companies.map((company, index) => (
             <div className={styles.sliderUl} key={index}>
               <div className={styles.sliderLI}>
@@ -22,7 +22,7 @@ const CompaniesIndex = () => {
             </div>
           ))}
         </div>
-        <div className={styles.company}>
+        <div className={styles.companyLogo}>
           {Companies.map((company, index) => (
             <div className={styles.sliderUl} key={index}>
               <div className={styles.sliderLI}>
