@@ -53,7 +53,9 @@ const OneToOneIndex = () => {
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
-                    iconsChange ? 'bg-primary' : ' bg-black text-secondary'
+                    iconsChange
+                      ? 'bg-primary duration-300'
+                      : ' bg-black text-secondary duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BsMic size={20} />
