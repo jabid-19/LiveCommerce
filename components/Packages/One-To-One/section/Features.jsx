@@ -42,8 +42,10 @@ const Features = () => {
           <h1
             className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            Simplify with many{' '}
-            <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block">
+            Simplify with many
+            <span
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              data-aos="fade-up">
               <span className="relative text-white">interesting</span>
             </span>{' '}
             <br /> features.
