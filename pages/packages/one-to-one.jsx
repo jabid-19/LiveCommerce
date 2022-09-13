@@ -1,11 +1,19 @@
+import Head from 'next/head'
 import React from 'react'
 import PackagesOneToOneMain from '../../components/Packages/One-To-One/Main'
 
 const OneToOneMain = () => {
   return (
-    <div className="relative w-full">
-      <PackagesOneToOneMain />
-    </div>
+    <section>
+      <Head>
+        <title>Live Commerce | Many To Many</title>
+        <meta name="description" content="Live Commerce many to many section" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="relative w-full">
+        <PackagesOneToOneMain />
+      </div>
+    </section>
   )
 }
 

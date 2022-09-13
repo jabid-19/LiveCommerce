@@ -31,7 +31,7 @@ const ChatWithCustomer = () => {
                   <BiMessage size={20} />
                 </div>
               </div>
-              <div className="">
+              <div>
                 <p className="font-bold">Chatting</p>
                 <p className="text-neutral text-xs">With Robert</p>
               </div>
