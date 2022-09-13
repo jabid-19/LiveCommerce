@@ -39,7 +39,7 @@ const Banner = () => {
             </video>
           </div>
         </div> */}
-        <div data-aos="fade-right" className="w-10/12 lg:w-1/2">
+        <div data-aos="fade-right" className="w-10/12 lg:w-1/2 lg:mr-12">
           <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold text-black">
             World-Leading Live Video Shopping
           </h1>

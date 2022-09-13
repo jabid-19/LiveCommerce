@@ -3,10 +3,10 @@ import imageLoader from '../../helper/imageLoader'
 import BigScreenContactImage from '../../public/contact/camera.avif'
 import SmallScreenContactImage from '../../public/contact/contact-us-animate.svg'
 import { useForm } from 'react-hook-form'
-// import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
-import axios from 'axios'
-// import { toast } from 'react-toastify'
+// import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const ContactUsMain = () => {
   const form = useRef()
@@ -17,61 +17,30 @@ const ContactUsMain = () => {
     formState: { errors },
   } = useForm()
   const onSubmit = async (data) => {
-    console.log('data', data)
-    console.log('form data', form.current)
-    try {
-      // make axios post request
-      const response = await axios({
-        method: 'post',
-        url: '/api/sendemail',
-        data: data,
-        headers: { 'Content-Type': 'application/json' },
-      })
-      console.log('response', response)
-      // if (response.status == 200) {
-      //   reset()
-      //   toast.success('Email sent')
-      // }
-    } catch (error) {
-      console.log(error)
-      // toast.error("Couldn't send email")
-    }
-    // emailjs
-    //   .sendForm(
-    //     `${process.env.SERVICE_ID}`,
-    //     `${process.env.TEMPLATE_ID}`,
-    //     form.current,
-    //     `${process.env.PUBLIC_KEY}`
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text)
-    //       console.log('Email sent')
-    //       toast.success('Email sent')
-    //       reset()
-    //     },
-    //     (error) => {
-    //       console.log(error.text)
-    //       console.log("Couldn't send email")
-    //       toast.error("Couldn't send email")
-    //     }
-    //   )
-
-    // emailjs
-    //   .send(
-    //     `${process.env.SERVICE_ID}`,
-    //     `${process.env.TEMPLATE_ID}`,
-    //     data,
-    //     `${process.env.PUBLIC_KEY}`
-    //   )
-    //   .then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text)
-    //     },
-    //     (err) => {
-    //       console.log('FAILED...', err)
-    //     }
-    //   )
+    const response = await fetch('/api/sendemail')
+    const apiData = await response.json()
+    console.log('response', response)
+    console.log('apiData', apiData)
+    emailjs
+      .sendForm(
+        `${apiData.SERVICE_ID}`,
+        `${apiData.TEMPLATE_ID}`,
+        form.current,
+        `${apiData.PUBLIC_KEY}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          console.log('Email sent')
+          toast.success('Email sent')
+          reset()
+        },
+        (error) => {
+          console.log(error.text)
+          console.log("Couldn't send email")
+          toast.error("Couldn't send email")
+        }
+      )
   }
   return (
     <div className="flex flex-col md:flex-row">
