@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const GetStartedShopping = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 p-8 mx-auto">
+    <div className="hero min-h-screen bg-primary p-8 mx-auto">
       <div className="rainbowBorder">
         <div className="hero-content max-w-7xl p-8 bg-base-100 flex-col lg:flex-row-reverse">
           <div data-aos="fade-left">
@@ -20,9 +20,14 @@ const GetStartedShopping = () => {
               />
             </div>
           </div>
-          <div data-aos="fade-right">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
-              Get Started With Live Shopping Today
+          <div data-aos="fade-right" className="text-center lg:text-left">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black">
+              <span
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
+                data-aos="fade-up">
+                <span className="relative">Get Started</span>
+              </span>{' '}
+              With Live Shopping Today
             </h1>
             <p className="py-6 text-black">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore

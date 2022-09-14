@@ -13,14 +13,22 @@ import PersonalShopping from './Sections/PersonalShopping'
 // import TeamWorkSlickSlider from './Sections/TeamWorkSlickSlider'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
 import ClientList from './Sections/ClientList'
+import Companies from '../Shared/Companies'
+import Features from '../Packages/One-To-One/section/Features'
 
 const LandingPageMain = () => {
   return (
-    <div className="text-center">
+    <div className="text-center bg-slate-200">
       <Banner />
-      <ClientList />
-      <Cards />
+      {/* <ClientList /> */}
+      <Features />
+      <div className="bg-primary mt-20">
+        <hr className="border-black"></hr>
+        <Companies />
+        <hr className="border-black"></hr>
+      </div>
       <FeaturedProducts />
+      <Cards />
       <LiveVideoShopping />
       {/* <Rechart /> */}
       <LiveVideoSlider />
@@ -30,7 +38,8 @@ const LandingPageMain = () => {
       <DataStat />
       <Blogs />
       <GetStartedShopping />
-      <ClientList />
+      {/* <ClientList /> */}
+      <Companies />
     </div>
   )
 }

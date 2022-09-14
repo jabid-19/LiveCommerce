@@ -23,101 +23,110 @@ const FeaturedProducts = () => {
   }, [])
 
   return (
-    <div className="relative w-100 min-h-screen max-h-[768px] overflow-hidden">
-      <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black">
-        <div data-aos="fade-down" className="flex py-8 justify-center">
-          <div>
-            <HiShoppingBag className="w-24 h-24 text-white" />
-          </div>
-          <div className="lg:mt-5 lg:pl-5">
-            <h3 className="text-5xl text-white">Featured Products</h3>
-          </div>
+    <div className="pt-16 pb-28 w-100 overflow-hidden bg-white shadow-xl shadow-primary">
+      {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
+      <div className="flex py-8 justify-center mt-16">
+        <div>
+          <HiShoppingBag className="w-24 h-24 text-black" />
         </div>
-        <div data-aos="zoom-in" className="container mx-auto mt-16">
-          <Swiper
-            navigation={true}
-            effect={'coverflow'}
-            grabCursor={true}
-            slidesPerView={
-              (size <= 768 && 1) || (size > 768 && size <= 1320 && 3) || (size > 1320 && 5)
-            }
-            loop={true}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
-            }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay, EffectCoverflow, Navigation]}
-            className="mySwiper">
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item1}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item2}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item3}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item4}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item5}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                loader={imageLoader}
-                src={item6}
-                width={300}
-                height={400}
-                alt=""
-                className="object-cover"
-              />
-            </SwiperSlide>
-          </Swiper>
+        <div className="mt-5 ml-2">
+          <h1
+            className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+            style={{ lineHeight: '4.5rem' }}>
+            <span
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
+              data-aos="fade-down">
+              <span className="relative">Featured</span>
+            </span>{' '}
+            Products
+          </h1>
         </div>
       </div>
+      <div data-aos="zoom-in" className="container mx-auto my-16">
+        <Swiper
+          navigation={true}
+          effect={'coverflow'}
+          grabCursor={true}
+          slidesPerView={
+            (size <= 768 && 1) || (size > 768 && size <= 1320 && 3) || (size > 1320 && 5)
+          }
+          loop={true}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, EffectCoverflow, Navigation]}
+          className="mySwiper">
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item1}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item2}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item3}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item4}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item5}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              loader={imageLoader}
+              src={item6}
+              width={300}
+              height={400}
+              alt=""
+              className="object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      {/* </div> */}
     </div>
   )
 }

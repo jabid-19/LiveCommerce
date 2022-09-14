@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 // import imageLoader from '../../../helper/imageLoader'
 const LiveVideoShopping = () => {
   return (
-    <div className="hero min-h-[75vh] bg-base-100 mx-auto py-8 lg:px-36 lg:py-0">
+    <div className="hero mx-auto py-8 lg:px-36 lg:py-0">
       <div className="hero-content flex-col lg:flex-row">
         {/* <iframe
           width="300"
@@ -23,9 +23,16 @@ const LiveVideoShopping = () => {
           muted>
           <source src="/video/live-video.mp4" type="video/mp4" />
         </video>
-        <div data-aos="fade-down-left" className="lg:ml-12">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
-            Live Video Shopping One-to-Many
+        <div data-aos="fade-down-left" className="lg:ml-12 text-center lg:text-left">
+          <h1
+            className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+            style={{ lineHeight: '4.5rem' }}>
+            Live Video Shopping
+            <span
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              data-aos="fade-up">
+              <span className="relative text-white">One-to-Many</span>
+            </span>
           </h1>
           <p className="py-6 text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam eveniet

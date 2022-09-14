@@ -10,8 +10,8 @@ import { BsChatDots } from 'react-icons/bs'
 
 const PersonalShopping = () => {
   return (
-    <div className="hero min-h-[80vh] bg-base-100 py-8 px-4 my-8 lg:my-16">
-      <div className="bg-base-100 lg:mx-36 p-8">
+    <div className="hero py-8 px-4 my-8 lg:my-16">
+      <div className="lg:mx-36 p-8">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div data-aos="fade-down-left" className="lg:ml-12">
             <div className="lg:flex">
@@ -77,16 +77,23 @@ const PersonalShopping = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-down-right">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black">
-              Personal Shopping‍ One-to-One
+          <div data-aos="fade-down-right" className="text-center lg:text-left">
+            <h1
+              className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+              style={{ lineHeight: '4.5rem' }}>
+              Personal Shopping
+              <span
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                data-aos="fade-up">
+                <span className="relative text-white">One-to-One</span>
+              </span>
             </h1>
             <p className="py-6 text-black">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi possimus ex quia
               impedit, laudantium eum saepe vero quisquam nobis expedita natus, sed et amet
               aspernatur magni. Inventore assumenda molestiae fugit.
             </p>
-            <div className="flex justify-center lg:mb-8">
+            <div className="mb-8">
               <button className="btn btn-primary text-white mr-4">Get Started</button>
               <button className="btn btn-outline text-black">
                 Learn More
