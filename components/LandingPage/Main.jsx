@@ -23,11 +23,9 @@ const LandingPageMain = () => {
       <FeaturedProducts />
       <LiveVideoShopping />
       {/* <Rechart /> */}
-      {/* <LiveVideoSlickSLider /> */}
       <LiveVideoSlider />
       <PersonalShopping />
       <CustomerReviews />
-      {/* <TeamWorkSlickSlider /> */}
       <TeamWorkSlider />
       <DataStat />
       <Blogs />
