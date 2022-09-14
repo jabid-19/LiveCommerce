@@ -12,6 +12,7 @@ module.exports = {
           accent: '#37cdbe',
           // accent: '#00ADB5',
           neutral: '#3d4451',
+          black: '#000000',
           'base-100': '#ffffff',
         },
       },
