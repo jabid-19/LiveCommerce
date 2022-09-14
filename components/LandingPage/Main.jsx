@@ -12,7 +12,6 @@ import PersonalShopping from './Sections/PersonalShopping'
 // import Rechart from './Sections/Rechart'
 // import TeamWorkSlickSlider from './Sections/TeamWorkSlickSlider'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
-import ClientList from './Sections/ClientList'
 import Companies from '../Shared/Companies'
 import Features from '../Packages/One-To-One/section/Features'
 
@@ -20,7 +19,6 @@ const LandingPageMain = () => {
   return (
     <div className="text-center bg-slate-200">
       <Banner />
-      {/* <ClientList /> */}
       <Features />
       <div className="bg-primary mt-20">
         <hr className="border-black"></hr>
@@ -38,7 +36,6 @@ const LandingPageMain = () => {
       <DataStat />
       <Blogs />
       <GetStartedShopping />
-      {/* <ClientList /> */}
       <Companies />
     </div>
   )
