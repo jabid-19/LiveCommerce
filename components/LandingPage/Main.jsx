@@ -6,11 +6,8 @@ import DataStat from './Sections/DataStat'
 import FeaturedProducts from './Sections/FeaturedProducts'
 import GetStartedShopping from './Sections/GetStartedShopping'
 import LiveVideoShopping from './Sections/LiveVideoShopping'
-// import LiveVideoSlickSLider from './Sections/LiveVideoSlickSlider'
 import LiveVideoSlider from './Sections/LiveVideoSlider'
 import PersonalShopping from './Sections/PersonalShopping'
-// import Rechart from './Sections/Rechart'
-// import TeamWorkSlickSlider from './Sections/TeamWorkSlickSlider'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
 import Companies from '../Shared/Companies'
 import Features from '../Packages/One-To-One/section/Features'
@@ -28,7 +25,6 @@ const LandingPageMain = () => {
       <FeaturedProducts />
       <Cards />
       <LiveVideoShopping />
-      {/* <Rechart /> */}
       <LiveVideoSlider />
       <PersonalShopping />
       <CustomerReviews />
