@@ -120,7 +120,7 @@ const Navbar = () => {
           <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary text-white mr-4">Get started</a>
           </Link> */}
-          <Link href="contact">
+          <Link href="/contact">
             <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link>
         </ul>
