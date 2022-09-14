@@ -56,7 +56,7 @@ const DataStat = () => {
       </div>
 
       <div data-aos="zoom-in-left" className="stat place-items-center">
-        <div className="stat-value text-secondary">
+        <div className="stat-value text-accent">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -20,7 +20,7 @@ import 'swiper/css/effect-creative'
 // import "./TeamWork.css";
 
 // import required modules
-import { EffectCreative, Pagination, Navigation, Scrollbar } from 'swiper'
+import { Autoplay, EffectCreative, Pagination, Navigation, Scrollbar } from 'swiper'
 import { useEffect, useState } from 'react'
 
 const TeamWorkSlider = () => {
@@ -41,16 +41,21 @@ const TeamWorkSlider = () => {
           grabCursor={true}
           effect={'creative'}
           scrollbar={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           creativeEffect={{
             prev: {
-              shadow: true,
+              shadow: false,
               translate: [0, 0, -400],
             },
             next: {
               translate: ['100%', 0, 0],
             },
           }}
-          modules={[EffectCreative, Pagination, Navigation, Scrollbar]}
+          loop={true}
+          modules={[Autoplay, EffectCreative, Pagination, Navigation, Scrollbar]}
           className="mySwiper">
           <SwiperSlide className="mb-12">
             <Image
@@ -59,16 +64,6 @@ const TeamWorkSlider = () => {
               width={870}
               height={580}
               src={team1}
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide className="mb-12">
-            <Image
-              loader={imageLoader}
-              className="object-fill hover:scale-105"
-              width={870}
-              height={580}
-              src={team2}
               alt=""
             />
           </SwiperSlide>
@@ -129,6 +124,16 @@ const TeamWorkSlider = () => {
               width={870}
               height={580}
               src={team8}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide className="mb-12">
+            <Image
+              loader={imageLoader}
+              className="object-fill hover:scale-105"
+              width={870}
+              height={580}
+              src={team2}
               alt=""
             />
           </SwiperSlide>

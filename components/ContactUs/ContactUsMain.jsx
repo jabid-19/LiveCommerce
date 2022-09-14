@@ -3,14 +3,45 @@ import imageLoader from '../../helper/imageLoader'
 import BigScreenContactImage from '../../public/contact/camera.avif'
 import SmallScreenContactImage from '../../public/contact/contact-us-animate.svg'
 import { useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+// import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const ContactUsMain = () => {
+  const form = useRef()
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = async (data) => {
+    const response = await fetch('/api/sendemail')
+    const apiData = await response.json()
+    console.log('response', response)
+    console.log('apiData', apiData)
+    emailjs
+      .sendForm(
+        `${apiData.SERVICE_ID}`,
+        `${apiData.TEMPLATE_ID}`,
+        form.current,
+        `${apiData.PUBLIC_KEY}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          console.log('Email sent')
+          toast.success('Email sent')
+          reset()
+        },
+        (error) => {
+          console.log(error.text)
+          console.log("Couldn't send email")
+          toast.error("Couldn't send email")
+        }
+      )
+  }
   return (
     <div className="flex flex-col md:flex-row">
       <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
@@ -29,7 +60,7 @@ const ContactUsMain = () => {
         <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-primary via-accent to-secondary">
           Contact Us
         </h2>
-        <form onSubmit={handleSubmit(onSubmit)} className="mt-10">
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className="mt-10">
           <div className="mb-5">
             <label className="text-xl font-semibold text-neutral pl-2 mb-4">Full Name</label>
             <input
