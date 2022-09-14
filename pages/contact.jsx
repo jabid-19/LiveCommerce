@@ -1,10 +1,18 @@
 import ContactUsMain from '../components/ContactUs/ContactUsMain'
+import Head from 'next/head'
 
 const Contact = () => {
   return (
-    <div>
-      <ContactUsMain />
-    </div>
+    <section>
+      <Head>
+        <title>Live Commerce | Contact</title>
+        <meta name="description" content="Live Commerce Contact" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>
+        <ContactUsMain />
+      </div>
+    </section>
   )
 }
 
