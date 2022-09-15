@@ -42,7 +42,7 @@ const AuthenticationMain = () => {
   }
 
   return (
-    <div className="flex flex-col-reverse md:flex-row">
+    <div className="flex flex-col-reverse md:flex-row bg-slate-200">
       {/* <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
         <Image
           loader={imageLoader}
@@ -72,7 +72,7 @@ const AuthenticationMain = () => {
             className={
               key != 'register'
                 ? 'btn btn-primary w-1/2 text-white'
-                : 'btn bg-slate-200 text-slate-400 border-none w-1/2'
+                : 'btn bg-slate-300 text-slate-400 border-none w-1/2'
             }
             onClick={loadLoginForm}>
             Login
@@ -81,7 +81,7 @@ const AuthenticationMain = () => {
             className={
               key === 'register'
                 ? 'btn btn-primary w-1/2 text-white'
-                : 'btn bg-slate-200 text-slate-400 border-none w-1/2'
+                : 'btn bg-slate-300 text-slate-400 border-none w-1/2'
             }
             onClick={loadRegisterForm}>
             Create Account
