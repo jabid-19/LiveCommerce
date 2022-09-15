@@ -46,12 +46,12 @@ const Navbar = () => {
               </a>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <Link href="/packages//one-to-one">
+                  <Link href="/packages/one-to-one">
                     <a>One to one</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/packages//many-to-many">
+                  <Link href="/packages/many-to-many">
                     <a>Many to many</a>
                   </Link>
                 </li>
@@ -102,12 +102,12 @@ const Navbar = () => {
             </a>
             <ul className="p-2 bg-base-100">
               <li>
-                <Link href="/packages//one-to-one">
+                <Link href="/packages/one-to-one">
                   <a>One to one</a>
                 </Link>
               </li>
               <li>
-                <Link href="/packages//many-to-many">
+                <Link href="/packages/many-to-many">
                   <a>Many to many</a>
                 </Link>
               </li>
