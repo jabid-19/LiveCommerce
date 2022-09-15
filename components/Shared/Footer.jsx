@@ -5,7 +5,7 @@ import Logo from '../../public/navbar-logo/logo.png'
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-black text-base-200 lg:justify-center lg:justify-between">
+      <footer className="footer p-10 bg-black text-base-200 lg:justify-between">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
