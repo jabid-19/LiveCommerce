@@ -98,10 +98,14 @@ const Navbar = () => {
             </a>
             <ul className="p-2">
               <li>
-                <a href="/packages//one-to-one">One to one</a>
+                <Link href="/packages//one-to-one">
+                  <a>One to one</a>
+                </Link>
               </li>
               <li>
-                <a href="/packages//many-to-many">Many to many</a>
+                <Link href="/packages//many-to-many">
+                  <a>Many to many</a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -109,7 +113,9 @@ const Navbar = () => {
             <a>About us</a>
           </li>
           <li>
-            <a href="/contact">Contact us</a>
+            <Link href="/contact">
+              <a>Contact us</a>
+            </Link>
           </li>
         </ul>
       </div>
