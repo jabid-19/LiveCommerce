@@ -5,7 +5,7 @@ import TalkToSales from './Sections/TalkToSales'
 
 const PricingMain = () => {
   return (
-    <div className="relative w-full bg-base-200">
+    <div className="relative w-full bg-slate-200">
       <TalkToSales />
       <Pricing />
       <Comparisons />
