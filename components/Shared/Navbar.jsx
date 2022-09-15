@@ -79,14 +79,14 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      {/* <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>Item 1</a>
+            <a href="/pricing">Pricing</a>
           </li>
           <li tabIndex="0">
             <a>
-              Parent
+              Packages
               <svg
                 className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,31 +98,34 @@ const Navbar = () => {
             </a>
             <ul className="p-2">
               <li>
-                <a>Submenu 1</a>
+                <a href="/packages//one-to-one">One to one</a>
               </li>
               <li>
-                <a>Submenu 2</a>
+                <a href="/packages//many-to-many">Many to many</a>
               </li>
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>About us</a>
+          </li>
+          <li>
+            <a href="/contact">Contact us</a>
           </li>
         </ul>
-      </div> */}
+      </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          {/* <Link href="login">
+          <Link href="login">
             <li className="mr-2">
               <a>Login</a>
             </li>
           </Link>
           <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary text-white mr-4">Get started</a>
-          </Link> */}
-          <Link href="/contact">
-            <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link>
+          {/* <Link href="/contact">
+            <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
+          </Link> */}
         </ul>
       </div>
     </div>
