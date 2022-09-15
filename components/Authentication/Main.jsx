@@ -43,7 +43,7 @@ const AuthenticationMain = () => {
 
   return (
     <div className="bg-slate-200">
-      <div className="flex flex-col-reverse md:flex-row bg-slate-200 w-[95%]">
+      <div className="flex flex-col-reverse md:flex-row bg-slate-200 md:w-[95%]">
         {/* <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
         <Image
           loader={imageLoader}
@@ -54,7 +54,7 @@ const AuthenticationMain = () => {
           priority={true}
         />
       </div> */}
-        <div className="md:w-[50%] flex justify-center">
+        <div className="md:min-w-[50%] flex justify-center items-center max-h-[1024px]">
           <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
             <Image
               loader={imageLoader}
@@ -62,7 +62,7 @@ const AuthenticationMain = () => {
               height={750}
               className="object-cover"
               src={BigScreenContactImage}
-              alt="Open Shopping"
+              alt="Login Image"
               priority={true}
             />
           </div>
