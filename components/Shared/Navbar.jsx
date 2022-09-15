@@ -62,7 +62,7 @@ const Navbar = () => {
             <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
             </Link> */}
-            <Link href="contact">
+            <Link href="/contact">
               <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link>
           </ul>
@@ -82,7 +82,9 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a href="/pricing">Pricing</a>
+            <Link href="/pricing">
+              <a>Pricing</a>
+            </Link>
           </li>
           <li tabIndex="0">
             <a>
