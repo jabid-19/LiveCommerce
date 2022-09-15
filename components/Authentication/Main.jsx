@@ -67,6 +67,25 @@ const AuthenticationMain = () => {
       <div
         data-aos="fade-left"
         className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
+        <div className="mb-20 max-w-4xl">
+          {key === 'register' ? (
+            <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
+              <span
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                data-aos="fade-up">
+                <span className="relative text-white">Sign up</span>
+              </span>
+            </h1>
+          ) : (
+            <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
+              <span
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                data-aos="fade-up">
+                <span className="relative text-white">Login</span>
+              </span>
+            </h1>
+          )}
+        </div>
         <div className="btn-group max-w-4xl">
           <button
             className={

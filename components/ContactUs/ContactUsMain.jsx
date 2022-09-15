@@ -44,9 +44,7 @@ const ContactUsMain = () => {
   }
   return (
     <div className="flex flex-col-reverse md:flex-row bg-slate-200">
-      <div
-        data-aos="fade-right"
-        className="rainbow mx-8 my-20 lg:mx-20 flex flex-col justify-center items-center">
+      <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 flex">
         <Image
           loader={imageLoader}
           width={580}
@@ -58,10 +56,17 @@ const ContactUsMain = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
-        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-primary via-accent to-secondary">
-          Contact Us
-        </h2>
+        className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
+        <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
+          <span
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+            data-aos="fade-up">
+            <span className="relative text-white">Contact us</span>
+          </span>
+        </h1>
+        <p className="text-neutral text-center text-base mt-10">
+          Fill in the form and we&apos;ll be in touch soon
+        </p>
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className="mt-10">
           <div className="mb-5">
             <label className="text-xl font-semibold text-neutral pl-2 mb-4">Full Name*</label>
@@ -175,21 +180,11 @@ const ContactUsMain = () => {
             <div className="text-error text-xs font-bold pl-2 pt-2">{errors.details?.message}</div>
           </div>
           <input
-            className="btn btn-secondary font-bold w-full min-w-xs normal-case text-white rounded cursor-pointer h-14 text-xl border-2"
+            className="btn btn-primary font-bold w-full min-w-xs normal-case text-white rounded cursor-pointer h-14 text-xl border-2"
             type="submit"
           />
         </form>
       </div>
-      {/* <div data-aos="fade-right" className="mb-20 flex justify-center md:hidden">
-        <Image
-          src={SmallScreenContactImage}
-          alt="Contact Image"
-          width={300}
-          height={300}
-          className="rounded-lg"
-          loader={imageLoader}
-        />
-      </div> */}
     </div>
   )
 }

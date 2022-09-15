@@ -26,9 +26,6 @@ const TalkToSales = () => {
               <span className="relative text-white">Live Shopping</span>
             </span>
           </h1>
-          {/* <h1 className="text-4xl text-center font-extrabold break-words text-neutral md:text-start lg:tracking-wider xl:text-5xl">
-            Get started with <br /> <span className="">Live Shopping today</span>
-          </h1> */}
           <p className="text-neutral text-center text-base mt-10 md:text-start">
             Fill in the form and we&apos;ll be in touch soon
           </p>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/GoLive.png'
+import Logo from '../../public/navbar-logo/logo.png'
 // import { useEffect, useState } from 'react'
 
 const Navbar = () => {
@@ -77,13 +77,7 @@ const Navbar = () => {
         </div>
         <Link href="/">
           <a className="ml-3">
-            <Image
-              width={141}
-              height={90}
-              src={Logo}
-              alt="Live Commerce's Logo"
-              loader={imageLoader}
-            />
+            <Image width={180} height={90} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
           </a>
         </Link>
       </div>

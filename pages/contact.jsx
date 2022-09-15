@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section>
       <Head>
-        <title>Live Commerce | Contact</title>
+        <title>Go Laiv | Contact</title>
         <meta name="description" content="Live Commerce Contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -6,7 +6,7 @@ const pricing = () => {
   return (
     <div>
       <Head>
-        <title>LiveCommerce | Pricing</title>
+        <title>Go Laiv | Pricing</title>
         <meta name="description" content="LiveCommerce Pricing Sections" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -6,7 +6,7 @@ const OneToOneMain = () => {
   return (
     <section>
       <Head>
-        <title>Live Commerce | One To One</title>
+        <title>Go Laiv | One To One</title>
         <meta name="description" content="Live Commerce many to many section" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

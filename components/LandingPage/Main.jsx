@@ -17,10 +17,10 @@ const LandingPageMain = () => {
     <div className="text-center bg-slate-200">
       <Banner />
       <Features />
-      <div className="bg-primary mt-20">
-        <hr className="border-black"></hr>
+      <div className="bg-white mt-20">
+        <hr className="border-secondary"></hr>
         <Companies />
-        <hr className="border-black"></hr>
+        <hr className="border-secondary"></hr>
       </div>
       <FeaturedProducts />
       <Cards />
