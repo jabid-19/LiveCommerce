@@ -54,7 +54,7 @@ const AuthenticationMain = () => {
           priority={true}
         />
       </div> */}
-        <div className="md:min-w-[50%] flex justify-center items-center max-h-[1024px]">
+        <div className="md:min-w-[50%] flex justify-center items-center">
           <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
             <Image
               loader={imageLoader}
