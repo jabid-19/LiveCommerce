@@ -4,7 +4,8 @@ import LoginForm from './Sections/LoginForm'
 import RegisterForm from './Sections/RegisterForm'
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import LoginImage from '../../public/login/login.avif'
+import BigScreenContactImage from '../../public/login/live-video.webp'
+// import LoginImage from '../../public/login/login.avif'
 
 const AuthenticationMain = () => {
   const router = useRouter()
@@ -42,7 +43,7 @@ const AuthenticationMain = () => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row">
-      <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
+      {/* <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
         <Image
           loader={imageLoader}
           width={387}
@@ -51,10 +52,21 @@ const AuthenticationMain = () => {
           alt="Open Shopping"
           priority={true}
         />
+      </div> */}
+      <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
+        <Image
+          loader={imageLoader}
+          width={500}
+          height={750}
+          className="object-cover"
+          src={BigScreenContactImage}
+          alt="Open Shopping"
+          priority={true}
+        />
       </div>
       <div
         data-aos="fade-left"
-        className="min-w-[90%] md:min-w-[50%] mx-auto my-20 px-8 flex flex-col justify-center">
+        className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
         <div className="btn-group max-w-4xl">
           <button
             className={

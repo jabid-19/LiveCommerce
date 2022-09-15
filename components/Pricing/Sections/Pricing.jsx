@@ -3,8 +3,22 @@ import { TiTick } from 'react-icons/ti'
 import { pricingPlans } from '../../../data/plans'
 const Pricing = () => {
   return (
-    <div className="w-auto mx-6 mt-12 lg:min-h-[85vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto">
-      <h1 className="text-5xl font-extrabold text-center">Plans & Pricing</h1>
+    <div className="w-auto mx-6 mt-12 lg:min-h-[85vh] lg:mt-44 2xl:w-[1400px] 2xl:mx-auto">
+      <h1
+        className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl"
+        style={{ lineHeight: '4.5rem' }}>
+        <span
+          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+          data-aos="fade-up">
+          <span className="relative text-white">Plans</span>
+        </span>{' '}
+        &{' '}
+        <span
+          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+          data-aos="fade-up">
+          <span className="relative text-white">Pricing</span>
+        </span>
+      </h1>
       <p className="text-center mt-5 font-bold">Select plan below</p>
       <div className="flex flex-col justify-between items-center gap-5 mt-10 md:flex-row">
         {pricingPlans?.map((plan) => (

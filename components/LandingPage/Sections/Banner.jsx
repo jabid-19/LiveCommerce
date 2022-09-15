@@ -2,7 +2,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const Banner = () => {
   return (
-    <div className="hero py-8 mb-16 lg:mb-28">
+    <div className="lg:min-h-[75vh] hero py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div data-aos="fade-left" className="rainbow w-10/12 lg:w-1/2">
           <video
@@ -45,7 +45,7 @@ const Banner = () => {
             style={{ lineHeight: '4.5rem' }}>
             World-Leading
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block animate-pulse"
               data-aos="fade-up">
               <span className="relative text-white">Live Video</span>
             </span>{' '}

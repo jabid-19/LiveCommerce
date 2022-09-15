@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
   }, [])
 
   return (
-    <div className="pt-16 pb-28 w-100 overflow-hidden bg-white shadow-xl shadow-primary">
+    <div className="pt-16 pb-28 w-100 overflow-hidden bg-white shadow-lg shadow-primary">
       {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
       <div className="flex py-8 justify-center mt-16">
         <div>

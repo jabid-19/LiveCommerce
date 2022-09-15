@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/LiveCommerce.png'
+import Logo from '../../public/navbar-logo/GoLive.png'
 
 const Footer = () => {
   return (
@@ -42,8 +42,8 @@ const Footer = () => {
           <p>
             <span>
               <Image
-                width={123}
-                height={69}
+                width={121}
+                height={70}
                 src={Logo}
                 alt="Live Commerce's Logo"
                 loader={imageLoader}
