@@ -9,7 +9,7 @@ const Products = () => {
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
             data-aos="fade-up">
-            <span className="relative text-black">Our products</span>
+            <span className="relative text-white">Our products</span>
           </span>
         </h1>
         <br />
