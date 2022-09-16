@@ -3,6 +3,7 @@ import Stats from './Sections/Stats'
 import Products from './Sections/Products'
 import WhyShopping from './Sections/WhyShopping'
 import Heading from './Sections/Heading'
+import Faq from '../Shared/Faq'
 
 const AboutMain = () => {
   return (
@@ -12,6 +13,7 @@ const AboutMain = () => {
       <Stats />
       <WhyShopping />
       <Products />
+      <Faq />
     </div>
   )
 }
