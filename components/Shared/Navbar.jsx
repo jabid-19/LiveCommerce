@@ -58,6 +58,11 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
+              <Link href="/about">
+                <a>About us</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/contact">
                 <a>Contact us</a>
               </Link>
@@ -114,7 +119,9 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a>About us</a>
+            <Link href="/about">
+              <a>About us</a>
+            </Link>
           </li>
           <li>
             <Link href="/contact">
