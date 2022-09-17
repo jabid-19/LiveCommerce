@@ -82,7 +82,7 @@ const Navbar = () => {
         </div>
         <Link href="/">
           <a className="ml-3">
-            <Image width={180} height={90} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
+            <Image width={155} height={70} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
           </a>
         </Link>
       </div>

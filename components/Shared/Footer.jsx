@@ -41,7 +41,7 @@ const Footer = () => {
           </svg> */}
           <p>
             <span>
-              <Image width={180} height={90} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
+              <Image width={155} height={70} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
             </span>
             <br></br>Copyright &copy; 2022
           </p>
