@@ -43,18 +43,20 @@ const Banner = () => {
           <h1
             className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            World-Leading
+            YOUR LEADING <br />
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block animate-pulse"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
               data-aos="fade-up">
-              <span className="relative text-white">Live Video</span>
-            </span>{' '}
-            <br /> Shopping
+              <span className="relative text-white">VIDEO PLATFORM</span>
+            </span>
+            <br />
+            FOR BUSINESS
           </h1>
           <p className="py-6 text-black">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore maiores
-            odio blanditiis minima a praesentium. Recusandae totam quaerat molestias ea quisquam
-            facere iste explicabo illo excepturi similique!
+            Our simple and intuitive interface and features can help you reach audiences wherever
+            and whenever they want. With an extensive list of features, our platform is designed to
+            support all use cases and enables you to add features as your brand grows, use only the
+            capabilities you need. When your business thrives, so will ours!
           </p>
           <button className="btn btn-outline mr-4 text-black">
             Get Started

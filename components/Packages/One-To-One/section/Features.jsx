@@ -3,7 +3,7 @@ import React from 'react'
 import { BiDevices, BiPhoneCall } from 'react-icons/bi'
 import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
 
-const Features = () => {
+const Features = ({ featuresContent }) => {
   const [iconsChange, setIconsChange] = React.useState(false)
   return (
     <div className="lg:min-h-[75vh] min-h-[800px] flex items-center bg-slate-200">
@@ -42,42 +42,38 @@ const Features = () => {
           <h1
             className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            Simplify with many
+            {featuresContent.featureTitlePart1}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
               data-aos="fade-up">
-              <span className="relative text-white">interesting</span>
+              <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>{' '}
-            <br /> features.
+            <br /> {featuresContent.featureTitlePart3}
           </h1>
           <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
                 <BsLock size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Encrypted and it is highly secured</p>
+              <p className="text-neutral font-bold mt-2">{featuresContent.feature1}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
                 <BsCameraVideo size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">
-                Audio & HD video calling and live streaming
-              </p>
+              <p className="text-neutral font-bold mt-2">{featuresContent.feature2}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
                 <BsLightning size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">
-                Not limited by time & places, go from anywhere
-              </p>
+              <p className="text-neutral font-bold mt-2">{featuresContent.feature3}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
                 <BiDevices size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Compatible with every available devices</p>
+              <p className="text-neutral font-bold mt-2">{featuresContent.feature4}</p>
             </div>
           </div>
         </div>
