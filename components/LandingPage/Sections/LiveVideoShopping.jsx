@@ -23,16 +23,17 @@ const LiveVideoShopping = () => {
           muted>
           <source src="/video/live-video.mp4" type="video/mp4" />
         </video>
-        <div data-aos="fade-down-left" className="lg:ml-12 text-center lg:text-left">
+        <div className="lg:ml-12 text-center lg:text-left">
           <h1
             className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
             Make sure
             <br />
+            your{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
               data-aos="fade-up">
-              <span className="relative text-white">your content</span>
+              <span className="relative text-white">content</span>
             </span>
             <br />
             delivers value

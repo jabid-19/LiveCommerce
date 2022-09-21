@@ -8,12 +8,11 @@ import { Autoplay, EffectCoverflow, Navigation } from 'swiper'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import imageLoader from '../../../helper/imageLoader'
-import item1 from '../../../public/featured-products/clothes.avif'
-import item2 from '../../../public/featured-products/shoes.avif'
-import item3 from '../../../public/featured-products/jewelry.avif'
-import item4 from '../../../public/featured-products/bag.avif'
-import item5 from '../../../public/featured-products/watch.avif'
-import item6 from '../../../public/featured-products/perfume.avif'
+import item1 from '../../../public/featured-products/onetoOne.png'
+import item2 from '../../../public/featured-products/oneToMany.png'
+import item3 from '../../../public/featured-products/liveCommerce.png'
+import item4 from '../../../public/featured-products/liveStreaming.png'
+import item5 from '../../../public/featured-products/multiStreaming.png'
 
 const FeaturedProducts = () => {
   const [size, setSize] = useState(0)
@@ -26,23 +25,22 @@ const FeaturedProducts = () => {
     <div className="pt-16 pb-28 w-100 overflow-hidden bg-white shadow-lg shadow-primary">
       {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
       <div className="flex py-8 justify-center mt-16">
-        <div>
+        {/* <div>
           <HiShoppingBag className="w-24 h-24 text-black" />
-        </div>
-        <div className="mt-5 ml-2">
-          <h1
-            className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
-            style={{ lineHeight: '4.5rem' }}>
-            <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-              data-aos="fade-down">
-              <span className="relative">Featured</span>
-            </span>{' '}
-            Products
-          </h1>
-        </div>
+        </div> */}
+        <h1
+          className="text-5xl text-center text-black font-bold md:text-6xl"
+          style={{ lineHeight: '4.5rem' }}>
+          Reach your{' '}
+          <span
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
+            data-aos="fade-down">
+            <span className="relative">audience</span>
+          </span>{' '}
+          by
+        </h1>
       </div>
-      <div data-aos="zoom-in" className="container mx-auto my-16">
+      <div className="container mx-auto my-16">
         <Swiper
           navigation={true}
           effect={'coverflow'}
@@ -69,59 +67,49 @@ const FeaturedProducts = () => {
               loader={imageLoader}
               src={item1}
               width={300}
-              height={400}
-              alt=""
-              className="object-cover"
+              height={500}
+              alt="One to one"
+              // className="object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               loader={imageLoader}
               src={item2}
-              width={300}
-              height={400}
-              alt=""
-              className="object-cover"
+              width={306}
+              height={500}
+              alt="One to many"
+              // className="object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               loader={imageLoader}
               src={item3}
-              width={300}
-              height={400}
-              alt=""
-              className="object-cover"
+              width={306}
+              height={500}
+              alt="Live Commerce"
+              // className="object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               loader={imageLoader}
               src={item4}
-              width={300}
-              height={400}
-              alt=""
-              className="object-cover"
+              width={306}
+              height={500}
+              alt="Live Streaming"
+              // className="object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               loader={imageLoader}
               src={item5}
-              width={300}
-              height={400}
-              alt=""
-              className="object-cover"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              loader={imageLoader}
-              src={item6}
-              width={300}
-              height={400}
-              alt=""
-              className="object-cover"
+              width={306}
+              height={500}
+              alt="Multi Streaming"
+              // className="object-cover"
             />
           </SwiperSlide>
         </Swiper>

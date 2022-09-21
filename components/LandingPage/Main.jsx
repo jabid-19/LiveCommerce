@@ -44,7 +44,7 @@ const LandingPageMain = () => {
       <FeaturedProducts />
       <Cards />
       <LiveVideoShopping />
-      <LiveVideoSlider />
+      {/* <LiveVideoSlider /> */}
       <PersonalShopping />
       <CustomerReviews />
       <TeamWorkSlider />

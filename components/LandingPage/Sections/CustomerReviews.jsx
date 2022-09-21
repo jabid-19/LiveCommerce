@@ -12,7 +12,7 @@ const CustomerReviews = () => {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-14 my-14">
         <div
           data-aos="flip-left"
-          className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary">
+          className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary">
           <figure>
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -47,7 +47,7 @@ const CustomerReviews = () => {
         </div>
         <div
           data-aos="flip-down"
-          className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary">
+          className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary">
           <figure>
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -82,7 +82,7 @@ const CustomerReviews = () => {
         </div>
         <div
           data-aos="flip-right"
-          className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary">
+          className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary">
           <figure>
             <div className="avatar mt-8">
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

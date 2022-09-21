@@ -8,7 +8,7 @@ const GetStartedShopping = () => {
     <div className="hero min-h-screen bg-primary p-8 mx-auto">
       <div className="rainbowBorder">
         <div className="hero-content max-w-7xl p-8 bg-base-100 flex-col lg:flex-row-reverse">
-          <div data-aos="fade-left">
+          <div>
             <div className="w-50 lg:w-80 lg:ml-12">
               <Image
                 loader={imageLoader}
@@ -20,7 +20,7 @@ const GetStartedShopping = () => {
               />
             </div>
           </div>
-          <div data-aos="fade-right" className="text-center lg:text-left">
+          <div className="text-center lg:text-left">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"

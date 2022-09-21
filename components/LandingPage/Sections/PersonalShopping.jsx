@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import imageLoader from '../../../helper/imageLoader'
-import girlShopping from '../../../public/shopping/girl-shopping.jpg'
-import guyShopping from '../../../public/shopping/guy-shopping.jpg'
-import tshirtShopping from '../../../public/shopping/tshirt-shopping.jpg'
-import clothShopping from '../../../public/shopping/cloth-shopping.jpg'
+import businessDeal from '../../../public/business/business-deal.jpeg'
+import chart from '../../../public/business/chart.webp'
+import businessTeam from '../../../public/business/business-team.webp'
+import presentation from '../../../public/business/business-presentation.webp'
 import { AiOutlineArrowRight, AiOutlinePhone, AiOutlineVideoCamera } from 'react-icons/ai'
 import { BiMicrophone } from 'react-icons/bi'
 import { BsChatDots } from 'react-icons/bs'
@@ -13,7 +13,61 @@ const PersonalShopping = () => {
     <div className="hero py-8 lg:px-4 my-8 lg:my-16">
       <div className="lg:mx-36 lg:p-8">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div data-aos="fade-down-left" className="lg:ml-12">
+          <div className="flex lg:gap-4">
+            <div className="flex flex-col gap-4">
+              <div className="avatar">
+                <div className="w-72 lg:w-52 rounded">
+                  <Image
+                    loader={imageLoader}
+                    className="object-fill"
+                    width={580}
+                    height={580}
+                    src={businessDeal}
+                    alt="Business Deal"
+                  />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-72 lg:w-52 rounded">
+                  <Image
+                    loader={imageLoader}
+                    className="object-fill"
+                    width={580}
+                    height={580}
+                    src={chart}
+                    alt="Business Chart"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="avatar hidden lg:block">
+                <div className="w-52 rounded">
+                  <Image
+                    loader={imageLoader}
+                    className="object-fill"
+                    width={580}
+                    height={580}
+                    src={businessTeam}
+                    alt="Business Team"
+                  />
+                </div>
+              </div>
+              <div className="avatar hidden lg:block">
+                <div className="w-52 rounded">
+                  <Image
+                    loader={imageLoader}
+                    className="object-fill"
+                    width={580}
+                    height={580}
+                    src={presentation}
+                    alt="Business Presentation"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div data-aos="fade-down-left" className="lg:ml-12">
             <div className="lg:flex">
               <div className="lg:pr-2">
                 <div className="avatar">
@@ -76,17 +130,19 @@ const PersonalShopping = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div data-aos="fade-down-right" className="text-center lg:text-left">
+          </div> */}
+          <div className="text-center lg:text-left lg:mr-12">
             <h1
               className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
               style={{ lineHeight: '4.5rem' }}>
               REACH ALL YOUR
+              <br />
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
                 data-aos="fade-up">
-                <span className="relative text-white">BUSINESS GOALS</span>
-              </span>
+                <span className="relative text-white">BUSINESS</span>
+              </span>{' '}
+              GOALS
             </h1>
             <br />
             <h3 className="text-2xl text-black font-bold">

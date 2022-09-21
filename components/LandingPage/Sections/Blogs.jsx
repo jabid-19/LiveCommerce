@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import imageLoader from '../../../helper/imageLoader'
-import onlineMessage from '../../../public/blogs/online-message.webp'
-import webDesign from '../../../public/blogs/website-design.webp'
-import digitalContent from '../../../public/blogs/digital-content.webp'
+import shoes from '../../../public/blogs/shoes.jpg'
+import bags from '../../../public/blogs/bags.jpg'
+import webDesign from '../../../public/shopping/girl-shopping.jpg'
 
 const Blogs = () => {
   return (
@@ -12,15 +12,15 @@ const Blogs = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-14 my-14">
           <div
             data-aos="flip-left"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100 hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100 hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
-                className="object-fill w-full"
+                className="object-cover w-full"
                 width={826}
                 height={468}
-                src={onlineMessage}
-                alt="Blog Picture"
+                src={shoes}
+                alt="Shoes Collection"
               />
             </figure>
             <div className="card-body">
@@ -42,15 +42,15 @@ const Blogs = () => {
           </div>
           <div
             data-aos="flip-down"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100  hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
-                className="object-fill w-full"
+                className="object-cover w-full"
                 width={826}
                 height={468}
-                src={digitalContent}
-                alt="Blog Picture"
+                src={bags}
+                alt="Bags Collection"
               />
             </figure>
             <div className="card-body">
@@ -72,11 +72,11 @@ const Blogs = () => {
           </div>
           <div
             data-aos="flip-right"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-xl shadow-primary hover:bg-amber-100  hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
-                className="object-fill w-full"
+                className="object-cover w-full"
                 width={826}
                 height={468}
                 src={webDesign}

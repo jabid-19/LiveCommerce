@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="lg:min-h-[75vh] hero py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div data-aos="fade-left" className="rainbow w-10/12 lg:w-1/2">
+        <div className="rainbow w-10/12 lg:w-1/2">
           <video
             className="w-full h-full"
             poster="/video/woman-video.png"
@@ -39,7 +39,7 @@ const Banner = () => {
             </video>
           </div>
         </div> */}
-        <div data-aos="fade-right" className="w-10/12 lg:w-1/2 lg:mr-12 text-center lg:text-left">
+        <div className="w-10/12 lg:w-1/2 lg:mr-12 text-center lg:text-left">
           <h1
             className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
@@ -47,8 +47,9 @@ const Banner = () => {
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
               data-aos="fade-up">
-              <span className="relative text-white">VIDEO PLATFORM</span>
-            </span>
+              <span className="relative text-white">VIDEO</span>
+            </span>{' '}
+            PLATFORM
             <br />
             FOR BUSINESS
           </h1>
