@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 const LiveVideoShopping = () => {
   return (
     <div className="hero mx-auto py-8 lg:px-36 lg:py-0">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col items-center justify-center lg:flex-row">
         {/* <iframe
           width="300"
           height="400"
@@ -39,7 +39,7 @@ const LiveVideoShopping = () => {
             <br />
             to your business
           </h1>
-          <div className="py-6 text-black">
+          <div className="py-6 text-black text-left">
             <ul>
               <li className="ml-6 list-disc">
                 Multi-stream simultaneously on a large range of platforms

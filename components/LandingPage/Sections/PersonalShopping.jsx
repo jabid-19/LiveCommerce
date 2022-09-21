@@ -82,7 +82,7 @@ const PersonalShopping = () => {
             <h3 className="text-2xl text-black font-bold">
               We make it simple for you to use video content
             </h3>
-            <div className="py-6 text-black">
+            <div className="py-6 text-black text-left">
               <ul>
                 <li className="ml-6 list-disc">
                   Easily reach your audience across multiple social media platforms
