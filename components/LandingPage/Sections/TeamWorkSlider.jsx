@@ -16,9 +16,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import 'swiper/css/effect-creative'
 
-// import custom styles;
-// import "./TeamWork.css";
-
 // import required modules
 import { Autoplay, EffectCreative, Pagination, Navigation, Scrollbar } from 'swiper'
 import { useEffect, useState } from 'react'
