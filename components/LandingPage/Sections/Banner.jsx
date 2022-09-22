@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="rainbow w-10/12 lg:w-1/2">
           <video
-            className="w-full h-full"
+            className="w-full h-full rounded bg-violet-400"
             poster="/video/woman-video.png"
             playsInline
             autoPlay

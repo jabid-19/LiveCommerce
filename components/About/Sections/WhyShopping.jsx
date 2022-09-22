@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../helper/imageLoader'
+import LiveShopping from '../../../public/about/live-shopping.webp'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const WhyShopping = () => {
@@ -56,13 +58,15 @@ const WhyShopping = () => {
           </div>
         </div>
         <div className="min-w-[50%] flex justify-center items-center">
-          <div data-aos="fade-left" className="rainbow flex">
+          <div className="rainbow flex">
             <Image
-              src="/about/live-shopping.webp"
-              alt="Picture of the author"
+              loader={imageLoader}
+              src={LiveShopping}
+              alt="Woman holding a shoe"
               width={500}
               height={650}
-              className="object-cover rounded-lg"
+              className="object-cover rounded bg-blue-700"
+              placeholder="blur"
             />
           </div>
         </div>

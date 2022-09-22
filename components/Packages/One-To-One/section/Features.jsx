@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../../helper/imageLoader'
+import meeting from '../../../../public/packages/meeting_2.jpg'
 import React from 'react'
 import { BiDevices, BiPhoneCall } from 'react-icons/bi'
 import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
@@ -11,11 +13,13 @@ const Features = ({ featuresContent }) => {
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-start">
           <div>
             <Image
-              src="/packages/meeting_2.jpg"
-              alt="Picture of the author"
+              src={meeting}
+              alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg bg-violet-400"
+              placeholder="blur"
+              loader={imageLoader}
             />
           </div>
           <div className="hidden md:block">

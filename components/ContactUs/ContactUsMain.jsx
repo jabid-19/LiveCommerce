@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
 import BigScreenContactImage from '../../public/contact/camera.avif'
-// import SmallScreenContactImage from '../../public/contact/contact-us-animate.svg'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
-// import axios from 'axios'
 import { toast } from 'react-toastify'
 
 const ContactUsMain = () => {
@@ -44,19 +42,19 @@ const ContactUsMain = () => {
   }
   return (
     <div className="flex flex-col-reverse md:flex-row bg-slate-200 justify-center items-center">
-      <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 flex">
+      <div className="rainbow mx-8 my-20 lg:mx-20 flex">
         <Image
           loader={imageLoader}
           width={580}
           height={754}
           src={BigScreenContactImage}
-          alt="Open Shopping"
+          alt="Woman with camera"
           priority={true}
+          className="object-cover rounded bg-zinc-900"
+          placeholder="blur"
         />
       </div>
-      <div
-        data-aos="fade-left"
-        className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
+      <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
         <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"

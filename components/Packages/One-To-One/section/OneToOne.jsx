@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../../helper/imageLoader'
+import meeting from '../../../../public/packages/meeting.jpg'
 import React, { useState } from 'react'
 import { BsMic } from 'react-icons/bs'
 const OneToOneIndex = () => {
@@ -41,11 +43,13 @@ const OneToOneIndex = () => {
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-end">
           <div>
             <Image
-              src="/packages/meeting.jpg"
-              alt="Picture of the author"
+              src={meeting}
+              alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg bg-violet-400"
+              placeholder="blur"
+              loader={imageLoader}
             />
           </div>
           <div className="hidden md:block">

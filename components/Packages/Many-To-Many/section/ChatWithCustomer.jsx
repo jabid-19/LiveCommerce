@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../../helper/imageLoader'
+import chat from '../../../../public/packages/chat.png'
 import React, { useState } from 'react'
 import { BiDevices, BiMessage } from 'react-icons/bi'
 import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
@@ -11,11 +13,13 @@ const ChatWithCustomer = () => {
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-start">
           <div>
             <Image
-              src="/packages/chat.png"
-              alt="Picture of the author"
+              src={chat}
+              alt="Chat with customer"
               width={500}
               height={800}
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg bg-violet-400"
+              placeholder="blur"
+              loader={imageLoader}
             />
           </div>
           <div className="hidden md:block">

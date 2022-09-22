@@ -14,7 +14,7 @@ const PersonalShopping = () => {
           <div className="flex lg:gap-4">
             <div className="flex flex-col gap-4">
               <div className="avatar">
-                <div className="w-72 lg:w-52 rounded">
+                <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -26,7 +26,7 @@ const PersonalShopping = () => {
                 </div>
               </div>
               <div className="avatar">
-                <div className="w-72 lg:w-52 rounded">
+                <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -40,7 +40,7 @@ const PersonalShopping = () => {
             </div>
             <div className="flex flex-col gap-4">
               <div className="avatar hidden lg:block">
-                <div className="w-52 rounded">
+                <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -52,7 +52,7 @@ const PersonalShopping = () => {
                 </div>
               </div>
               <div className="avatar hidden lg:block">
-                <div className="w-52 rounded">
+                <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"

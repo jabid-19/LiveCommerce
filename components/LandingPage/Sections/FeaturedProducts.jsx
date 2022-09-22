@@ -34,7 +34,7 @@ const FeaturedProducts = () => {
           Reach your{' '}
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-            data-aos="fade-down">
+            data-aos="fade-up">
             <span className="relative">audience</span>
           </span>{' '}
           by
@@ -57,7 +57,7 @@ const FeaturedProducts = () => {
             slideShadows: false,
           }}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, EffectCoverflow, Navigation]}
@@ -69,7 +69,8 @@ const FeaturedProducts = () => {
               width={300}
               height={500}
               alt="One to one"
-              // className="object-cover"
+              className="object-cover rounded-xl bg-violet-400"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -79,7 +80,8 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="One to many"
-              // className="object-cover"
+              className="object-cover rounded-xl bg-violet-400"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -89,7 +91,8 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Commerce"
-              // className="object-cover"
+              className="object-cover rounded-xl bg-violet-400"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -99,7 +102,8 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Streaming"
-              // className="object-cover"
+              className="object-cover rounded-xl bg-violet-400"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -109,7 +113,8 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Multi Streaming"
-              // className="object-cover"
+              className="object-cover rounded-xl bg-violet-400"
+              placeholder="blur"
             />
           </SwiperSlide>
         </Swiper>

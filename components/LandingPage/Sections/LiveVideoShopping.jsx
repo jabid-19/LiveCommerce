@@ -14,6 +14,7 @@ const LiveVideoShopping = () => {
           allowFullScreen></iframe> */}
         <video
           style={{ height: '600px' }}
+          className="rounded-lg bg-orange-300"
           // controls
           poster="/video/live-video.png"
           playsInline

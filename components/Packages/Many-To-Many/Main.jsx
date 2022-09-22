@@ -12,7 +12,9 @@ const PackagesManyToManyMain = () => {
       <ManyToMany />
       <CompaniesIndex />
       <ChatWithCustomer />
-      <Faq />
+      <div className="w-full bg-slate-200">
+        <Faq />
+      </div>
     </div>
   )
 }

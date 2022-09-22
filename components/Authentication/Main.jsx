@@ -4,8 +4,7 @@ import LoginForm from './Sections/LoginForm'
 import RegisterForm from './Sections/RegisterForm'
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import BigScreenContactImage from '../../public/login/live-video.webp'
-// import LoginImage from '../../public/login/login.avif'
+import LoginImage from '../../public/login/live-video.webp'
 
 const AuthenticationMain = () => {
   const router = useRouter()
@@ -44,32 +43,21 @@ const AuthenticationMain = () => {
   return (
     <div className="bg-slate-200">
       <div className="flex flex-col-reverse md:flex-row bg-slate-200 md:w-[95%]">
-        {/* <div data-aos="fade-right" className="mb-20 md:mb-0 mx-auto md:mx-0 hidden md:flex">
-        <Image
-          loader={imageLoader}
-          width={387}
-          height={581}
-          src={LoginImage}
-          alt="Open Shopping"
-          priority={true}
-        />
-      </div> */}
         <div className="md:min-w-[50%] flex justify-center items-center">
-          <div data-aos="fade-right" className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
+          <div className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
             <Image
               loader={imageLoader}
               width={500}
               height={750}
-              className="object-cover"
-              src={BigScreenContactImage}
-              alt="Login Image"
+              src={LoginImage}
+              alt="Woman showing product in live call"
               priority={true}
+              className="object-cover rounded bg-sky-200"
+              placeholder="blur"
             />
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
+        <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
           <div className="mb-20 max-w-4xl">
             {key === 'register' ? (
               <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">

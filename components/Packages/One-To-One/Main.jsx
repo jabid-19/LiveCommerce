@@ -19,7 +19,9 @@ const PackagesOneToOneMain = () => {
       <OneToOneIndex />
       <CompaniesIndex />
       <Features featuresContent={featuresContent} />
-      <Faq />
+      <div className="bg-slate-200">
+        <Faq />
+      </div>
     </div>
   )
 }

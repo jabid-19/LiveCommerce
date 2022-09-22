@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../../helper/imageLoader'
+import customerMarketing from '../../../../public/packages/marketing.png'
 import React, { useState } from 'react'
 import { BiBroadcast } from 'react-icons/bi'
 
@@ -42,11 +44,13 @@ const ManyToMany = () => {
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-end">
           <div>
             <Image
-              src="/packages/marketing.png"
-              alt="Picture of the author"
+              src={customerMarketing}
+              alt="Customer Marketing"
               width={500}
               height={700}
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg bg-violet-400"
+              placeholder="blur"
+              loader={imageLoader}
             />
           </div>
           <div className="hidden md:block">
