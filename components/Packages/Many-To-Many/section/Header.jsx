@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import imageLoader from '../../../../helper/imageLoader'
+import videoCall from '../../../../public/packages/videocall.png'
 import React from 'react'
 
 const Header = () => {
@@ -21,11 +23,13 @@ const Header = () => {
           Start Free Trial
         </button>
         <Image
-          src="/packages/videocall.png"
+          src={videoCall}
           width={900}
           height={700}
-          className="object-cover rounded-lg"
           alt="LiveCommerce Video Call"
+          placeholder="blur"
+          className="object-cover rounded-lg bg-slate-200"
+          loader={imageLoader}
         />
       </div>
     </div>

@@ -18,11 +18,11 @@ const CustomerReviews = () => {
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
                   loader={imageLoader}
-                  className="object-fill"
+                  className="object-cover"
                   width={580}
                   height={580}
                   src={profile1}
-                  alt="Girl Shopping"
+                  alt="Profile Avatar"
                 />
               </div>
             </div>
@@ -53,11 +53,11 @@ const CustomerReviews = () => {
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
                   loader={imageLoader}
-                  className="object-fill"
+                  className="object-cover"
                   width={580}
                   height={580}
                   src={profile2}
-                  alt="Girl Shopping"
+                  alt="Profile Avatar"
                 />
               </div>
             </div>
@@ -88,11 +88,11 @@ const CustomerReviews = () => {
               <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <Image
                   loader={imageLoader}
-                  className="object-fill"
+                  className="object-cover"
                   width={580}
                   height={580}
                   src={profile3}
-                  alt="Girl Shopping"
+                  alt="Profile Avatar"
                 />
               </div>
             </div>

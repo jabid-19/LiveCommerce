@@ -6,22 +6,13 @@ import DataStat from './Sections/DataStat'
 import FeaturedProducts from './Sections/FeaturedProducts'
 import GetStartedShopping from './Sections/GetStartedShopping'
 import LiveVideoShopping from './Sections/LiveVideoShopping'
-import LiveVideoSlider from './Sections/LiveVideoSlider'
+// import LiveVideoSlider from './Sections/LiveVideoSlider'
 import PersonalShopping from './Sections/PersonalShopping'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
 import Companies from '../Shared/Companies'
 import Features from '../Packages/One-To-One/section/Features'
 
 const LandingPageMain = () => {
-  // const featuresContent = {
-  //   featureTitlePart1: 'How you can use',
-  //   featureTitlePart2: 'our video platform',
-  //   featureTitlePart3: 'to reach audiences',
-  //   feature1: 'One-to-one',
-  //   feature2: 'One-to-many ',
-  //   feature3: 'Live-streaming ',
-  //   feature4: 'Multi-streaming',
-  // }
   const featuresContent = {
     featureTitlePart1: 'Simplify with many',
     featureTitlePart2: 'interesting',

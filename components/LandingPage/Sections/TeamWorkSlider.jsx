@@ -16,9 +16,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import 'swiper/css/effect-creative'
 
-// import custom styles;
-// import "./TeamWork.css";
-
 // import required modules
 import { Autoplay, EffectCreative, Pagination, Navigation, Scrollbar } from 'swiper'
 import { useEffect, useState } from 'react'
@@ -42,8 +39,9 @@ const TeamWorkSlider = () => {
           effect={'creative'}
           scrollbar={true}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           creativeEffect={{
             prev: {
@@ -60,81 +58,89 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team1}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team3}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team4}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team5}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team6}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team7}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team8}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-fill hover:scale-105"
+              className="object-cover rounded-xl bg-violet-400"
               width={870}
               height={580}
               src={team2}
-              alt=""
+              alt="Team work"
+              placeholder="blur"
             />
           </SwiperSlide>
         </Swiper>

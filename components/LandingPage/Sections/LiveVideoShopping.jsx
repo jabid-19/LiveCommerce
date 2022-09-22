@@ -1,10 +1,9 @@
 import { AiOutlineArrowRight } from 'react-icons/ai'
 // import video from '../../../public/video/videoplayback.mp4'
-// import imageLoader from '../../../helper/imageLoader'
 const LiveVideoShopping = () => {
   return (
     <div className="hero mx-auto py-8 lg:px-36 lg:py-0">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col items-center justify-center lg:flex-row">
         {/* <iframe
           width="300"
           height="400"
@@ -15,6 +14,7 @@ const LiveVideoShopping = () => {
           allowFullScreen></iframe> */}
         <video
           style={{ height: '600px' }}
+          className="rounded-lg bg-orange-300"
           // controls
           poster="/video/live-video.png"
           playsInline
@@ -40,7 +40,7 @@ const LiveVideoShopping = () => {
             <br />
             to your business
           </h1>
-          <div className="py-6 text-black">
+          <div className="py-6 text-black text-left">
             <ul>
               <li className="ml-6 list-disc">
                 Multi-stream simultaneously on a large range of platforms
@@ -65,43 +65,6 @@ const LiveVideoShopping = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="py-6">
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Multistream simultaneously on a large range of platforms</p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>No limits on time & places, create video content from anywhere</p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Audio & HD video calling and live streaming </p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Compatible with any device</p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Playback recorded videos on any platform with scheduling and reminder options</p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>
-                Receive analytics on your success rate and use our AI to help create a video content
-                strategy
-              </p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Translation captions will help to widen your audience reach</p>
-            </div>
-            <div className="pt-1.5 text-black flex items-center">
-              <AiOutlineArrowRight className="w-6 h-6 mr-2" />
-              <p>Solutions to make your video content scalable, reliable and secure</p>
-            </div>
-          </div> */}
           <div className="mb-8">
             <button className="btn btn-primary text-white mr-4">Get Started</button>
             <button className="btn btn-outline text-black">

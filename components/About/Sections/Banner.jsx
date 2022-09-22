@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import videoStreaming from '../../../public/about/video-streaming.jpeg'
+import imageLoader from '../../../helper/imageLoader'
 const Banner = () => {
   return (
     <div className="md:max-w-[90%] xl:max-w-6xl mx-auto my-20 md:my-36">
@@ -39,13 +41,15 @@ const Banner = () => {
           </div>
         </div>
         <div className="min-w-[50%] flex justify-center items-center">
-          <div data-aos="fade-right" className="rainbow flex">
+          <div className="rainbow flex">
             <Image
-              src="/about/video-streaming.jpeg"
-              alt="Picture of the author"
+              src={videoStreaming}
+              alt="Woman in live call"
               width={450}
               height={700}
-              className="object-cover rounded-lg"
+              className="object-cover rounded bg-yellow-500"
+              placeholder="blur"
+              loader={imageLoader}
             />
           </div>
         </div>

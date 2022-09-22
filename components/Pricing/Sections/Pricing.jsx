@@ -3,7 +3,7 @@ import { TiTick } from 'react-icons/ti'
 import { pricingPlans } from '../../../data/plans'
 const Pricing = () => {
   return (
-    <div className="w-auto mx-6 mt-12 lg:min-h-[85vh] lg:mt-44 2xl:w-[1400px] 2xl:mx-auto">
+    <div className="w-auto mx-6 pt-12 lg:min-h-[75vh] lg:pt-16 2xl:w-[1400px] 2xl:mx-auto">
       <h1
         className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl"
         style={{ lineHeight: '4.5rem' }}>

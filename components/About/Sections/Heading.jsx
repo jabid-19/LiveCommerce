@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import videoCall from '../../../public/packages/videocall.png'
+import imageLoader from '../../../helper/imageLoader'
 const Heading = () => {
   return (
     <div className="min-h-[75vh] pt-20 px-8 flex flex-col-reverse md:flex-col justify-center items-center">
@@ -7,7 +9,7 @@ const Heading = () => {
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
             data-aos="fade-up">
-            <span className="relative text-white">About GoLive</span>
+            <span className="relative text-white">About GoLaiv</span>
           </span>
         </h4>
         <h1 className="text-black text-6xl font-bold">How the website works</h1>
@@ -32,11 +34,12 @@ const Heading = () => {
         </div>
       </div>
       <Image
-        data-aos="fade-up"
-        src="/packages/videocall.png"
+        src={videoCall}
         width={900}
         height={700}
-        className="object-cover rounded-lg"
+        className="object-cover rounded-3xl bg-slate-200"
+        placeholder="blur"
+        loader={imageLoader}
         alt="LiveCommerce Video Call"
       />
     </div>

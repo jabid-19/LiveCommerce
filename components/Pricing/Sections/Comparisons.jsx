@@ -60,7 +60,7 @@ const tableData = [
 ]
 const Comparisons = () => {
   return (
-    <div className="w-auto pb-12 mx-6 mt-12 lg:min-h-[85vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto lg:mb-0">
+    <div className="w-auto pb-12 mx-6 mt-12 lg:min-h-[55vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto lg:mb-0">
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>

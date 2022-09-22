@@ -20,7 +20,7 @@ const Products = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-10 gap-10">
-        <div data-aos="fade-up" className="rainbow shadow-lg shadow-primary">
+        <div className="rainbow shadow-lg shadow-primary">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-slate-200 py-2">
               <AiOutlineVideoCamera className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
@@ -39,7 +39,7 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div data-aos="fade-up" className="rainbow shadow-lg shadow-primary">
+        <div className="rainbow shadow-lg shadow-primary">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-slate-200 py-2">
               <AiOutlineCalendar className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
@@ -58,7 +58,7 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div data-aos="fade-up" className="rainbow shadow-lg shadow-primary">
+        <div className="rainbow shadow-lg shadow-primary">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-slate-200 py-2">
               <BsChatDots className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
@@ -77,7 +77,7 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div data-aos="fade-up" className="rainbow shadow-lg shadow-primary">
+        <div className="rainbow shadow-lg shadow-primary">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-slate-200 py-2">
               <IoIosStats className="w-24 h-24 p-2 bg-primary rounded-full text-white" />

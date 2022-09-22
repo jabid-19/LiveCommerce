@@ -4,9 +4,7 @@ import businessDeal from '../../../public/business/business-deal.jpeg'
 import chart from '../../../public/business/chart.webp'
 import businessTeam from '../../../public/business/business-team.webp'
 import presentation from '../../../public/business/business-presentation.webp'
-import { AiOutlineArrowRight, AiOutlinePhone, AiOutlineVideoCamera } from 'react-icons/ai'
-import { BiMicrophone } from 'react-icons/bi'
-import { BsChatDots } from 'react-icons/bs'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const PersonalShopping = () => {
   return (
@@ -16,7 +14,7 @@ const PersonalShopping = () => {
           <div className="flex lg:gap-4">
             <div className="flex flex-col gap-4">
               <div className="avatar">
-                <div className="w-72 lg:w-52 rounded">
+                <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -28,7 +26,7 @@ const PersonalShopping = () => {
                 </div>
               </div>
               <div className="avatar">
-                <div className="w-72 lg:w-52 rounded">
+                <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -42,7 +40,7 @@ const PersonalShopping = () => {
             </div>
             <div className="flex flex-col gap-4">
               <div className="avatar hidden lg:block">
-                <div className="w-52 rounded">
+                <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -54,7 +52,7 @@ const PersonalShopping = () => {
                 </div>
               </div>
               <div className="avatar hidden lg:block">
-                <div className="w-52 rounded">
+                <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
                     className="object-fill"
@@ -67,70 +65,6 @@ const PersonalShopping = () => {
               </div>
             </div>
           </div>
-          {/* <div data-aos="fade-down-left" className="lg:ml-12">
-            <div className="lg:flex">
-              <div className="lg:pr-2">
-                <div className="avatar">
-                  <div className="w-72 lg:w-48 rounded">
-                    <Image
-                      loader={imageLoader}
-                      className="object-fill"
-                      width={580}
-                      height={580}
-                      src={girlShopping}
-                      alt="Girl Shopping"
-                    />
-                  </div>
-                </div>
-                <div className="avatar hidden lg:block">
-                  <div className="w-48 rounded">
-                    <Image
-                      loader={imageLoader}
-                      className="object-fill"
-                      width={580}
-                      height={580}
-                      src={guyShopping}
-                      alt="Girl Shopping"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="lg:pr-2 hidden lg:block">
-                <div className="avatar">
-                  <div className="w-48 rounded">
-                    <Image
-                      loader={imageLoader}
-                      className="object-fill"
-                      width={580}
-                      height={580}
-                      src={tshirtShopping}
-                      alt="Girl Shopping"
-                    />
-                  </div>
-                </div>
-                <div className="avatar">
-                  <div className="w-48 rounded">
-                    <Image
-                      loader={imageLoader}
-                      className="object-fill"
-                      width={580}
-                      height={580}
-                      src={clothShopping}
-                      alt="Girl Shopping"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between lg:flex-col lg:space-y-8">
-                  <BiMicrophone className="w-8 h-8 text-black" />
-                  <AiOutlinePhone className="w-8 h-8 text-black" />
-                  <AiOutlineVideoCamera className="w-8 h-8 text-black" />
-                  <BsChatDots className="w-8 h-8 text-black" />
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="text-center lg:text-left lg:mr-12">
             <h1
               className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
@@ -148,7 +82,7 @@ const PersonalShopping = () => {
             <h3 className="text-2xl text-black font-bold">
               We make it simple for you to use video content
             </h3>
-            <div className="py-6 text-black">
+            <div className="py-6 text-black text-left">
               <ul>
                 <li className="ml-6 list-disc">
                   Easily reach your audience across multiple social media platforms
@@ -165,11 +99,6 @@ const PersonalShopping = () => {
                 </li>
               </ul>
             </div>
-            {/* <p className="py-6 text-black">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi possimus ex quia
-              impedit, laudantium eum saepe vero quisquam nobis expedita natus, sed et amet
-              aspernatur magni. Inventore assumenda molestiae fugit.
-            </p> */}
             <div className="mb-8">
               <button className="btn btn-primary text-white mr-4">Get Started</button>
               <button className="btn btn-outline text-black">

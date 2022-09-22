@@ -6,8 +6,6 @@ import 'swiper/css/bundle'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 
-// import '../../../styles/LiveVideoSlider.css'
-
 // import required modules
 import { FreeMode, Pagination, Navigation } from 'swiper'
 import { useEffect, useState } from 'react'
