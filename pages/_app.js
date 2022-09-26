@@ -1,11 +1,12 @@
-import '../styles/globals.scss'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import Navbar from '../components/Shared/Navbar'
-import Footer from '../components/Shared/Footer'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import ModalMain from '../components/Modal/Modal'
+import Footer from '../components/Shared/Footer'
+import Navbar from '../components/Shared/Navbar'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <div className="overflow-x-hidden">
         <Component {...pageProps} />
+        <ModalMain />
       </div>
       <Footer />
       <ToastContainer />
