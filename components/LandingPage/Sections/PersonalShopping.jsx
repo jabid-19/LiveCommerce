@@ -8,8 +8,8 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const PersonalShopping = () => {
   return (
-    <div className="hero py-8 lg:px-4 my-8 lg:my-16">
-      <div className="lg:mx-36 lg:p-8">
+    <div className="hero lg:px-4 my-12 lg:my-36">
+      <div className="lg:mx-36 lg:px-8">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="flex lg:gap-4">
             <div className="flex flex-col gap-4">
@@ -67,7 +67,7 @@ const PersonalShopping = () => {
           </div>
           <div className="text-center lg:text-left lg:mr-12">
             <h1
-              className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+              className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
               style={{ lineHeight: '4.5rem' }}>
               REACH ALL YOUR
               <br />
@@ -99,7 +99,7 @@ const PersonalShopping = () => {
                 </li>
               </ul>
             </div>
-            <div className="mb-8">
+            <div>
               <button className="btn btn-primary text-white mr-4">Get Started</button>
               <button className="btn btn-outline text-black">
                 Learn More

@@ -2,7 +2,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const DataStat = () => {
   return (
-    <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto my-20 lg:my-44">
+    <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto mb-12 lg:mb-36">
       <div data-aos="zoom-in-right" className="stat place-items-center">
         <div className="stat-value text-primary">
           <svg
