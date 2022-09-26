@@ -8,7 +8,7 @@ const customStyles = {
     left: '50%',
     right: 'auto',
     bottom: 'auto',
-    width: '30vw',
+
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
   },
@@ -17,7 +17,7 @@ const customStyles = {
 const MailChimpForm = () => {
   const url = `https://golaiv.us13.list-manage.com/subscribe/post?u=768f81b429682b38a33162aa7&id=3bc3c255a3`
   return (
-    <div className="mc__form-container">
+    <div id="modalElement">
       <MailchimpSubscribe
         url={url}
         render={({ subscribe, status, message }) => (
@@ -61,8 +61,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     setEmail('')
   }
   return (
-    <form className="flex flex-col p-20" onSubmit={(e) => handleSubmit(e)}>
-      <h3 className="text-4xl font-semibold mb-10">
+    <form className="p-0 flex flex-col md:p-20" onSubmit={(e) => handleSubmit(e)}>
+      <div className="text-4xl font-semibold mb-10">
         {status === 'success' ? (
           'Success!'
         ) : (
@@ -70,16 +70,9 @@ const CustomForm = ({ status, message, onValidated }) => {
             Join our email list <br /> for future updates.
           </h1>
         )}
-      </h3>
-      {status === 'error' && (
-        <div className="mc__alert mc__alert--error" dangerouslySetInnerHTML={{ __html: message }} />
-      )}
-      {status === 'success' && (
-        <div
-          className="mc__alert mc__alert--success"
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
+      </div>
+      {status === 'error' && <div>{message}</div>}
+      {status === 'success' && <div>{message}</div>}
 
       {status !== 'success' ? (
         <div className="">
@@ -132,8 +125,8 @@ const CustomForm = ({ status, message, onValidated }) => {
         <button
           className="mt-8 w-full p-4 bg-primary text-white text-xl font-semibold rounded-md hover:cursor-pointer"
           type="submit"
-          formValues={[email, firstName, lastName]}>
-          {status === 'Loading' ? 'Loading...' : 'Subscribe'}
+          formvalues={[email, firstName, lastName]}>
+          {status === 'sending' ? 'Loading...' : 'Subscribe'}
         </button>
       )}
     </form>
@@ -141,7 +134,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const ModalMain = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(true)
+  const [modalIsOpen, setIsOpen] = useState(true)
 
   function openModal() {
     setIsOpen(true)
@@ -157,6 +150,7 @@ const ModalMain = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
+        ariaHideApp={false}
         contentLabel="Get Started Modal">
         <MailChimpForm />
       </Modal>
