@@ -7,12 +7,12 @@ import FeaturedProducts from './Sections/FeaturedProducts'
 import GetStartedShopping from './Sections/GetStartedShopping'
 import LiveVideoShopping from './Sections/LiveVideoShopping'
 // import LiveVideoSlider from './Sections/LiveVideoSlider'
+import Features from '../Packages/One-To-One/section/Features'
+import Companies from '../Shared/Companies'
 import PersonalShopping from './Sections/PersonalShopping'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
-import Companies from '../Shared/Companies'
-import Features from '../Packages/One-To-One/section/Features'
 
-const LandingPageMain = () => {
+const LandingPageMain = ({ getStartedModal, setGetStartedModal }) => {
   const featuresContent = {
     featureTitlePart1: 'Simplify with many',
     featureTitlePart2: 'interesting',
@@ -25,7 +25,7 @@ const LandingPageMain = () => {
   }
   return (
     <div className="text-center bg-slate-200">
-      <Banner />
+      <Banner getStartedModal={getStartedModal} setGetStartedModal={setGetStartedModal} />
       <Features featuresContent={featuresContent} />
       <div className="bg-white mt-20">
         <hr className="border-secondary"></hr>

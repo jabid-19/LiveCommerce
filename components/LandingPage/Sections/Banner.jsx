@@ -1,6 +1,6 @@
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
-const Banner = () => {
+const Banner = ({ getStartedModal, setGetStartedModal }) => {
   return (
     <div className="lg:min-h-[75vh] hero py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -59,7 +59,9 @@ const Banner = () => {
             support all use cases and enables you to add features as your brand grows, use only the
             capabilities you need. When your business thrives, so will ours!
           </p>
-          <button className="btn btn-outline mr-4 text-black">
+          <button
+            className="btn btn-outline mr-4 text-black"
+            onClick={() => setGetStartedModal(!getStartedModal)}>
             Get Started
             <AiOutlineArrowRight className="w-4 h-4 ml-2" />
           </button>

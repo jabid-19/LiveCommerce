@@ -2,19 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import Modal from 'react-modal'
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-}
-
-const MailChimpForm = () => {
+const MailChimpForm = ({ closeModal }) => {
   const url = `https://golaiv.us13.list-manage.com/subscribe/post?u=768f81b429682b38a33162aa7&id=3bc3c255a3`
   return (
     <div id="modalElement">
@@ -25,6 +13,7 @@ const MailChimpForm = () => {
             status={status}
             message={message}
             onValidated={(formData) => subscribe(formData)}
+            closeModal={closeModal}
           />
         )}
       />
@@ -32,7 +21,7 @@ const MailChimpForm = () => {
   )
 }
 
-const CustomForm = ({ status, message, onValidated }) => {
+const CustomForm = ({ status, message, onValidated, closeModal }) => {
   const [email, setEmail] = useState('')
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -61,15 +50,16 @@ const CustomForm = ({ status, message, onValidated }) => {
     setEmail('')
   }
   return (
-    <form className="p-0 flex flex-col md:p-20" onSubmit={(e) => handleSubmit(e)}>
-      <div className="text-4xl font-semibold mb-10">
+    <form className="p-10 flex flex-col md:p-20" onSubmit={(e) => handleSubmit(e)}>
+      <div className="mb-10 flex justify-between">
         {status === 'success' ? (
           'Success!'
         ) : (
-          <h1>
+          <h1 className="text-4xl font-semibold">
             Join our email list <br /> for future updates.
           </h1>
         )}
+        <button onClick={closeModal}>X</button>
       </div>
       {status === 'error' && <div>{message}</div>}
       {status === 'success' && <div>{message}</div>}
@@ -133,26 +123,24 @@ const CustomForm = ({ status, message, onValidated }) => {
   )
 }
 
-const ModalMain = () => {
-  const [modalIsOpen, setIsOpen] = useState(true)
-
+const ModalMain = ({ getStartedModal, setGetStartedModal }) => {
   function openModal() {
-    setIsOpen(true)
+    setGetStartedModal(true)
   }
 
   function closeModal() {
-    setIsOpen(false)
+    setGetStartedModal(false)
   }
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={getStartedModal}
         onRequestClose={closeModal}
-        style={customStyles}
+        className="Modal"
         ariaHideApp={false}
         contentLabel="Get Started Modal">
-        <MailChimpForm />
+        <MailChimpForm closeModal={closeModal} />
       </Modal>
     </div>
   )
