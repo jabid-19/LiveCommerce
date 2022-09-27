@@ -1,7 +1,10 @@
 import Image from 'next/image'
-import videoCall from '../../../public/packages/videocall.png'
+import { useContext } from 'react'
 import imageLoader from '../../../helper/imageLoader'
+import { ModalContext } from '../../../pages/_app'
+import videoCall from '../../../public/packages/videocall.png'
 const Heading = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="min-h-[75vh] pt-20 px-8 flex flex-col-reverse md:flex-col justify-center items-center">
       <div className="max-w-2xl text-center">
@@ -25,7 +28,9 @@ const Heading = () => {
           Start Free Trial
         </button> */}
         <div className="my-4 flex flex-col gap-2 md:gap-4 md:flex-row justify-center items-center">
-          <button className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-black duration-500">
+          <button
+            className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-black duration-500"
+            onClick={() => setGetStartedModal(!getStartedModal)}>
             Get Started
           </button>
           <button className="py-4 w-full md:w-1/2 rounded-md bg-secondary text-white font-bold hover:bg-black duration-500">

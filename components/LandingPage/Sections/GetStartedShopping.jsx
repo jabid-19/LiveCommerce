@@ -1,9 +1,12 @@
 import Image from 'next/image'
-import imageLoader from '../../../helper/imageLoader'
-import girlRedCoat from '../../../public/shopping/girl-red-coat.jpg'
+import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import imageLoader from '../../../helper/imageLoader'
+import { ModalContext } from '../../../pages/_app'
+import girlRedCoat from '../../../public/shopping/girl-red-coat.jpg'
 
 const GetStartedShopping = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="hero bg-primary px-8 py-12 lg:py-36 mx-auto">
       <div className="rainbowBorder">
@@ -34,7 +37,9 @@ const GetStartedShopping = () => {
               maiores odio blanditiis minima a praesentium. Recusandae totam quaerat molestias ea
               quisquam facere iste explicabo illo excepturi similique!
             </p>
-            <button className="btn btn-primary text-white">
+            <button
+              className="btn btn-primary text-white"
+              onClick={() => setGetStartedModal(!getStartedModal)}>
               Get Started
               <AiOutlineArrowRight className="w-4 h-4 ml-2 text-White" />
             </button>
