@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import Modal from 'react-modal'
+import { ModalContext } from '../../pages/_app'
 
 const MailChimpForm = ({ closeModal }) => {
   const url = `https://golaiv.us13.list-manage.com/subscribe/post?u=768f81b429682b38a33162aa7&id=3bc3c255a3`
@@ -53,7 +54,7 @@ const CustomForm = ({ status, message, onValidated, closeModal }) => {
     <form className="p-10 flex flex-col md:p-20" onSubmit={(e) => handleSubmit(e)}>
       <div className="mb-10 flex justify-between">
         {status === 'success' ? (
-          'Success!'
+          <h1 className="text-3xl font-bold">Success!</h1>
         ) : (
           <h1 className="text-4xl font-semibold">
             Join our email list <br /> for future updates.
@@ -61,8 +62,8 @@ const CustomForm = ({ status, message, onValidated, closeModal }) => {
         )}
         <button onClick={closeModal}>X</button>
       </div>
-      {status === 'error' && <div>{message}</div>}
-      {status === 'success' && <div>{message}</div>}
+      {status === 'error' && <div className="mb-8 text-error">{message}</div>}
+      {status === 'success' && <div className="">{message}</div>}
 
       {status !== 'success' ? (
         <div className="">
@@ -123,7 +124,9 @@ const CustomForm = ({ status, message, onValidated, closeModal }) => {
   )
 }
 
-const ModalMain = ({ getStartedModal, setGetStartedModal }) => {
+const ModalMain = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
+
   function openModal() {
     setGetStartedModal(true)
   }

@@ -1,6 +1,9 @@
+import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { ModalContext } from '../../../pages/_app'
 
-const Banner = ({ getStartedModal, setGetStartedModal }) => {
+const Banner = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="lg:min-h-[75vh] hero py-8 mb-16">
       <div className="hero-content flex-col lg:flex-row-reverse">

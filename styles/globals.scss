@@ -184,6 +184,12 @@
   border: 1px solid gray;
 }
 
+@media screen and (max-width: 1300px) {
+  .Modal {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 786px) {
   .Modal {
     width: 90%;

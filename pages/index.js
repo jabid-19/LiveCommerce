@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import LandingPageMain from '../components/LandingPage/Main'
 
-export default function Home({ getStartedModal, setGetStartedModal}) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -10,7 +10,7 @@ export default function Home({ getStartedModal, setGetStartedModal}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <LandingPageMain  getStartedModal={getStartedModal} setGetStartedModal={setGetStartedModal} />
+        <LandingPageMain  />
       </main>
     </div>
   )

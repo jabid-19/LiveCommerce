@@ -12,7 +12,7 @@ import Companies from '../Shared/Companies'
 import PersonalShopping from './Sections/PersonalShopping'
 import TeamWorkSlider from './Sections/TeamWorkSlider'
 
-const LandingPageMain = ({ getStartedModal, setGetStartedModal }) => {
+const LandingPageMain = () => {
   const featuresContent = {
     featureTitlePart1: 'Simplify with many',
     featureTitlePart2: 'interesting',
@@ -25,7 +25,7 @@ const LandingPageMain = ({ getStartedModal, setGetStartedModal }) => {
   }
   return (
     <div className="text-center bg-slate-200">
-      <Banner getStartedModal={getStartedModal} setGetStartedModal={setGetStartedModal} />
+      <Banner />
       <Features featuresContent={featuresContent} />
       <div className="bg-white mt-20">
         <hr className="border-secondary"></hr>

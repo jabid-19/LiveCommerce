@@ -1,6 +1,9 @@
+import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { ModalContext } from '../../../pages/_app'
 
 const DataStat = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto my-20 lg:my-44">
       <div data-aos="zoom-in-right" className="stat place-items-center">
@@ -23,7 +26,9 @@ const DataStat = () => {
           architecto unde doloribus! Nihil dignissimos laboriosam illo est maiores, eligendi aliquid
           voluptatum vel minus nisi corrupti et?
         </p>
-        <button className="btn btn-wide btn-primary text-white mt-4">
+        <button
+          className="btn btn-wide btn-primary text-white mt-4"
+          onClick={() => setGetStartedModal(!getStartedModal)}>
           Get Started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
@@ -49,7 +54,9 @@ const DataStat = () => {
           ullam. Architecto autem quod exercitationem dolores eum blanditiis, quia repudiandae
           reiciendis cumque quaerat explicabo, laudantium repellendus nulla rerum.
         </p>
-        <button className="btn btn-wide btn-primary text-white mt-4">
+        <button
+          className="btn btn-wide btn-primary text-white mt-4"
+          onClick={() => setGetStartedModal(!getStartedModal)}>
           Get Started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
@@ -75,7 +82,9 @@ const DataStat = () => {
           soluta iusto ex commodi beatae consectetur doloremque atque rerum nam ea ullam odit
           accusantium maxime tempora at!
         </p>
-        <button className="btn btn-wide btn-primary text-white mt-4">
+        <button
+          className="btn btn-wide btn-primary text-white mt-4"
+          onClick={() => setGetStartedModal(!getStartedModal)}>
           Get Started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>

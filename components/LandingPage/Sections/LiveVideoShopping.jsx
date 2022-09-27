@@ -1,6 +1,9 @@
+import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { ModalContext } from '../../../pages/_app'
 // import video from '../../../public/video/videoplayback.mp4'
 const LiveVideoShopping = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="hero mx-auto py-8 lg:px-36 lg:py-0">
       <div className="hero-content flex-col items-center justify-center lg:flex-row">
@@ -66,7 +69,11 @@ const LiveVideoShopping = () => {
             </ul>
           </div>
           <div className="mb-8">
-            <button className="btn btn-primary text-white mr-4">Get Started</button>
+            <button
+              className="btn btn-primary text-white mr-4"
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              Get Started
+            </button>
             <button className="btn btn-outline text-black">
               Learn More
               <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />

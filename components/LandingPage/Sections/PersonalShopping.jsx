@@ -1,12 +1,15 @@
 import Image from 'next/image'
-import imageLoader from '../../../helper/imageLoader'
-import businessDeal from '../../../public/business/business-deal.jpeg'
-import chart from '../../../public/business/chart.webp'
-import businessTeam from '../../../public/business/business-team.webp'
-import presentation from '../../../public/business/business-presentation.webp'
+import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import imageLoader from '../../../helper/imageLoader'
+import { ModalContext } from '../../../pages/_app'
+import businessDeal from '../../../public/business/business-deal.jpeg'
+import presentation from '../../../public/business/business-presentation.webp'
+import businessTeam from '../../../public/business/business-team.webp'
+import chart from '../../../public/business/chart.webp'
 
 const PersonalShopping = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="hero py-8 lg:px-4 my-8 lg:my-16">
       <div className="lg:mx-36 lg:p-8">
@@ -100,7 +103,11 @@ const PersonalShopping = () => {
               </ul>
             </div>
             <div className="mb-8">
-              <button className="btn btn-primary text-white mr-4">Get Started</button>
+              <button
+                className="btn btn-primary text-white mr-4"
+                onClick={() => setGetStartedModal(!getStartedModal)}>
+                Get Started
+              </button>
               <button className="btn btn-outline text-black">
                 Learn More
                 <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
