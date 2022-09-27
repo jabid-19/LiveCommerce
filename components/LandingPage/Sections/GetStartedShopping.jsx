@@ -8,7 +8,7 @@ import girlRedCoat from '../../../public/shopping/girl-red-coat.jpg'
 const GetStartedShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
-    <div className="hero min-h-screen bg-primary p-8 mx-auto">
+    <div className="hero bg-primary px-8 py-12 lg:py-36 mx-auto">
       <div className="rainbowBorder">
         <div className="hero-content max-w-7xl p-8 bg-base-100 flex-col lg:flex-row-reverse">
           <div>

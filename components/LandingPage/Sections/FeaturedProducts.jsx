@@ -22,14 +22,14 @@ const FeaturedProducts = () => {
   }, [])
 
   return (
-    <div className="pt-16 pb-28 w-100 overflow-hidden bg-white shadow-lg shadow-primary">
+    <div className="py-12 lg:py-36 w-100 overflow-hidden bg-white shadow-lg shadow-primary">
       {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
-      <div className="flex py-8 justify-center mt-16">
+      <div className="flex justify-center mb-12 lg:mb-24">
         {/* <div>
           <HiShoppingBag className="w-24 h-24 text-black" />
         </div> */}
         <h1
-          className="text-5xl text-center text-black font-bold md:text-6xl"
+          className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl"
           style={{ lineHeight: '4.5rem' }}>
           Reach your{' '}
           <span
@@ -40,7 +40,7 @@ const FeaturedProducts = () => {
           by
         </h1>
       </div>
-      <div className="container mx-auto my-16">
+      <div className="container mx-auto">
         <Swiper
           navigation={true}
           effect={'coverflow'}
@@ -69,7 +69,7 @@ const FeaturedProducts = () => {
               width={300}
               height={500}
               alt="One to one"
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-2xl bg-violet-400"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -80,7 +80,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="One to many"
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-2xl bg-violet-400"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -91,7 +91,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Commerce"
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-2xl bg-violet-400"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -102,7 +102,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Streaming"
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-2xl bg-violet-400"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -113,7 +113,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Multi Streaming"
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-2xl bg-violet-400"
               placeholder="blur"
             />
           </SwiperSlide>

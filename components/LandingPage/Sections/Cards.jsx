@@ -2,7 +2,7 @@ import { AiOutlineClockCircle, AiOutlineDollarCircle, AiOutlinePhone } from 'rea
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-8 mt-40 mb-32 lg:mb-40 container mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-8 mt-16 mb-12 lg:mt-48 lg:mb-44 container mx-auto">
       <div data-aos="flip-left" className="card lg:card-side shadow-xl bg-primary">
         <figure className="flex items-center justify-center lg:pl-5 pt-5 lg:pt-0">
           <AiOutlineClockCircle className="h-24 w-24 text-white" />

@@ -5,7 +5,7 @@ import { ModalContext } from '../../../pages/_app'
 const LiveVideoShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
-    <div className="hero mx-auto py-8 lg:px-36 lg:py-0">
+    <div className="hero mx-auto lg:px-36">
       <div className="hero-content flex-col items-center justify-center lg:flex-row">
         {/* <iframe
           width="300"
@@ -28,7 +28,7 @@ const LiveVideoShopping = () => {
         </video>
         <div className="lg:ml-12 text-center lg:text-left">
           <h1
-            className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+            className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
             Make sure
             <br />
@@ -68,7 +68,7 @@ const LiveVideoShopping = () => {
               </li>
             </ul>
           </div>
-          <div className="mb-8">
+          <div>
             <button
               className="btn btn-primary text-white mr-4"
               onClick={() => setGetStartedModal(!getStartedModal)}>
