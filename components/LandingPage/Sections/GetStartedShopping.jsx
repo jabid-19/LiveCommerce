@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const GetStartedShopping = () => {
   return (
-    <div className="hero bg-primary px-8 py-12 lg:py-36 mx-auto">
+    <div className="hero bg-secondary px-8 py-12 lg:py-36 mx-auto">
       <div className="rainbowBorder">
         <div className="hero-content max-w-7xl p-8 bg-base-100 flex-col lg:flex-row-reverse">
           <div>
@@ -23,7 +23,7 @@ const GetStartedShopping = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black">
               <span
-                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
                 data-aos="fade-up">
                 <span className="relative">Get Started</span>
               </span>{' '}

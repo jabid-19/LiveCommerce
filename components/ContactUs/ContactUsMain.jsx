@@ -41,7 +41,7 @@ const ContactUsMain = () => {
       )
   }
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-slate-200 justify-center items-center">
+    <div className="flex flex-col-reverse md:flex-row bg-[#e8e4d9] justify-center items-center">
       <div className="rainbow mx-8 my-20 lg:mx-20 flex">
         <Image
           loader={imageLoader}

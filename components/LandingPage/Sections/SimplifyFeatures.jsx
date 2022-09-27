@@ -5,10 +5,10 @@ import React from 'react'
 import { BiDevices, BiPhoneCall } from 'react-icons/bi'
 import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
 
-const FeaturedItems = ({ featuresContent }) => {
+const SimplifyFeatures = ({ featuresContent }) => {
   const [iconsChange, setIconsChange] = React.useState(false)
   return (
-    <div className="flex items-center bg-slate-200 mb-8 lg:mb-32">
+    <div className="flex items-center bg-[#e8e4d9] mb-8 lg:mb-32">
       <div className="mx-6 h-full w-auto flex flex-col items-center lg:flex-row lg:justify-between md:items-center md:gap-2 2xl:w-[1400px] 2xl:mx-auto">
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-start">
           <div>
@@ -29,7 +29,9 @@ const FeaturedItems = ({ featuresContent }) => {
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
-                    iconsChange ? 'bg-black text-secondary duration-300' : 'bg-primary duration-300'
+                    iconsChange
+                      ? 'bg-black text-secondary duration-300'
+                      : 'bg-accent text-white duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BiPhoneCall size={20} />
@@ -49,7 +51,7 @@ const FeaturedItems = ({ featuresContent }) => {
             {featuresContent.featureTitlePart1}
             <br />
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>
@@ -57,25 +59,25 @@ const FeaturedItems = ({ featuresContent }) => {
           </h1>
           <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsLock size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature1}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsCameraVideo size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature2}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsLightning size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature3}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BiDevices size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature4}</p>
@@ -87,4 +89,4 @@ const FeaturedItems = ({ featuresContent }) => {
   )
 }
 
-export default FeaturedItems
+export default SimplifyFeatures

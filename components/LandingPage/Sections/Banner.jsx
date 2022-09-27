@@ -45,7 +45,7 @@ const Banner = () => {
             style={{ lineHeight: '4.5rem' }}>
             YOUR LEADING <br />
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">VIDEO</span>
             </span>{' '}

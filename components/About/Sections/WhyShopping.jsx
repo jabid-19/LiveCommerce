@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const WhyShopping = () => {
   return (
-    <div className="md:max-w-[90%] xl:max-w-6xl mx-auto my-20 md:my-36">
+    <div className="md:max-w-[90%] xl:max-w-6xl mx-auto my-12 md:my-36">
       <div
         className="lg:min-h-[75vh] flex flex-col-reverse md:flex-row justify-center items-center md:gap-10 lg:gap-20 mx-auto px-8"
         //   style={{
@@ -21,7 +21,7 @@ const WhyShopping = () => {
               style={{ lineHeight: '4.5rem' }}>
               Why GoLaiv <br />
               <span
-                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
                 data-aos="fade-up">
                 <span className="relative text-white">Live Shopping</span>
               </span>{' '}

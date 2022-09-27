@@ -1,21 +1,13 @@
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowRight, AiOutlineGlobal } from 'react-icons/ai'
+import { BsFillBarChartFill } from 'react-icons/bs'
+import { BiMessageDetail } from 'react-icons/bi'
 
 const DataStat = () => {
   return (
     <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto mb-12 lg:mb-36">
       <div data-aos="zoom-in-right" className="stat place-items-center">
-        <div className="stat-value text-primary">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-8 h-8 stroke-current">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-          </svg>
+        <div className="stat-value">
+          <BsFillBarChartFill className="w-8 h-8 text-primary" />
         </div>
         <h4 className="font-bold text-2xl text-black">Data and Insights</h4>
         <p className="text-black">
@@ -30,18 +22,8 @@ const DataStat = () => {
       </div>
 
       <div data-aos="zoom-in-down" className="stat place-items-center">
-        <div className="stat-value text-secondary">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-8 h-8 stroke-current">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-          </svg>
+        <div className="stat-value">
+          <BiMessageDetail className="w-8 h-8 text-primary" />
         </div>
         <h4 className="font-bold text-2xl text-black">ADA Compliance</h4>
         <p className="text-black">
@@ -56,18 +38,8 @@ const DataStat = () => {
       </div>
 
       <div data-aos="zoom-in-left" className="stat place-items-center">
-        <div className="stat-value text-accent">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-8 h-8 stroke-current">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
+        <div className="stat-value">
+          <AiOutlineGlobal className="w-8 h-8 text-primary" />
         </div>
         <h4 className="font-bold text-2xl text-black">Global Coverage</h4>
         <p className="text-black">

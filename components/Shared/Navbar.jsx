@@ -6,7 +6,7 @@ import Logo from '../../public/navbar-logo/navbar-logo.png'
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-md shadow-primary py-2 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -67,11 +67,11 @@ const Navbar = () => {
                 <a>Contact us</a>
               </Link>
             </li>
-            <Link href="login">
+            {/* <Link href="login">
               <li className="mr-2">
                 <a>Login</a>
               </li>
-            </Link>
+            </Link> */}
             <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
             </Link>
@@ -132,11 +132,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          <Link href="login">
+          {/* <Link href="login">
             <li className="mr-2">
               <a>Login</a>
             </li>
-          </Link>
+          </Link> */}
           <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary text-white mr-4">Get started</a>
           </Link>

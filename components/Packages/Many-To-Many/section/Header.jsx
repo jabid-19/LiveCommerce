@@ -5,10 +5,10 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="lg:min-h-[75vh] min-h-[800px] flex items-center bg-slate-200">
-      <div className="mx-6 mt-16 h-full w-auto flex flex-col justify-center items-center 2xl:w-[1400px] 2xl:mx-auto">
+    <div className="py-12 lg:py-36 flex items-center bg-[#e8e4d9]">
+      <div className="mx-6 h-full w-auto flex flex-col justify-center items-center 2xl:w-[1400px] 2xl:mx-auto">
         <h1
-          className="text-5xl leading-tight font-bold text-center md:leading-loose md:text-6xl"
+          className="text-3xl md:text-5xl leading-tight font-bold text-center md:leading-loose lg:text-6xl"
           data-aos="fade-up">
           Connect anywhere anytime!
         </h1>
@@ -28,7 +28,7 @@ const Header = () => {
           height={700}
           alt="LiveCommerce Video Call"
           placeholder="blur"
-          className="object-cover rounded-lg bg-slate-200"
+          className="object-cover rounded-lg bg-[#e8e4d9]"
           loader={imageLoader}
         />
       </div>

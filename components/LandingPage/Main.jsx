@@ -11,7 +11,7 @@ import PersonalShopping from './Sections/PersonalShopping'
 // import TeamWorkSlider from './Sections/TeamWorkSlider'
 import Companies from '../Shared/Companies'
 // import Features from '../Packages/One-To-One/section/Features'
-import FeaturedItems from './Sections/FeaturedItems'
+import SimplifyFeatures from './Sections/SimplifyFeatures'
 
 const LandingPageMain = () => {
   const featuresContent = {
@@ -25,14 +25,14 @@ const LandingPageMain = () => {
     feature5: 'Multi-streaming',
   }
   return (
-    <div className="text-center bg-slate-200">
+    <div className="text-center bg-[#e8e4d9]">
       <Banner />
-      <FeaturedItems featuresContent={featuresContent} />
-      <div className="bg-white">
+      <SimplifyFeatures featuresContent={featuresContent} />
+      {/* <div className="bg-white">
         <hr className="border-secondary"></hr>
         <Companies />
         <hr className="border-secondary"></hr>
-      </div>
+      </div> */}
       <FeaturedProducts />
       <Cards />
       <LiveVideoShopping />
@@ -43,7 +43,7 @@ const LandingPageMain = () => {
       <DataStat />
       {/* <Blogs /> */}
       <GetStartedShopping />
-      <Companies />
+      {/* <Companies /> */}
     </div>
   )
 }
