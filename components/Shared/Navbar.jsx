@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/logo.png'
+import Logo from '../../public/navbar-logo/navbar-logo.png'
 // import { useEffect, useState } from 'react'
 
 const Navbar = () => {

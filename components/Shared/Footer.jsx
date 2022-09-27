@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/logo.png'
+import Logo from '../../public/navbar-logo/navbar-logo.png'
 
 const Footer = () => {
   return (
