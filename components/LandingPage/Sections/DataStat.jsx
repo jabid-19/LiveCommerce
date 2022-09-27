@@ -3,7 +3,6 @@ import { BsFillBarChartFill } from 'react-icons/bs'
 import { BiMessageDetail } from 'react-icons/bi'
 import { useContext } from 'react'
 import { ModalContext } from '../../../pages/_app'
-
 const DataStat = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
