@@ -3,11 +3,11 @@ import { BsChatDots } from 'react-icons/bs'
 import { IoIosStats } from 'react-icons/io'
 const Products = () => {
   return (
-    <div className="mt-12 lg:mt-36 px-8">
+    <div className="mt-12 lg:mt-36 mb-16 lg:mb-44 px-8">
       <div className="max-w-7xl">
         <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl">
           <span
-            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
             data-aos="fade-up">
             <span className="relative text-white">Our products</span>
           </span>
@@ -23,7 +23,7 @@ const Products = () => {
         <div className="rainbow shadow-lg shadow-accent">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-[#e8e4d9] py-2">
-              <AiOutlineVideoCamera className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
+              <AiOutlineVideoCamera className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
@@ -42,7 +42,7 @@ const Products = () => {
         <div className="rainbow shadow-lg shadow-accent">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-[#e8e4d9] py-2">
-              <AiOutlineCalendar className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
+              <AiOutlineCalendar className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
@@ -61,7 +61,7 @@ const Products = () => {
         <div className="rainbow shadow-lg shadow-accent">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-[#e8e4d9] py-2">
-              <BsChatDots className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
+              <BsChatDots className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
@@ -80,7 +80,7 @@ const Products = () => {
         <div className="rainbow shadow-lg shadow-accent">
           <div className="bg-white p-8 text-black h-full">
             <div className="flex justify-center bg-[#e8e4d9] py-2">
-              <IoIosStats className="w-24 h-24 p-2 bg-primary rounded-full text-white" />
+              <IoIosStats className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span

@@ -58,7 +58,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team1}
@@ -69,7 +69,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team3}
@@ -80,7 +80,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team4}
@@ -91,7 +91,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team5}
@@ -102,7 +102,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team6}
@@ -113,7 +113,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team7}
@@ -124,7 +124,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team8}
@@ -135,7 +135,7 @@ const TeamWorkSlider = () => {
           <SwiperSlide className="mb-12">
             <Image
               loader={imageLoader}
-              className="object-cover rounded-xl bg-violet-400"
+              className="object-cover rounded-xl bg-secondary"
               width={870}
               height={580}
               src={team2}

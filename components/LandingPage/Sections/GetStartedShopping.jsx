@@ -28,9 +28,9 @@ const GetStartedShopping = () => {
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
                 data-aos="fade-up">
-                <span className="relative">Get Started</span>
+                <span className="relative">Get started</span>
               </span>{' '}
-              With Live Shopping Today
+              with live shopping today
             </h1>
             <p className="py-6 text-black">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore

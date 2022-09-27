@@ -2,8 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import imageLoader from '../../helper/imageLoader'
 import Logo from '../../public/navbar-logo/navbar-logo.png'
+import { useContext } from 'react'
+import { ModalContext } from '../../pages/_app'
 
 const Navbar = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50">
       <div className="navbar-start">
@@ -71,9 +74,14 @@ const Navbar = () => {
                 <a>Login</a>
               </li>
             </Link> */}
-            <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
+            {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
-            </Link>
+            </Link> */}
+            <button
+              onClick={() => setGetStartedModal(!getStartedModal)}
+              className="btn btn-primary text-white mr-4 mt-2">
+              Get started
+            </button>
             {/* <Link href="/contact">
               <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link> */}
@@ -136,9 +144,14 @@ const Navbar = () => {
               <a>Login</a>
             </li>
           </Link> */}
-          <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
+          {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary text-white mr-4">Get started</a>
-          </Link>
+          </Link> */}
+          <button
+            onClick={() => setGetStartedModal(!getStartedModal)}
+            className="btn btn-primary text-white mr-4">
+            Get started
+          </button>
           {/* <Link href="/contact">
             <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link> */}

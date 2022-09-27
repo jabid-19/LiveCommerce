@@ -4,10 +4,10 @@ import { FaqData } from '../../assets/data/Faq'
 
 const Faq = () => {
   return (
-    <div className="py-12 md:py-36 max-w-7xl px-8 mx-auto">
+    <div className="pb-12 md:pb-36 max-w-7xl px-8 mx-auto">
       <h1 className="text-3xl md:text-5xl lg:text-6xl text-center text-black font-bold mb-4">
         <span
-          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
           data-aos="fade-up">
           <span className="relative text-white">FAQs</span>
         </span>

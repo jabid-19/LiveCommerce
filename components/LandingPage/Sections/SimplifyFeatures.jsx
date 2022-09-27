@@ -17,7 +17,7 @@ const SimplifyFeatures = ({ featuresContent }) => {
               alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg bg-violet-400"
+              className="object-cover rounded-lg bg-secondary"
               placeholder="blur"
               loader={imageLoader}
             />
@@ -51,7 +51,7 @@ const SimplifyFeatures = ({ featuresContent }) => {
             {featuresContent.featureTitlePart1}
             <br />
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>

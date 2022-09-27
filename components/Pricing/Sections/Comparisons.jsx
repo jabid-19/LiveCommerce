@@ -66,7 +66,7 @@ const Comparisons = () => {
           <thead>
             <tr className="text-white text-2xl">
               {tableHead.map((head, index) => (
-                <th className="bg-primary" key={index}>
+                <th className="bg-accent" key={index}>
                   {head.title}
                 </th>
               ))}

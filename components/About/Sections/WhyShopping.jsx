@@ -21,9 +21,9 @@ const WhyShopping = () => {
               style={{ lineHeight: '4.5rem' }}>
               Why GoLaiv <br />
               <span
-                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up">
-                <span className="relative text-white">Live Shopping</span>
+                <span className="relative text-white">live shopping</span>
               </span>{' '}
               ?
             </h1>

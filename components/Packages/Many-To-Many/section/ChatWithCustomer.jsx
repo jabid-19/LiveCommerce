@@ -17,7 +17,7 @@ const ChatWithCustomer = () => {
               alt="Chat with customer"
               width={500}
               height={800}
-              className="object-cover rounded-lg bg-violet-400"
+              className="object-cover rounded-lg bg-secondary"
               placeholder="blur"
               loader={imageLoader}
             />
@@ -50,7 +50,7 @@ const ChatWithCustomer = () => {
             style={{ lineHeight: '4.5rem' }}>
             Simplify with many
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">interesting</span>
             </span>{' '}

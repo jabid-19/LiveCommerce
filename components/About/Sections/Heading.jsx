@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import imageLoader from '../../../helper/imageLoader'
 import { ModalContext } from '../../../pages/_app'
 import videoCall from '../../../public/packages/videocall.png'
+
 const Heading = ({ headingContent }) => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
@@ -32,6 +33,7 @@ const Heading = ({ headingContent }) => {
           {!headingContent.buttonContent2 && (
             <button
               data-aos="zoom-in"
+              onClick={() => setGetStartedModal(!getStartedModal)}
               className="py-4 w-full rounded-md bg-primary text-white font-bold hover:bg-accent duration-500">
               {headingContent.buttonContent1}
             </button>

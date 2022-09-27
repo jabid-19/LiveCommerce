@@ -57,7 +57,7 @@ const ContactUsMain = () => {
       <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
         <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
           <span
-            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
             data-aos="fade-up">
             <span className="relative text-white">Contact us</span>
           </span>

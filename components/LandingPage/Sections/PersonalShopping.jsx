@@ -72,14 +72,14 @@ const PersonalShopping = () => {
             <h1
               className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
               style={{ lineHeight: '4.5rem' }}>
-              REACH ALL YOUR
+              Reach all your
               <br />
               <span
-                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up">
-                <span className="relative text-white">BUSINESS</span>
+                <span className="relative text-white">business</span>
               </span>{' '}
-              GOALS
+              goals
             </h1>
             <br />
             <h3 className="text-2xl text-black font-bold">

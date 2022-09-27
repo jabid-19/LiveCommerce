@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import videoStreaming from '../../../public/about/video-streaming.jpeg'
 import imageLoader from '../../../helper/imageLoader'
+import { useContext } from 'react'
+import { ModalContext } from '../../../pages/_app'
+
 const Banner = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="md:max-w-[90%] xl:max-w-6xl mx-auto my-12 md:my-36">
       <div
@@ -19,7 +23,7 @@ const Banner = () => {
               style={{ lineHeight: '4.5rem' }}>
               Empowering brands to <br />
               <span
-                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+                className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up">
                 <span className="relative text-white">create and connect</span>
               </span>{' '}
@@ -33,6 +37,7 @@ const Banner = () => {
               companies, media, politicians and celebrities.
             </p>
             <button
+              onClick={() => setGetStartedModal(!getStartedModal)}
               className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-3/5"
               data-aos="fade-up"
               data-aos-duration="4500">

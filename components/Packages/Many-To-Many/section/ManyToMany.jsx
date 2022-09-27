@@ -3,8 +3,11 @@ import imageLoader from '../../../../helper/imageLoader'
 import customerMarketing from '../../../../public/packages/marketing.png'
 import React, { useState } from 'react'
 import { BiBroadcast } from 'react-icons/bi'
+import { useContext } from 'react'
+import { ModalContext } from '../../../../pages/_app'
 
 const ManyToMany = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   const [iconsChange, setIconsChange] = useState(false)
   return (
     <div className="pt-12 lg:pt-36 flex items-center bg-[#e8e4d9]">
@@ -13,11 +16,11 @@ const ManyToMany = () => {
           <h1 className="text-3xl md:text-5xl text-center text-black font-bold leading-tight lg:text-6xl lg:text-start">
             Talk{' '}
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">easily</span>
             </span>{' '}
-            With Customer <br /> without any hassle
+            with customer <br /> without any hassle
           </h1>
           <p className="text-neutral text-center mt-5 text-lg lg:text-start">
             Virtual online meetings is when people from around the world, regardless of their
@@ -37,7 +40,9 @@ const ManyToMany = () => {
               </p>
             </div>
           </div>
-          <button className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-1/2">
+          <button
+            onClick={() => setGetStartedModal(!getStartedModal)}
+            className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-1/2">
             Start Free Trial
           </button>
         </div>
@@ -48,7 +53,7 @@ const ManyToMany = () => {
               alt="Customer Marketing"
               width={500}
               height={700}
-              className="object-cover rounded-lg bg-violet-400"
+              className="object-cover rounded-lg bg-secondary"
               placeholder="blur"
               loader={imageLoader}
             />

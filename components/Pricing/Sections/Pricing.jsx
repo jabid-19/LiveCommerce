@@ -8,13 +8,13 @@ const Pricing = () => {
         className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl"
         style={{ lineHeight: '4.5rem' }}>
         <span
-          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
           data-aos="fade-up">
           <span className="relative text-white">Plans</span>
         </span>{' '}
         &{' '}
         <span
-          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+          className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
           data-aos="fade-up">
           <span className="relative text-white">Pricing</span>
         </span>
