@@ -1,7 +1,10 @@
 import Image from 'next/image'
-import videoCall from '../../../public/packages/videocall.png'
+import { useContext } from 'react'
 import imageLoader from '../../../helper/imageLoader'
+import { ModalContext } from '../../../pages/_app'
+import videoCall from '../../../public/packages/videocall.png'
 const Heading = ({ headingContent }) => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="pt-12 lg:pt-36 px-8 flex flex-col-reverse md:flex-col justify-center items-center">
       <div className="max-w-2xl text-center">
@@ -34,7 +37,9 @@ const Heading = ({ headingContent }) => {
             </button>
           )}
           {headingContent.buttonContent2 && (
-            <button className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-accent duration-500">
+            <button
+              onClick={() => setGetStartedModal(!getStartedModal)}
+              className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-accent duration-500">
               {headingContent.buttonContent1}
             </button>
           )}
