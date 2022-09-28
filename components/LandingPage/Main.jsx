@@ -30,12 +30,6 @@ const LandingPageMain = () => {
     icon3: <MdLiveTv size={20} />,
     icon4: <RiBroadcastFill size={20} />,
   }
-  // const icons = {
-  //   icon1: <IoPeopleOutline size={20} />,
-  //   icon2: <IoIosPeople size={20} />,
-  //   icon3: <MdLiveTv size={20} />,
-  //   icon4: <RiBroadcastFill size={20} />,
-  // }
   return (
     <div className="text-center bg-[#e8e4d9]">
       <Banner />

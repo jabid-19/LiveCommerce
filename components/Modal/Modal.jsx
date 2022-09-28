@@ -136,7 +136,6 @@ const ModalMain = () => {
   }
   return (
     <div>
-      {/* <button onClick={openModal}>Open Modal</button> */}
       <Modal
         isOpen={getStartedModal}
         onRequestClose={closeModal}

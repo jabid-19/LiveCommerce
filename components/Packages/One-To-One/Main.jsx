@@ -20,12 +20,6 @@ const PackagesOneToOneMain = () => {
     icon3: <BsLightning size={20} />,
     icon4: <BiDevices size={20} />,
   }
-  // const icons = {
-  //   icon1: <BsLock size={20} />,
-  //   icon2: <BsCameraVideo size={20} />,
-  //   icon3: <BsLightning size={20} />,
-  //   icon4: <BiDevices size={20} />,
-  // }
   return (
     <div>
       <OneToOneIndex />
