@@ -8,8 +8,8 @@ const Cards = () => {
           <AiOutlineClockCircle className="h-24 w-24 text-white" />
         </figure>
         <div className="card-body text-white">
-          <h2 className="text-xl text-center lg:text-left uppercase font-bold">
-            24 hours Online Shopping
+          <h2 className="text-xl text-center lg:text-left normal-case font-bold">
+            24 hours online shopping
           </h2>
           <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -19,8 +19,8 @@ const Cards = () => {
           <AiOutlineDollarCircle className="h-24 w-24 text-white" />
         </figure>
         <div className="card-body text-white">
-          <h2 className="text-xl text-center lg:text-left uppercase font-bold">
-            100% Money Back Guarantee
+          <h2 className="text-xl text-center lg:text-left normal-case font-bold">
+            100% money back guarantee
           </h2>
           <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -30,8 +30,8 @@ const Cards = () => {
           <AiOutlinePhone className="h-24 w-24 text-white" />
         </figure>
         <div className="card-body text-white">
-          <h2 className="text-xl text-center lg:text-left uppercase font-bold">
-            24/7 Online and Phone Support
+          <h2 className="text-xl text-center lg:text-left normal-case font-bold">
+            24/7 online and phone support
           </h2>
           <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>

@@ -70,12 +70,12 @@ const LiveVideoShopping = () => {
           </div>
           <div>
             <button
-              className="btn btn-primary text-white mr-4"
+              className="btn btn-primary text-white mr-4 normal-case"
               onClick={() => setGetStartedModal(!getStartedModal)}>
-              Get Started
+              Get started
             </button>
-            <button className="btn btn-outline text-black">
-              Learn More
+            <button className="btn btn-outline text-black normal-case">
+              Learn more
               <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
             </button>
           </div>

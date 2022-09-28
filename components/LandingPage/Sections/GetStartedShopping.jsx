@@ -38,9 +38,9 @@ const GetStartedShopping = () => {
               quisquam facere iste explicabo illo excepturi similique!
             </p>
             <button
-              className="btn btn-primary text-white"
+              className="btn btn-primary text-white normal-case"
               onClick={() => setGetStartedModal(!getStartedModal)}>
-              Get Started
+              Get started
               <AiOutlineArrowRight className="w-4 h-4 ml-2 text-White" />
             </button>
           </div>

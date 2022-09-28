@@ -42,8 +42,8 @@ const ManyToMany = () => {
           </div>
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-1/2">
-            Start Free Trial
+            className="w-full mt-10 py-4  rounded-md bg-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
+            Start free trial
           </button>
         </div>
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-end">

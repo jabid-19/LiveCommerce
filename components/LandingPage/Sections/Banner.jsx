@@ -64,13 +64,13 @@ const Banner = () => {
             capabilities you need. When your business thrives, so will ours!
           </p>
           <button
-            className="btn btn-outline mr-4 text-black"
+            className="btn btn-outline mr-4 text-black normal-case"
             onClick={() => setGetStartedModal(!getStartedModal)}>
-            Get Started
+            Get started
             <AiOutlineArrowRight className="w-4 h-4 ml-2" />
           </button>
           <Link href="/pricing">
-            <a className="btn btn-primary text-white">Pricing</a>
+            <a className="btn btn-primary text-white normal-case">Pricing</a>
           </Link>
         </div>
       </div>

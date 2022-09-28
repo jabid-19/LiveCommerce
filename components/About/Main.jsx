@@ -11,8 +11,8 @@ const AboutMain = () => {
     title: 'How the website works',
     details:
       'Connect with unlimited customers by hosting shoppable livestreams or pre-recorded videos on your native website. Connect with anyone from anywhere.',
-    buttonContent1: 'Get Started',
-    buttonContent2: 'Watch Demo',
+    buttonContent1: 'Get started',
+    buttonContent2: 'Watch demo',
   }
   return (
     <div className="bg-[#e8e4d9]">

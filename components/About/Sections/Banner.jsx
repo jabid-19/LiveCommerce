@@ -38,7 +38,7 @@ const Banner = () => {
             </p>
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-3/5"
+              className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-3/5"
               data-aos="fade-up"
               data-aos-duration="4500">
               Start 14 days trial

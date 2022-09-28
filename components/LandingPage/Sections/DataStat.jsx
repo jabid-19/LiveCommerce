@@ -18,7 +18,7 @@ const DataStat = () => {
           voluptatum vel minus nisi corrupti et?
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
           Get Started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
@@ -36,7 +36,7 @@ const DataStat = () => {
           reiciendis cumque quaerat explicabo, laudantium repellendus nulla rerum.
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
           Get Started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
@@ -54,9 +54,9 @@ const DataStat = () => {
           accusantium maxime tempora at!
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>

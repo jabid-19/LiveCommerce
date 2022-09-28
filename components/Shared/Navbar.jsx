@@ -75,11 +75,11 @@ const Navbar = () => {
               </li>
             </Link> */}
             {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
-              <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
+              <a className="btn btn-primary normal-case text-white mr-4 mt-2">Get started</a>
             </Link> */}
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="btn btn-primary text-white mr-4 mt-2">
+              className="btn btn-primary normal-case text-white mr-4 mt-2">
               Get started
             </button>
             {/* <Link href="/contact">
@@ -145,11 +145,11 @@ const Navbar = () => {
             </li>
           </Link> */}
           {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
-            <a className="btn btn-primary text-white mr-4">Get started</a>
+            <a className="btn btn-primary normal-case text-white mr-4">Get started</a>
           </Link> */}
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="btn btn-primary text-white mr-4">
+            className="btn btn-primary normal-case text-white mr-4">
             Get started
           </button>
           {/* <Link href="/contact">

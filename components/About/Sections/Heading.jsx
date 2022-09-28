@@ -34,19 +34,19 @@ const Heading = ({ headingContent }) => {
             <button
               data-aos="zoom-in"
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="py-4 w-full rounded-md bg-primary text-white font-bold hover:bg-accent duration-500">
+              className="py-4 w-full rounded-md bg-primary text-white font-bold hover:bg-black duration-500 normal-case">
               {headingContent.buttonContent1}
             </button>
           )}
           {headingContent.buttonContent2 && (
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-accent duration-500">
+              className="py-4 w-full md:w-1/2 rounded-md bg-primary text-white font-bold hover:bg-black duration-500 normal-case">
               {headingContent.buttonContent1}
             </button>
           )}
           {headingContent.buttonContent2 && (
-            <button className="py-4 w-full md:w-1/2 rounded-md bg-secondary text-white font-bold hover:bg-accent duration-500">
+            <button className="py-4 w-full md:w-1/2 rounded-md bg-secondary text-white font-bold hover:bg-black duration-500 normal-case">
               {headingContent.buttonContent2}
             </button>
           )}
