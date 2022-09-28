@@ -48,7 +48,7 @@ const GerStartedForm = ({ closeModal }) => {
             }`}>
             {capitalizeFirstLetter(status.result)}
           </h1>
-          <p className="mt-5">{status.message}</p>
+          <p className="mt-5 text-xl">{status.message}</p>
         </div>
       )}
       {status.status !== (201 || 200) && (
