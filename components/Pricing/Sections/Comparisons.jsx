@@ -60,13 +60,13 @@ const tableData = [
 ]
 const Comparisons = () => {
   return (
-    <div className="w-auto pb-12 mx-6 mt-12 lg:min-h-[55vh] lg:mt-16 2xl:w-[1400px] 2xl:mx-auto lg:mb-0">
+    <div className="w-auto pb-12 lg:pb-36 mx-6 mt-12 lg:mt-36 2xl:w-[1400px] 2xl:mx-auto lg:mb-0">
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>
             <tr className="text-white text-2xl">
               {tableHead.map((head, index) => (
-                <th className="bg-primary" key={index}>
+                <th className="bg-accent" key={index}>
                   {head.title}
                 </th>
               ))}

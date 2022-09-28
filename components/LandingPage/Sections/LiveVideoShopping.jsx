@@ -34,7 +34,7 @@ const LiveVideoShopping = () => {
             <br />
             your{' '}
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">content</span>
             </span>

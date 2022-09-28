@@ -17,9 +17,9 @@ const PackagesOneToOneMain = () => {
   return (
     <div>
       <OneToOneIndex />
-      <CompaniesIndex />
+      {/* <CompaniesIndex /> */}
       <Features featuresContent={featuresContent} />
-      <div className="bg-slate-200">
+      <div className="bg-[#e8e4d9]">
         <Faq />
       </div>
     </div>

@@ -8,8 +8,8 @@ import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
 const Features = ({ featuresContent }) => {
   const [iconsChange, setIconsChange] = React.useState(false)
   return (
-    <div className="lg:min-h-[75vh] min-h-[800px] flex items-center bg-slate-200">
-      <div className="mx-6 mt-16 h-full w-auto flex flex-col items-center lg:flex-row lg:justify-between md:items-center md:gap-2 lg:mt-0 2xl:w-[1400px] 2xl:mx-auto">
+    <div className="lg:pb-28 flex items-center bg-[#e8e4d9]">
+      <div className="mx-6 h-full w-auto flex flex-col items-center lg:flex-row lg:justify-between md:items-center md:gap-2 2xl:w-[1400px] 2xl:mx-auto">
         <div className="relative w-full h-full flex justify-center lg:w-1/2 lg:justify-start">
           <div>
             <Image
@@ -17,7 +17,7 @@ const Features = ({ featuresContent }) => {
               alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg bg-violet-400"
+              className="object-cover rounded-lg bg-secondary"
               placeholder="blur"
               loader={imageLoader}
             />
@@ -29,7 +29,9 @@ const Features = ({ featuresContent }) => {
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
-                    iconsChange ? 'bg-black text-secondary duration-300' : 'bg-primary duration-300'
+                    iconsChange
+                      ? 'bg-accent text-secondary duration-300'
+                      : 'bg-secondary text-white duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BiPhoneCall size={20} />
@@ -44,11 +46,11 @@ const Features = ({ featuresContent }) => {
         </div>
         <div className="w-full my-10 flex flex-col justify-center items-center lg:w-1/2 lg:items-start lg:my-0">
           <h1
-            className="text-5xl text-center text-black font-bold md:text-6xl lg:text-start"
+            className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
             {featuresContent.featureTitlePart1}
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>{' '}
@@ -56,25 +58,25 @@ const Features = ({ featuresContent }) => {
           </h1>
           <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsLock size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature1}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsCameraVideo size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature2}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsLightning size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature3}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-primary mx-auto lg:mx-0">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BiDevices size={20} />
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature4}</p>

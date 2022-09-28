@@ -41,8 +41,8 @@ const AuthenticationMain = () => {
   }
 
   return (
-    <div className="bg-slate-200">
-      <div className="flex flex-col-reverse md:flex-row bg-slate-200 md:w-[95%]">
+    <div className="bg-[#e8e4d9]">
+      <div className="flex flex-col-reverse md:flex-row bg-[#e8e4d9] md:w-[95%]">
         <div className="md:min-w-[50%] flex justify-center items-center">
           <div className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
             <Image
@@ -62,7 +62,7 @@ const AuthenticationMain = () => {
             {key === 'register' ? (
               <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
                 <span
-                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                   data-aos="fade-up">
                   <span className="relative text-white">Sign up</span>
                 </span>
@@ -70,7 +70,7 @@ const AuthenticationMain = () => {
             ) : (
               <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
                 <span
-                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                   data-aos="fade-up">
                   <span className="relative text-white">Login</span>
                 </span>
@@ -82,7 +82,7 @@ const AuthenticationMain = () => {
               className={
                 key != 'register'
                   ? 'btn btn-primary w-1/2 text-white'
-                  : 'btn bg-slate-300 text-slate-400 border-none w-1/2'
+                  : 'btn bg-accent/50 text-white border-none w-1/2'
               }
               onClick={loadLoginForm}>
               Login
@@ -91,7 +91,7 @@ const AuthenticationMain = () => {
               className={
                 key === 'register'
                   ? 'btn btn-primary w-1/2 text-white'
-                  : 'btn bg-slate-300 text-slate-400 border-none w-1/2'
+                  : 'btn bg-accent/50 text-white border-none w-1/2'
               }
               onClick={loadRegisterForm}>
               Create Account

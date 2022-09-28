@@ -1,5 +1,6 @@
-import { useContext } from 'react'
+import Link from 'next/link'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { useContext } from 'react'
 import { ModalContext } from '../../../pages/_app'
 
 const Banner = () => {
@@ -9,7 +10,7 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="rainbow w-10/12 lg:w-1/2">
           <video
-            className="w-full h-full rounded bg-violet-400"
+            className="w-full h-full rounded bg-secondary"
             poster="/video/woman-video.png"
             playsInline
             autoPlay
@@ -46,15 +47,15 @@ const Banner = () => {
           <h1
             className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            YOUR LEADING <br />
+            Your leading <br />
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
-              <span className="relative text-white">VIDEO</span>
+              <span className="relative text-white">video</span>
             </span>{' '}
-            PLATFORM
+            platform
             <br />
-            FOR BUSINESS
+            for business
           </h1>
           <p className="py-6 text-black">
             Our simple and intuitive interface and features can help you reach audiences wherever
@@ -68,7 +69,9 @@ const Banner = () => {
             Get Started
             <AiOutlineArrowRight className="w-4 h-4 ml-2" />
           </button>
-          <button className="btn btn-primary text-white">Pricing</button>
+          <Link href="/pricing">
+            <a className="btn btn-primary text-white">Pricing</a>
+          </Link>
         </div>
       </div>
     </div>

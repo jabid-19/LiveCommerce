@@ -3,16 +3,20 @@ import imageLoader from '../../../../helper/imageLoader'
 import meeting from '../../../../public/packages/meeting.jpg'
 import React, { useState } from 'react'
 import { BsMic } from 'react-icons/bs'
+import { useContext } from 'react'
+import { ModalContext } from '../../../../pages/_app'
+
 const OneToOneIndex = () => {
+  const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   const [iconsChange, setIconsChange] = useState(false)
   return (
-    <div className="lg:min-h-[75vh] min-h-[800px] flex items-center bg-slate-200">
-      <div className="mx-6 mt-16 h-full w-auto flex flex-col-reverse items-center lg:flex-row lg:justify-between md:items-center md:gap-2 lg:mt-0 2xl:w-[1400px] 2xl:mx-auto">
+    <div className="py-12 lg:py-36 flex items-center bg-[#e8e4d9]">
+      <div className="mx-6 h-full w-auto flex flex-col-reverse items-center lg:flex-row lg:justify-between md:items-center md:gap-2 2xl:w-[1400px] 2xl:mx-auto">
         <div className="w-full my-10 flex flex-col items-center lg:w-1/2 lg:items-start lg:my-0">
-          <h1 className="text-5xl text-center text-black font-bold leading-tight md:text-6xl lg:text-start">
+          <h1 className="text-3xl md:text-5xl text-center text-black font-bold leading-tight lg:text-6xl lg:text-start">
             Connect{' '}
             <span
-              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+              className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up">
               <span className="relative text-white">easily</span>
             </span>{' '}
@@ -36,7 +40,9 @@ const OneToOneIndex = () => {
               </p>
             </div>
           </div>
-          <button className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-1/2">
+          <button
+            onClick={() => setGetStartedModal(!getStartedModal)}
+            className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-1/2">
             Start Free Trial
           </button>
         </div>
@@ -47,7 +53,7 @@ const OneToOneIndex = () => {
               alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg bg-violet-400"
+              className="object-cover rounded-lg bg-secondary"
               placeholder="blur"
               loader={imageLoader}
             />
@@ -59,7 +65,9 @@ const OneToOneIndex = () => {
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
-                    iconsChange ? 'bg-black text-secondary duration-300' : 'bg-primary duration-300'
+                    iconsChange
+                      ? 'bg-accent text-secondary duration-300'
+                      : 'bg-secondary text-white duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BsMic size={20} />

@@ -41,7 +41,7 @@ const ContactUsMain = () => {
       )
   }
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-slate-200 justify-center items-center">
+    <div className="flex flex-col-reverse md:flex-row bg-[#e8e4d9] justify-center items-center">
       <div className="rainbow mx-8 my-20 lg:mx-20 flex">
         <Image
           loader={imageLoader}
@@ -57,7 +57,7 @@ const ContactUsMain = () => {
       <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
         <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
           <span
-            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
             data-aos="fade-up">
             <span className="relative text-white">Contact us</span>
           </span>

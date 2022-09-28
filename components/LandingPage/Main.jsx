@@ -9,29 +9,29 @@ import LiveVideoShopping from './Sections/LiveVideoShopping'
 import PersonalShopping from './Sections/PersonalShopping'
 // import TeamWorkSlider from './Sections/TeamWorkSlider'
 import Companies from '../Shared/Companies'
-// import Features from '../Packages/One-To-One/section/Features'
-import FeaturedItems from './Sections/FeaturedItems'
+import Features from '../Packages/One-To-One/section/Features'
+// import SimplifyFeatures from './Sections/SimplifyFeatures'
 
 const LandingPageMain = () => {
   const featuresContent = {
     featureTitlePart1: 'Simplify with many',
     featureTitlePart2: 'interesting',
     featureTitlePart3: 'features.',
-    feature1: 'Encrypted and it is highly secured',
-    feature2: 'Audio & HD video calling and live streaming',
-    feature3: 'Not limited by time & places, go from anywhere',
-    feature4: 'Compatible with every available devices',
-    feature5: 'Multi-streaming',
+    feature1: 'One to One',
+    feature2: 'One to Many',
+    feature3: 'Live Commerce',
+    feature4: 'Multi-streaming',
   }
   return (
-    <div className="text-center bg-slate-200">
+    <div className="text-center bg-[#e8e4d9]">
       <Banner />
-      <FeaturedItems featuresContent={featuresContent} />
-      <div className="bg-white">
+      {/* <SimplifyFeatures featuresContent={featuresContent} /> */}
+      <Features featuresContent={featuresContent} />
+      {/* <div className="bg-white">
         <hr className="border-secondary"></hr>
         <Companies />
         <hr className="border-secondary"></hr>
-      </div>
+      </div> */}
       <FeaturedProducts />
       <Cards />
       <LiveVideoShopping />
@@ -42,7 +42,7 @@ const LandingPageMain = () => {
       <DataStat />
       {/* <Blogs /> */}
       <GetStartedShopping />
-      <Companies />
+      {/* <Companies /> */}
     </div>
   )
 }

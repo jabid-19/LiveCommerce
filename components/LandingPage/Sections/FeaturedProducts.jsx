@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
   }, [])
 
   return (
-    <div className="py-12 lg:py-36 w-100 overflow-hidden bg-white shadow-lg shadow-primary">
+    <div className="py-12 lg:py-36 w-100 overflow-hidden bg-white shadow-lg shadow-secondary">
       {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
       <div className="flex justify-center mb-12 lg:mb-24">
         {/* <div>
@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
           style={{ lineHeight: '4.5rem' }}>
           Reach your{' '}
           <span
-            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
+            className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
             data-aos="fade-up">
             <span className="relative">audience</span>
           </span>{' '}
@@ -69,7 +69,7 @@ const FeaturedProducts = () => {
               width={300}
               height={500}
               alt="One to one"
-              className="object-cover rounded-2xl bg-violet-400"
+              className="object-cover rounded-2xl bg-secondary"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -80,7 +80,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="One to many"
-              className="object-cover rounded-2xl bg-violet-400"
+              className="object-cover rounded-2xl bg-secondary"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -91,7 +91,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Commerce"
-              className="object-cover rounded-2xl bg-violet-400"
+              className="object-cover rounded-2xl bg-secondary"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -102,7 +102,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Live Streaming"
-              className="object-cover rounded-2xl bg-violet-400"
+              className="object-cover rounded-2xl bg-secondary"
               placeholder="blur"
             />
           </SwiperSlide>
@@ -113,7 +113,7 @@ const FeaturedProducts = () => {
               width={306}
               height={500}
               alt="Multi Streaming"
-              className="object-cover rounded-2xl bg-violet-400"
+              className="object-cover rounded-2xl bg-secondary"
               placeholder="blur"
             />
           </SwiperSlide>

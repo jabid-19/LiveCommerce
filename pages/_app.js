@@ -8,7 +8,7 @@ import Footer from '../components/Shared/Footer'
 import Navbar from '../components/Shared/Navbar'
 import '../styles/globals.scss'
 
-export const ModalContext = createContext();
+export const ModalContext = createContext()
 
 function MyApp({ Component, pageProps }) {
   const [getStartedModal, setGetStartedModal] = useState(false)
@@ -19,13 +19,13 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div>
-      <Navbar />
-      <div className="overflow-x-hidden">
-        <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
+      <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
+        <Navbar />
+        <div className="overflow-x-hidden">
           <Component {...pageProps} />
           <ModalMain />
-        </ModalContext.Provider>
-      </div>
+        </div>
+      </ModalContext.Provider>
       <Footer />
       <ToastContainer />
     </div>

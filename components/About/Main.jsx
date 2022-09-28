@@ -6,9 +6,17 @@ import Heading from './Sections/Heading'
 import Faq from '../Shared/Faq'
 
 const AboutMain = () => {
+  const headingContent = {
+    pageTitle: 'About GoLaiv',
+    title: 'How the website works',
+    details:
+      'Connect with unlimited customers by hosting shoppable livestreams or pre-recorded videos on your native website. Connect with anyone from anywhere.',
+    buttonContent1: 'Get Started',
+    buttonContent2: 'Watch Demo',
+  }
   return (
-    <div className="bg-slate-200">
-      <Heading />
+    <div className="bg-[#e8e4d9]">
+      <Heading headingContent={headingContent} />
       <Banner></Banner>
       <Stats />
       <WhyShopping />

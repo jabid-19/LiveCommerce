@@ -24,7 +24,7 @@ const GerStartedForm = ({ closeModal }) => {
     const { email, firstName, lastName } = data
     setStatus({ ...status, loading: true })
     axios
-      .post('/api/getStarted', {
+      .post('/api/getstarted', {
         email,
         firstName,
         lastName,
@@ -43,10 +43,13 @@ const GerStartedForm = ({ closeModal }) => {
     <div className="p-10 flex flex-col md:p-20">
       {status.status && status.result && status.message && (
         <div>
-          <h1 className={`text-3xl ${status.result === 'error' ? 'text-error' : ''}`}>
+          <h1
+            className={`text-3xl font-bold ${
+              status.result === 'error' ? 'text-error' : 'text-secondary'
+            }`}>
             {capitalizeFirstLetter(status.result)}
           </h1>
-          <p className="mt-3">{status.message}</p>
+          <p className="mt-5">{status.message}</p>
         </div>
       )}
       {status.status !== (201 || 200) && (
