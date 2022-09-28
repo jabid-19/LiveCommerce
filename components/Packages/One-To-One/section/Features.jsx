@@ -2,8 +2,7 @@ import Image from 'next/image'
 import imageLoader from '../../../../helper/imageLoader'
 import meeting from '../../../../public/packages/meeting_2.jpg'
 import React from 'react'
-import { BiDevices, BiPhoneCall } from 'react-icons/bi'
-import { BsCameraVideo, BsLightning, BsLock } from 'react-icons/bs'
+import { BiPhoneCall } from 'react-icons/bi'
 
 const Features = ({ featuresContent }) => {
   const [iconsChange, setIconsChange] = React.useState(false)
@@ -59,25 +58,25 @@ const Features = ({ featuresContent }) => {
           <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
-                <BsLock size={20} />
+                {featuresContent.icon1}
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature1}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
-                <BsCameraVideo size={20} />
+                {featuresContent.icon2}
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature2}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
-                <BsLightning size={20} />
+                {featuresContent.icon3}
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature3}</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
-                <BiDevices size={20} />
+                {featuresContent.icon4}
               </div>
               <p className="text-neutral font-bold mt-2">{featuresContent.feature4}</p>
             </div>
