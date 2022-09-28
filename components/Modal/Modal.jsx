@@ -54,7 +54,7 @@ const GerStartedForm = ({ closeModal }) => {
       {status.status !== (201 || 200) && (
         <div>
           <div className="mb-8 flex justify-between items-center">
-            <h1 className="text-4xl font-semibold">Join our Early Bird Campaign</h1>
+            <h1 className="text-4xl font-bold">Join our Early Bird Campaign</h1>
             <button onClick={closeModal}>
               <AiOutlineClose />
             </button>
@@ -67,6 +67,7 @@ const GerStartedForm = ({ closeModal }) => {
               <input
                 type="email"
                 {...register('email', { required: 'Email is required' })}
+                placeholder="Ex. example@example.com"
                 className="w-full p-4 border border-gray-300 rounded-md"
               />
               {errors.email && <p className="text-error">{errors.email.message}</p>}
@@ -78,6 +79,7 @@ const GerStartedForm = ({ closeModal }) => {
               <input
                 type="text"
                 {...register('firstName', { required: 'First Name is required' })}
+                placeholder="Ex. John"
                 className="w-full p-4 border border-gray-300 rounded-md"
               />
               {errors.email && <p className="text-error">{errors.firstName?.message}</p>}
@@ -89,6 +91,7 @@ const GerStartedForm = ({ closeModal }) => {
               <input
                 type="text"
                 {...register('lastName', { required: 'Last Name is required' })}
+                placeholder="Ex. Doe"
                 className="w-full p-4 border border-gray-300 rounded-md"
               />
               {errors.email && <p className="text-error">{errors.lastName?.message}</p>}
