@@ -38,7 +38,6 @@ const GerStartedForm = ({ closeModal }) => {
         })
       )
   }
-
   return (
     <div className="p-10 flex flex-col md:p-20">
       {status.status && status.result && status.message && (
