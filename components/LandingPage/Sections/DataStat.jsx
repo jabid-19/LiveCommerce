@@ -20,7 +20,7 @@ const DataStat = () => {
         <button
           className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>
@@ -38,7 +38,7 @@ const DataStat = () => {
         <button
           className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>
