@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import imageLoader from '../../../helper/imageLoader'
@@ -109,10 +110,12 @@ const PersonalShopping = () => {
                 onClick={() => setGetStartedModal(!getStartedModal)}>
                 Get started
               </button>
-              <button className="btn btn-outline text-black normal-case">
-                Learn more
-                <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
-              </button>
+              <Link href="/about">
+                <a className="btn btn-outline text-black normal-case">
+                  Learn more
+                  <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
