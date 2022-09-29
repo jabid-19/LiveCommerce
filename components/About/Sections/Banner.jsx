@@ -24,7 +24,8 @@ const Banner = () => {
               Empowering brands to <br />
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">create and connect</span>
               </span>{' '}
               <br />
@@ -38,9 +39,9 @@ const Banner = () => {
             </p>
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-accent duration-500 md:w-3/5"
+              className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-3/5"
               data-aos="fade-up"
-              data-aos-duration="4500">
+              data-aos-anchor-placement="top-bottom">
               Start 14 days trial
             </button>
           </div>

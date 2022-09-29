@@ -8,7 +8,8 @@ const Faq = () => {
       <h1 className="text-3xl md:text-5xl lg:text-6xl text-center text-black font-bold mb-4">
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-          data-aos="fade-up">
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
           <span className="relative text-white">FAQs</span>
         </span>
       </h1>

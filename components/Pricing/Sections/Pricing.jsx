@@ -9,13 +9,15 @@ const Pricing = () => {
         style={{ lineHeight: '4.5rem' }}>
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-          data-aos="fade-up">
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
           <span className="relative text-white">Plans</span>
         </span>{' '}
         &{' '}
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-          data-aos="fade-up">
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
           <span className="relative text-white">Pricing</span>
         </span>
       </h1>

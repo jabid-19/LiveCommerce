@@ -7,7 +7,10 @@ const DataStat = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto mb-12 lg:mb-36">
-      <div data-aos="zoom-in-right" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-right"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <BsFillBarChartFill className="w-8 h-8 text-primary" />
         </div>
@@ -18,14 +21,17 @@ const DataStat = () => {
           voluptatum vel minus nisi corrupti et?
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>
 
-      <div data-aos="zoom-in-down" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <BiMessageDetail className="w-8 h-8 text-primary" />
         </div>
@@ -36,14 +42,17 @@ const DataStat = () => {
           reiciendis cumque quaerat explicabo, laudantium repellendus nulla rerum.
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>
 
-      <div data-aos="zoom-in-left" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-left"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <AiOutlineGlobal className="w-8 h-8 text-primary" />
         </div>
@@ -54,9 +63,9 @@ const DataStat = () => {
           accusantium maxime tempora at!
         </p>
         <button
-          className="btn btn-wide btn-primary text-white mt-4"
+          className="btn btn-wide btn-primary normal-case text-white mt-4"
           onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get Started
+          Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
         </button>
       </div>

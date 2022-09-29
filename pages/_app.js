@@ -14,13 +14,15 @@ function MyApp({ Component, pageProps }) {
   const [getStartedModal, setGetStartedModal] = useState(false)
 
   useEffect(() => {
-    Aos.init({ duration: 1500 })
+    Aos.init({ duration: 1500, anchorPlacement: 'top-bottom' })
   }, [])
 
   return (
     <div>
       <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
-        <Navbar />
+        <div className="bg-[#e8e4d9]">
+          <Navbar />
+        </div>
         <div className="overflow-x-hidden">
           <Component {...pageProps} />
           <ModalMain />

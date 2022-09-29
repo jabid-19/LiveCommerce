@@ -10,7 +10,7 @@ const LoginForm = () => {
     console.log(data)
   }
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
       <form className="mt-10 max-w-4xl" onSubmit={handleSubmit(onSubmit)}>
         {/* <input
           type="email"

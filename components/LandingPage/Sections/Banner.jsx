@@ -19,7 +19,7 @@ const Banner = () => {
             <source src="/video/woman-video.mp4" type="video/mp4" />
           </video>
         </div>
-        {/* <div data-aos="fade-left" className="avatar">
+        {/* <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="avatar">
           <div className="w-72 lg:w-96 rounded-full ring-8 ring-primary ring-offset-2"> */}
         {/* <div className="w-72 lg:w-96 rounded-full border-4 border-dotted border-primary animate-spin"> */}
         {/* // <Image
@@ -50,7 +50,8 @@ const Banner = () => {
             Your leading <br />
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-              data-aos="fade-up">
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">video</span>
             </span>{' '}
             platform
@@ -64,13 +65,13 @@ const Banner = () => {
             capabilities you need. When your business thrives, so will ours!
           </p>
           <button
-            className="btn btn-outline mr-4 text-black"
+            className="btn btn-outline mr-4 text-black normal-case"
             onClick={() => setGetStartedModal(!getStartedModal)}>
-            Get Started
+            Get started
             <AiOutlineArrowRight className="w-4 h-4 ml-2" />
           </button>
           <Link href="/pricing">
-            <a className="btn btn-primary text-white">Pricing</a>
+            <a className="btn btn-primary text-white normal-case">Pricing</a>
           </Link>
         </div>
       </div>

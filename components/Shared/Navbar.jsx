@@ -8,7 +8,7 @@ import Logo from '../../public/navbar-logo/navbar-logo.png'
 const Navbar = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
-    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50 2xl:px-[10%]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -75,11 +75,11 @@ const Navbar = () => {
               </li>
             </Link> */}
             {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
-              <a className="btn btn-primary text-white mr-4 mt-2">Get started</a>
+              <a className="btn btn-primary normal-case text-white mr-4 mt-2">Get started</a>
             </Link> */}
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="btn btn-primary text-white mr-4 mt-2">
+              className="btn btn-primary normal-case text-white mr-4 mt-2">
               Get started
             </button>
             {/* <Link href="/contact">
@@ -145,11 +145,11 @@ const Navbar = () => {
             </li>
           </Link> */}
           {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
-            <a className="btn btn-primary text-white mr-4">Get started</a>
+            <a className="btn btn-primary normal-case text-white mr-4">Get started</a>
           </Link> */}
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="btn btn-primary text-white mr-4">
+            className="btn btn-primary normal-case text-white mr-4">
             Get started
           </button>
           {/* <Link href="/contact">

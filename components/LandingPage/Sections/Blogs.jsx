@@ -12,6 +12,7 @@ const Blogs = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-14 my-14">
           <div
             data-aos="flip-left"
+            data-aos-anchor-placement="top-bottom"
             className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100 hover:opacity-80">
             <figure>
               <Image
@@ -42,6 +43,7 @@ const Blogs = () => {
           </div>
           <div
             data-aos="flip-down"
+            data-aos-anchor-placement="top-bottom"
             className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image
@@ -72,6 +74,7 @@ const Blogs = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-anchor-placement="top-bottom"
             className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image

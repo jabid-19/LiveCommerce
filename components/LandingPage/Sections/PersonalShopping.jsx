@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import imageLoader from '../../../helper/imageLoader'
@@ -76,7 +77,8 @@ const PersonalShopping = () => {
               <br />
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">business</span>
               </span>{' '}
               goals
@@ -104,14 +106,16 @@ const PersonalShopping = () => {
             </div>
             <div>
               <button
-                className="btn btn-primary text-white mr-4"
+                className="btn btn-primary text-white mr-4 normal-case"
                 onClick={() => setGetStartedModal(!getStartedModal)}>
-                Get Started
+                Get started
               </button>
-              <button className="btn btn-outline text-black">
-                Learn More
-                <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
-              </button>
+              <Link href="/about">
+                <a className="btn btn-outline text-black normal-case">
+                  Learn more
+                  <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

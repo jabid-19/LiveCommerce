@@ -59,7 +59,8 @@ const ContactUsMain = () => {
         <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-            data-aos="fade-up">
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <span className="relative text-white">Contact us</span>
           </span>
         </h1>

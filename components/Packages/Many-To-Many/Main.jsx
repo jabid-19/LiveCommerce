@@ -12,21 +12,17 @@ const PackagesManyToManyMain = () => {
     title: 'Connect anywhere anytime!',
     details:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto blanditiis ex beatae voluptates fugiat animi vitae a quasi quia.',
-    buttonContent1: 'Start Free Trial',
+    buttonContent1: 'Start free trial',
     buttonContent2: '',
   }
   return (
-    <div>
+    <div className="bg-[#e8e4d9]">
       {/* <Header /> */}
-      <div className="bg-[#e8e4d9]">
-        <Heading headingContent={headingContent} />
-      </div>
+      <Heading headingContent={headingContent} />
       <ManyToMany />
       {/* <CompaniesIndex /> */}
       <ChatWithCustomer />
-      <div className="bg-[#e8e4d9]">
-        <Faq />
-      </div>
+      <Faq />
     </div>
   )
 }
