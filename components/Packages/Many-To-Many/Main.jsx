@@ -16,17 +16,13 @@ const PackagesManyToManyMain = () => {
     buttonContent2: '',
   }
   return (
-    <div>
+    <div className="bg-[#e8e4d9]">
       {/* <Header /> */}
-      <div className="bg-[#e8e4d9]">
-        <Heading headingContent={headingContent} />
-      </div>
+      <Heading headingContent={headingContent} />
       <ManyToMany />
       {/* <CompaniesIndex /> */}
       <ChatWithCustomer />
-      <div className="bg-[#e8e4d9]">
-        <Faq />
-      </div>
+      <Faq />
     </div>
   )
 }

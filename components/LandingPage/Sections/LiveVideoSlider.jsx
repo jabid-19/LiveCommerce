@@ -22,7 +22,7 @@ const LiveVideoSlider = () => {
       <h3 className="text-2xl lg:text-4xl font-bold mb-12 text-black">
         Get Idea About Live Shopping
       </h3>
-      <div data-aos="zoom-in">
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
         <Swiper
           navigation={true}
           slidesPerView={

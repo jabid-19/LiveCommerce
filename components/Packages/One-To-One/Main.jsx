@@ -21,13 +21,11 @@ const PackagesOneToOneMain = () => {
     icon4: <BiDevices size={20} />,
   }
   return (
-    <div>
+    <div className="bg-[#e8e4d9]">
       <OneToOneIndex />
       {/* <CompaniesIndex /> */}
       <Features featuresContent={featuresContent} />
-      <div className="bg-[#e8e4d9]">
-        <Faq />
-      </div>
+      <Faq />
     </div>
   )
 }

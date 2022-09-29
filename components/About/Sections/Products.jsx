@@ -8,7 +8,8 @@ const Products = () => {
         <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl">
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-            data-aos="fade-up">
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <span className="relative text-white">Our products</span>
           </span>
         </h1>
@@ -28,7 +29,8 @@ const Products = () => {
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">Multi-streaming</span>
               </span>
             </h1>
@@ -47,7 +49,8 @@ const Products = () => {
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">Upload & Stream</span>
               </span>
             </h1>
@@ -66,7 +69,8 @@ const Products = () => {
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">Talk & Chat</span>
               </span>
             </h1>
@@ -85,7 +89,8 @@ const Products = () => {
             <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">Analytics</span>
               </span>
             </h1>

@@ -25,7 +25,8 @@ const SimplifyFeatures = ({ featuresContent }) => {
           <div className="hidden md:block">
             <div
               className="absolute bg-white w-1/3 rounded-full flex px-4 py-2 items-center gap-4 left-[60%] top-[70%] lg:left-[50%] lg:w-1/2 lg:top-[72%] lg:px-4 lg:py-4 lg:flex-row xl:left-[55%] xl:w-1/3"
-              data-aos="fade-up">
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
               <div className="flex items-center">
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
@@ -52,7 +53,8 @@ const SimplifyFeatures = ({ featuresContent }) => {
             <br />
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-              data-aos="fade-up">
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>
             <br /> {featuresContent.featureTitlePart3}
