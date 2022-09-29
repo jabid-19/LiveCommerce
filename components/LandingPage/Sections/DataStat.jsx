@@ -7,7 +7,10 @@ const DataStat = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="lg:flex stats-vertical lg:stats-horizontal container mx-auto mb-12 lg:mb-36">
-      <div data-aos="zoom-in-right" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-right"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <BsFillBarChartFill className="w-8 h-8 text-primary" />
         </div>
@@ -25,7 +28,10 @@ const DataStat = () => {
         </button>
       </div>
 
-      <div data-aos="zoom-in-down" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <BiMessageDetail className="w-8 h-8 text-primary" />
         </div>
@@ -43,7 +49,10 @@ const DataStat = () => {
         </button>
       </div>
 
-      <div data-aos="zoom-in-left" className="stat place-items-center">
+      <div
+        data-aos="zoom-in-left"
+        data-aos-anchor-placement="top-bottom"
+        className="stat place-items-center">
         <div className="stat-value">
           <AiOutlineGlobal className="w-8 h-8 text-primary" />
         </div>

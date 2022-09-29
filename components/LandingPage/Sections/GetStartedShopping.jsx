@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import imageLoader from '../../../helper/imageLoader'
 import { ModalContext } from '../../../pages/_app'
-import girlRedCoat from '../../../public/shopping/girl-red-coat.jpg'
+import girlShopping from '../../../public/shopping/girl-shopping-online.jpeg'
 
 const GetStartedShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -18,7 +18,7 @@ const GetStartedShopping = () => {
                 className="object-cover rounded-lg"
                 width={435}
                 height={580}
-                src={girlRedCoat}
+                src={girlShopping}
                 alt="Girl Shopping"
               />
             </div>
@@ -27,7 +27,8 @@ const GetStartedShopping = () => {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
-                data-aos="fade-up">
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <span className="relative">Get started</span>
               </span>{' '}
               with live shopping today

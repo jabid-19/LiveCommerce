@@ -30,7 +30,7 @@ const TeamWorkSlider = () => {
   return (
     <div className="container mx-auto mt-40 lg:mt-52">
       <h3 className="text-2xl lg:text-4xl font-bold mb-12 text-black">How Our Team Works</h3>
-      <div data-aos="zoom-in">
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
         <Swiper
           navigation={true}
           slidesPerView={size < 768 ? 1 : 2}

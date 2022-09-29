@@ -8,7 +8,7 @@ import { ModalContext } from '../../pages/_app'
 const Navbar = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
-    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50 2xl:px-[10%]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">

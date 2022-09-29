@@ -3,7 +3,10 @@ import { AiOutlineClockCircle, AiOutlineDollarCircle, AiOutlinePhone } from 'rea
 const Cards = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-8 mt-16 mb-12 lg:mt-48 lg:mb-44 container mx-auto">
-      <div data-aos="flip-left" className="card lg:card-side bg-primary">
+      <div
+        data-aos="flip-left"
+        data-aos-anchor-placement="top-bottom"
+        className="card lg:card-side bg-primary">
         <figure className="flex items-center justify-center lg:pl-5 pt-5 lg:pt-0">
           <AiOutlineClockCircle className="h-24 w-24 text-white" />
         </figure>
@@ -14,7 +17,10 @@ const Cards = () => {
           <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-      <div data-aos="flip-up" className="card lg:card-side bg-secondary">
+      <div
+        data-aos="flip-up"
+        data-aos-anchor-placement="top-bottom"
+        className="card lg:card-side bg-secondary">
         <figure className="flex items-center justify-center lg:pl-5 pt-5 lg:pt-0">
           <AiOutlineDollarCircle className="h-24 w-24 text-white" />
         </figure>
@@ -25,7 +31,10 @@ const Cards = () => {
           <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-      <div data-aos="flip-right" className="card lg:card-side bg-accent">
+      <div
+        data-aos="flip-right"
+        data-aos-anchor-placement="top-bottom"
+        className="card lg:card-side bg-accent">
         <figure className="flex items-center justify-center lg:pl-5 pt-5 lg:pt-0">
           <AiOutlinePhone className="h-24 w-24 text-white" />
         </figure>

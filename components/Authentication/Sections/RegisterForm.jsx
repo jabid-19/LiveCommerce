@@ -10,7 +10,7 @@ const RegisterForm = () => {
     console.log(data)
   }
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
       <form className="mt-10 max-w-4xl" onSubmit={handleSubmit(onSubmit)}>
         {/* <div className="w-full grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 max-w-4xl mt-10">
           <input type="text" placeholder="Fist Name" className="input input-bordered w-full" />

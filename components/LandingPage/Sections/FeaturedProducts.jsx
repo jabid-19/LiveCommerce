@@ -34,7 +34,8 @@ const FeaturedProducts = () => {
           Reach your{' '}
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
-            data-aos="fade-up">
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <span className="relative">audience</span>
           </span>{' '}
           by

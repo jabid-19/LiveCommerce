@@ -13,7 +13,8 @@ const Heading = ({ headingContent }) => {
           <h4 className="text-gray-500 text-2xl md:text-4xl font-bold">
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent relative inline-block"
-              data-aos="fade-up">
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">{headingContent.pageTitle}</span>
             </span>
           </h4>
@@ -26,6 +27,7 @@ const Heading = ({ headingContent }) => {
         {/* <button
           className="w-full my-10 py-4 rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-4/5"
           data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
           data-aos-duration="4500">
           Start Free Trial
         </button> */}
@@ -33,6 +35,7 @@ const Heading = ({ headingContent }) => {
           {!headingContent.buttonContent2 && (
             <button
               data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
               onClick={() => setGetStartedModal(!getStartedModal)}
               className="py-4 w-full rounded-md bg-primary text-white font-bold hover:bg-black duration-500 normal-case">
               {headingContent.buttonContent1}
