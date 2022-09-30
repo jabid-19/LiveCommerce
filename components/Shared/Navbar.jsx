@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/navbar-logo.png'
 import { useContext } from 'react'
+import imageLoader from '../../helper/imageLoader'
 import { ModalContext } from '../../pages/_app'
+import Logo from '../../public/navbar-logo/navbar-logo.png'
 
 const Navbar = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
