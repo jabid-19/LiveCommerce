@@ -18,13 +18,13 @@ import { RiBroadcastFill } from 'react-icons/ri'
 
 const LandingPageMain = () => {
   const featuresContent = {
-    featureTitlePart1: 'Simplify with many',
-    featureTitlePart2: 'interesting',
+    featureTitlePart1: 'Grow with us fast with more',
+    featureTitlePart2: 'fascinating',
     featureTitlePart3: 'features.',
     feature1: 'One to One',
     feature2: 'One to Many',
     feature3: 'Live Commerce',
-    feature4: 'Multi-streaming',
+    feature4: 'Multi-Streaming',
     icon1: <IoPeopleOutline size={20} />,
     icon2: <IoIosPeople size={20} />,
     icon3: <MdLiveTv size={20} />,

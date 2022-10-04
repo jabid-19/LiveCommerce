@@ -73,35 +73,34 @@ const PersonalShopping = () => {
             <h1
               className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
               style={{ lineHeight: '4.5rem' }}>
-              Reach all your
-              <br />
+              Grab your{' '}
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
                 <span className="relative text-white">business</span>
-              </span>{' '}
-              goals
+              </span>
+              <br />
+              goals at home
             </h1>
             <br />
             <h3 className="text-2xl text-black font-bold">
-              We make it simple for you to use video content
+              We make your virtual path easier and brings success
             </h3>
             <div className="py-6 text-black text-left">
               <ul>
                 <li className="ml-6 list-disc">
-                  Easily reach your audience across multiple social media platforms
+                  Easily reach your targeted audiences across the world through multiple social
+                  media platforms
                 </li>
                 <li className="ml-6 list-disc">Manage all chats from our dashboard</li>
                 <li className="ml-6 list-disc">
                   Increase customer engagement with ready-to-us interactive elements
                 </li>
-                <li className="ml-6 list-disc">Create your own branding </li>
+                <li className="ml-6 list-disc">Create your own branding with low-cost</li>
                 <li className="ml-6 list-disc">Monetize videos to grow your revenue</li>
-                <li className="ml-6 list-disc">Analyze your success rate</li>
-                <li className="ml-6 list-disc">
-                  Use AI to help create a data-based video strategy
-                </li>
+                <li className="ml-6 list-disc">Analyze your competitors and success ratio</li>
+                <li className="ml-6 list-disc">Use AI to create a data-based video strategy</li>
               </ul>
             </div>
             <div>

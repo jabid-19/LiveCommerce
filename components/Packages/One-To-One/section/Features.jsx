@@ -48,7 +48,7 @@ const Features = ({ featuresContent }) => {
           <h1
             className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            {featuresContent.featureTitlePart1}
+            {featuresContent.featureTitlePart1}{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up"
