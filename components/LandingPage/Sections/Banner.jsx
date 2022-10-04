@@ -47,22 +47,22 @@ const Banner = () => {
           <h1
             className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            Your leading <br />
+            Trusted{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">video</span>
             </span>{' '}
-            platform
-            <br />
-            for business
+            platform for growing your business!
           </h1>
           <p className="py-6 text-black">
-            Our simple and intuitive interface and features can help you reach audiences wherever
-            and whenever they want. With an extensive list of features, our platform is designed to
-            support all use cases and enables you to add features as your brand grows, use only the
-            capabilities you need. When your business thrives, so will ours!
+            No matter where you are or what your customer demands, our straightforward and intuitive
+            interface as well as features must assist you grow your business. Our dedicated experts
+            team know how to reach your targeted audiences, boost your business and make a position
+            for you in the competitive market. With an extensive list of features, our platform is
+            designed to support all use cases and enables you to add features as your brand grows,
+            using only the capabilities you need. In fact when your business thrives, so will ours!
           </p>
           <button
             className="btn btn-outline mr-4 text-black normal-case"

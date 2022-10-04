@@ -14,7 +14,9 @@ const Cards = () => {
           <h2 className="text-xl text-center lg:text-left normal-case font-bold">
             24 hours online shopping
           </h2>
-          <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className="lg:text-left">
+            Your 24 hours virtual presence accelerates your daily sales.
+          </p>
         </div>
       </div>
       <div
@@ -28,7 +30,9 @@ const Cards = () => {
           <h2 className="text-xl text-center lg:text-left normal-case font-bold">
             100% money back guarantee
           </h2>
-          <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className="lg:text-left">
+            If something is wrong with your purchase, you’ll get a refund.
+          </p>
         </div>
       </div>
       <div
@@ -40,9 +44,9 @@ const Cards = () => {
         </figure>
         <div className="card-body text-white">
           <h2 className="text-xl text-center lg:text-left normal-case font-bold">
-            24/7 online and phone support
+            24/7 customer support
           </h2>
-          <p className="lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className="lg:text-left">Our dedicated team is always available to get in touch.</p>
         </div>
       </div>
     </div>

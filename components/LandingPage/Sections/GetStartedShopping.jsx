@@ -31,12 +31,12 @@ const GetStartedShopping = () => {
                 data-aos-anchor-placement="top-bottom">
                 <span className="relative">Get started</span>
               </span>{' '}
-              with live shopping today
+              your shopping here with live video
             </h1>
             <p className="py-6 text-black">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum quia labore
-              maiores odio blanditiis minima a praesentium. Recusandae totam quaerat molestias ea
-              quisquam facere iste explicabo illo excepturi similique!
+              You can easily buy anything with live video shopping as your choice without hassle.
+              You can here sort out your desired products from a huge collection with competitive
+              prices and get satisfied.
             </p>
             <button
               className="btn btn-primary text-white normal-case"

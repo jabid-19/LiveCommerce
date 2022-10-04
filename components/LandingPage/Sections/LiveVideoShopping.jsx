@@ -31,42 +31,39 @@ const LiveVideoShopping = () => {
           <h1
             className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
             style={{ lineHeight: '4.5rem' }}>
-            Make sure
+            Create relevant content
             <br />
-            your{' '}
+            to your{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom">
-              <span className="relative text-white">content</span>
+              <span className="relative text-white">business</span>
             </span>
             <br />
-            delivers value
-            <br />
-            to your business
+            that attracts customers
           </h1>
           <div className="py-6 text-black text-left">
             <ul>
               <li className="ml-6 list-disc">
-                Multi-stream simultaneously on a large range of platforms
+                Create video content from anywhere whenever you want
               </li>
               <li className="ml-6 list-disc">
-                No limits on time & places, create video content from anywhere
+                Multi-streaming simultaneously on a large range of platforms
               </li>
-              <li className="ml-6 list-disc">Audio & HD video calling and live streaming</li>
-              <li className="ml-6 list-disc">Compatible with any device</li>
+              <li className="ml-6 list-disc">HD video live streaming as well as Audio promo</li>
               <li className="ml-6 list-disc">
                 Playback recorded videos on any platform with scheduling and reminder options
               </li>
               <li className="ml-6 list-disc">
-                Receive analytics on your success rate and use our AI to help create a video content
-                strategy
-              </li>
-              <li className="ml-6 list-disc">
-                Translation captions will help to widen your audience reach
+                Translation options will help to widen your audience reach worldwide
               </li>
               <li className="ml-6 list-disc">
                 Solutions to make your video content scalable, reliable and secure
+              </li>
+              <li className="ml-6 list-disc">
+                Receive analytics on your success rate and use our AI to create a video content
+                strategy
               </li>
             </ul>
           </div>

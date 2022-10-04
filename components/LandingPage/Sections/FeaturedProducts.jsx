@@ -36,9 +36,9 @@ const FeaturedProducts = () => {
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <span className="relative">audience</span>
+            <span className="relative">targeted</span>
           </span>{' '}
-          by
+          customers through
         </h1>
       </div>
       <div className="container mx-auto">
