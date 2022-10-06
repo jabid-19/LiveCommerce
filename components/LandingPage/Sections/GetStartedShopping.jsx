@@ -24,7 +24,7 @@ const GetStartedShopping = () => {
             </div>
           </div>
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block text-white"
                 data-aos="fade-up"

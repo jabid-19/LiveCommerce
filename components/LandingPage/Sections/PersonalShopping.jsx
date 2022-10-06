@@ -70,9 +70,7 @@ const PersonalShopping = () => {
             </div>
           </div>
           <div className="text-center lg:text-left lg:mr-12">
-            <h1
-              className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
-              style={{ lineHeight: '4.5rem' }}>
+            <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
               Grab your{' '}
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"

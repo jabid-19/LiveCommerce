@@ -6,19 +6,10 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 const WhyShopping = () => {
   return (
     <div className="md:max-w-[90%] xl:max-w-6xl mx-auto my-12 md:my-36">
-      <div
-        className="lg:min-h-[75vh] flex flex-col-reverse md:flex-row justify-center items-center md:gap-10 lg:gap-20 mx-auto px-8"
-        //   style={{
-        //     backgroundImage: `url('/about/about-bg.png')`,
-        //     backgroundRepeat: `no-repeat`,
-        //     backgroundSize: 'cover',
-        //   }}
-      >
+      <div className="lg:min-h-[75vh] flex flex-col-reverse md:flex-row justify-center items-center md:gap-10 lg:gap-20 mx-auto px-8">
         <div className="min-w-[50%]">
           <div className="max-w-3xl mx-auto text-center md:text-left">
-            <h1
-              className="text-3xl md:text-5xl text-black font-bold lg:text-6xl"
-              style={{ lineHeight: '4.5rem' }}>
+            <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
               Why GoLaiv <br />
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
