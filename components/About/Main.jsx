@@ -7,10 +7,11 @@ import Faq from '../Shared/Faq'
 
 const AboutMain = () => {
   const headingContent = {
-    pageTitle: 'About GoLaiv',
-    title: 'How the website works',
+    pageTitleMain: 'GoLiav',
+    pageTitle: '- Your ultimate destination!',
+    title: 'How we work for your business growth ',
     details:
-      'Connect with unlimited customers by hosting shoppable livestreams or pre-recorded videos on your native website. Connect with anyone from anywhere.',
+      "Connect with unlimited customers by hosting shoppable live streams or pre-recorded videos on your native website. This doesn't matter where they are!",
     buttonContent1: 'Get started',
     buttonContent2: 'Watch demo',
   }
