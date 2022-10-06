@@ -12,21 +12,21 @@ const Banner = () => {
         <div className="min-w-[50%]">
           <div className="max-w-3xl mx-auto text-center md:text-left">
             <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
-              Empowering brands to <br />
+              Establish your brand worldwide through creating
+              <br />
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
-                <span className="relative text-white">create and connect</span>
-              </span>{' '}
-              <br />
-              through live video
+                <span className="relative text-white">live videos</span>
+              </span>
             </h1>
             <br />
             <p className="text-2xl text-black">
-              Millions of people around the world use GoLaiv to reach, engage and monetize their
-              audiences. Our customers include professional and amateur gamers, Fortune 500
-              companies, media, politicians and celebrities.
+              Millions of people around the world take services from GoLaiv to reach targeted
+              customers, increase engagement and monetize their audiences. We have a number of
+              customers including renowned companies, media agencies, entrepreneurs, politicians as
+              well as celebrities worldwide.
             </p>
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
