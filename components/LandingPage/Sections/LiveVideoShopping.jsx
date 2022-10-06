@@ -28,9 +28,7 @@ const LiveVideoShopping = () => {
           <source src="/video/live-video.mp4" type="video/mp4" />
         </video>
         <div className="lg:ml-12 text-center lg:text-left">
-          <h1
-            className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
-            style={{ lineHeight: '4.5rem' }}>
+          <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
             Create relevant content
             <br />
             to your{' '}
