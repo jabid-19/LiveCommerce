@@ -53,8 +53,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/packages/many-to-many">
-                    <a>Many to many</a>
+                  <Link href="/packages/one-to-many">
+                    <a>One to many</a>
                   </Link>
                 </li>
               </ul>
@@ -119,8 +119,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/packages/many-to-many">
-                  <a>Many to many</a>
+                <Link href="/packages/one-to-many">
+                  <a>One to many</a>
                 </Link>
               </li>
             </ul>

@@ -9,9 +9,9 @@ import ManyToMany from './section/ManyToMany'
 const PackagesManyToManyMain = () => {
   const headingContent = {
     pageTitle: '',
-    title: 'Connect anywhere anytime!',
+    title: 'Connect with anyone anytime',
     details:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto blanditiis ex beatae voluptates fugiat animi vitae a quasi quia.',
+      'You can connect with people from any part of the world from anywhere without any hassle. This must make your business easier and smoother.',
     buttonContent1: 'Start free trial',
     buttonContent2: '',
   }

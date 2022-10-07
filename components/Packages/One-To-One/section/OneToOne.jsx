@@ -24,8 +24,9 @@ const OneToOneIndex = () => {
             without <br /> any hassle
           </h1>
           <p className="text-neutral text-center mt-5 text-lg lg:text-start">
-            Virtual online meetings is when people from around the world, regardless of their
-            location. It conduct meetings from various places without the need to travel.
+            Wherever you are, just make sure your internet connection is with a laptop or mobile and
+            start a virtual meeting. This gives you comfort, minimizes your time as well as saves
+            your traveling costs.
           </p>
           <div className="mt-10 flex flex-col gap-8 md:flex-row">
             <div className="flex items-center gap-4 mb-2 md:max-mr-28">
