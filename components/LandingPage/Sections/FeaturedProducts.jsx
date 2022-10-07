@@ -3,7 +3,6 @@ import 'swiper/css/bundle'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { HiShoppingBag } from 'react-icons/hi'
 import { Autoplay, EffectCoverflow, Navigation } from 'swiper'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
@@ -58,6 +57,7 @@ const FeaturedProducts = () => {
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           modules={[Autoplay, EffectCoverflow, Navigation]}
           className="mySwiper">

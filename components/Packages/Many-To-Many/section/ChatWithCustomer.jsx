@@ -47,7 +47,7 @@ const ChatWithCustomer = () => {
         </div>
         <div className="w-full my-10 flex flex-col justify-center items-center lg:w-[48%] lg:items-start lg:my-0">
           <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
-            Simplify with many
+            Make you different with{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up"
@@ -61,29 +61,25 @@ const ChatWithCustomer = () => {
               <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsLock size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Encrypted and it is highly secured</p>
+              <p className="text-neutral font-bold mt-2">Make sure end-to-end encrypted</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsCameraVideo size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">
-                Audio & HD video calling and live streaming
-              </p>
+              <p className="text-neutral font-bold mt-2">Audio & premium live-streaming</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BsLightning size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">
-                Not limited by time & places, go from anywhere
-              </p>
+              <p className="text-neutral font-bold mt-2">Barrier-free communication</p>
             </div>
             <div className="w-[15rem] h-[10rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
                 <BiDevices size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Compatible with every available devices</p>
+              <p className="text-neutral font-bold mt-2">Compatible with available devices </p>
             </div>
           </div>
         </div>

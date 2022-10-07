@@ -14,28 +14,28 @@ const ManyToMany = () => {
       <div className="mx-6 h-full w-auto flex flex-col-reverse items-center lg:flex-row lg:justify-between md:items-center md:gap-2 lg:mt-0 2xl:w-[1400px] 2xl:mx-auto">
         <div className="w-full my-10 flex flex-col items-center lg:w-[48%] lg:items-start lg:my-0">
           <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
-            Talk{' '}
+            Connect{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">easily</span>
             </span>{' '}
-            with customer <br /> without any hassle
+            <br /> with customers and <br /> grow business
           </h1>
           <p className="text-neutral text-center mt-5 text-lg lg:text-start">
-            Virtual online meetings is when people from around the world, regardless of their
-            location. It conduct meetings from various places without the need to travel.
+            You must make sure customer engagement to achieve your business goals. So the easier the
+            path you follow, the easier you can reach your targeted customers.
           </p>
           <div className="mt-10 flex flex-col gap-8 md:flex-row">
             <div className="flex items-center gap-4 mb-2 md:max-mr-28">
-              <p className="text-5xl font-bold">96M</p>
+              <p className="text-5xl font-bold">12M </p>
               <p className="text-3xl">
                 In Dollar <br /> Sells
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <p className="text-5xl font-bold">10k+</p>
+              <p className="text-5xl font-bold">27k+</p>
               <p className="text-3xl">
                 Active <br /> Users
               </p>

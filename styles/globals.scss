@@ -165,6 +165,13 @@
   }
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #cc955c;
+  text-shadow: 4px 0px 4px black;
+  backdrop-filter: blur(3px);
+}
+
 .ReactModal__Overlay {
   position: relative;
 }
