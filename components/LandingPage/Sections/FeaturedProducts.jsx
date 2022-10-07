@@ -57,6 +57,7 @@ const FeaturedProducts = () => {
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           modules={[Autoplay, EffectCoverflow, Navigation]}
           className="mySwiper">
