@@ -9,7 +9,7 @@ const Heading = ({ headingContent }) => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
     <div className="pt-12 lg:pt-36 px-8 flex flex-col-reverse md:flex-col justify-center items-center">
-      <div className="max-w-2xl text-center">
+      <div className="mt-4 md:mt-0 max-w-2xl text-center">
         {headingContent.pageTitle && (
           <h4 className="text-accent text-2xl font-bold">
             <span
@@ -33,7 +33,7 @@ const Heading = ({ headingContent }) => {
           data-aos-duration="4500">
           Start Free Trial
         </button> */}
-        <div className="my-4 flex flex-col gap-2 md:gap-4 md:flex-row justify-center items-center">
+        <div className="my-4 md:my-8 flex flex-col gap-2 md:gap-4 md:flex-row justify-center items-center">
           {!headingContent.buttonContent2 && (
             <button
               data-aos="fade-up"
