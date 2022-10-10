@@ -43,7 +43,7 @@ const PersonalShopping = () => {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="avatar hidden lg:block">
+              <div className="avatar hidden xl:block">
                 <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
@@ -55,7 +55,7 @@ const PersonalShopping = () => {
                   />
                 </div>
               </div>
-              <div className="avatar hidden lg:block">
+              <div className="avatar hidden xl:block">
                 <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
@@ -101,16 +101,16 @@ const PersonalShopping = () => {
                 <li className="ml-6 list-disc">Use AI to create a data-based video strategy</li>
               </ul>
             </div>
-            <div>
+            <div className="flex flex-wrap justify-center items-center lg:justify-start gap-4">
               <button
-                className="btn btn-primary text-white mr-4 normal-case"
+                className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case"
                 onClick={() => setGetStartedModal(!getStartedModal)}>
                 Get started
               </button>
               <Link href="/about">
-                <a className="btn btn-outline text-black normal-case">
+                <a className="py-4 px-5 flex justify-center items-center rounded-md bg-[#e8e4d9] border-2 border-primary text-black font-bold hover:text-white hover:bg-black duration-500 normal-case">
                   Learn more
-                  <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
+                  <AiOutlineArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Link>
             </div>

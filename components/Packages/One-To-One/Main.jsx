@@ -10,10 +10,10 @@ const PackagesOneToOneMain = () => {
   const featuresContent = {
     featureTitlePart1: 'Be uncompetitive with more',
     featureTitlePart2: 'fascinating ',
-    featureTitlePart3: 'features.',
+    featureTitlePart3: 'features',
     feature1: 'Make sure end-to-end encrypted',
     feature2: 'Audio & premium live-streaming',
-    feature3: 'Barrier-free communication',
+    feature3: 'Barrier-free & smooth communication',
     feature4: 'Compatible with available devices',
     icon1: <BsLock size={20} />,
     icon2: <BsCameraVideo size={20} />,

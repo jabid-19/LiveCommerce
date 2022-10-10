@@ -52,7 +52,7 @@ const Banner = () => {
               data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">video</span>
             </span>{' '}
-            platform for growing your business!
+            platform for growing business!
           </h1>
           <p className="py-6 text-black">
             No matter where you are or what your customer demands, our straightforward and intuitive
@@ -62,15 +62,24 @@ const Banner = () => {
             designed to support all use cases and enables you to add features as your brand grows,
             using only the capabilities you need. In fact when your business thrives, so will ours!
           </p>
-          <button
-            className="btn btn-outline mr-4 text-black normal-case"
-            onClick={() => setGetStartedModal(!getStartedModal)}>
-            Get started
-            <AiOutlineArrowRight className="w-4 h-4 ml-2" />
-          </button>
-          <Link href="/pricing">
-            <a className="btn btn-primary text-white normal-case">Pricing</a>
-          </Link>
+          <div className="flex flex-wrap justify-center items-center lg:justify-start gap-4">
+            <button
+              className="py-4 px-5 flex justify-center items-center rounded-md bg-[#e8e4d9] border-2 border-primary text-black font-bold hover:text-white hover:bg-black duration-500 normal-case"
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              Get started
+              <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+            </button>
+            {/* <Link href="/pricing">
+              <a className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case">
+                Pricing
+              </a>
+            </Link> */}
+            <Link href="/about">
+              <a className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case">
+                Learn more
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

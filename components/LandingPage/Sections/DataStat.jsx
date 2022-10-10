@@ -21,7 +21,7 @@ const DataStat = () => {
           analyzing your data that generates revenue and growth of your business.
         </p>
         <button
-          className="btn btn-wide btn-primary normal-case text-white mt-4"
+          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
           onClick={() => setGetStartedModal(!getStartedModal)}>
           Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
@@ -42,7 +42,7 @@ const DataStat = () => {
           online users the ADA compliance tool.
         </p>
         <button
-          className="btn btn-wide btn-primary normal-case text-white mt-4"
+          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
           onClick={() => setGetStartedModal(!getStartedModal)}>
           Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
@@ -63,7 +63,7 @@ const DataStat = () => {
           global presence.
         </p>
         <button
-          className="btn btn-wide btn-primary normal-case text-white mt-4"
+          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
           onClick={() => setGetStartedModal(!getStartedModal)}>
           Get started
           <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />

@@ -38,7 +38,7 @@ const Features = ({ featuresContent }) => {
                 </div>
               </div>
               <div className="">
-                <p className="font-bold">Calling</p>
+                <p className="text-black font-bold">Calling</p>
                 <p className="text-neutral text-xs">With Robert</p>
               </div>
             </div>
@@ -53,32 +53,32 @@ const Features = ({ featuresContent }) => {
               data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">{featuresContent.featureTitlePart2}</span>
             </span>{' '}
-            <br /> {featuresContent.featureTitlePart3}
+            {featuresContent.featureTitlePart3}
           </h1>
-          <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 mt-10">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 {featuresContent.icon1}
               </div>
-              <p className="text-neutral font-bold mt-2">{featuresContent.feature1}</p>
+              <p className="text-black font-bold mt-2">{featuresContent.feature1}</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 {featuresContent.icon2}
               </div>
-              <p className="text-neutral font-bold mt-2">{featuresContent.feature2}</p>
+              <p className="text-black font-bold mt-2">{featuresContent.feature2}</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 {featuresContent.icon3}
               </div>
-              <p className="text-neutral font-bold mt-2">{featuresContent.feature3}</p>
+              <p className="text-black font-bold mt-2">{featuresContent.feature3}</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
               <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 {featuresContent.icon4}
               </div>
-              <p className="text-neutral font-bold mt-2">{featuresContent.feature4}</p>
+              <p className="text-black font-bold mt-2">{featuresContent.feature4}</p>
             </div>
           </div>
         </div>

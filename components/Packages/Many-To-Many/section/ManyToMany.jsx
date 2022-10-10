@@ -23,11 +23,11 @@ const ManyToMany = () => {
             </span>{' '}
             <br /> with customers and <br /> grow business
           </h1>
-          <p className="text-neutral text-center mt-5 text-lg lg:text-start">
+          <p className="text-black text-center mt-5 lg:text-start">
             You must make sure customer engagement to achieve your business goals. So the easier the
             path you follow, the easier you can reach your targeted customers.
           </p>
-          <div className="mt-10 flex flex-col gap-8 md:flex-row">
+          <div className="mt-10 flex flex-col gap-8 md:flex-row text-black">
             <div className="flex items-center gap-4 mb-2 md:max-mr-28">
               <p className="text-5xl font-bold">12M </p>
               <p className="text-3xl">
@@ -43,7 +43,7 @@ const ManyToMany = () => {
           </div>
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="w-full mt-10 py-4  rounded-md bg-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
+            className="w-full mt-10 py-4  rounded-md bg-primary border-2 border-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
             Start free trial
           </button>
         </div>
@@ -76,7 +76,7 @@ const ManyToMany = () => {
                 </div>
               </div>
               <div className="">
-                <p className="font-bold">Start broadcast</p>
+                <p className="text-black font-bold">Start broadcast</p>
                 <p className="text-neutral text-xs">With audiences</p>
               </div>
             </div>

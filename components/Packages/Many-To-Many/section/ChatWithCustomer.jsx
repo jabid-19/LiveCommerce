@@ -31,15 +31,15 @@ const ChatWithCustomer = () => {
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
                     iconsChange
-                      ? 'bg-black text-secondary duration-300'
-                      : 'bg-accent text-white duration-300'
+                      ? 'bg-accent text-secondary duration-300'
+                      : 'bg-secondary text-white duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BiMessage size={20} />
                 </div>
               </div>
               <div>
-                <p className="font-bold">Chatting</p>
+                <p className="text-black font-bold">Chatting</p>
                 <p className="text-neutral text-xs">With Robert</p>
               </div>
             </div>
@@ -54,32 +54,32 @@ const ChatWithCustomer = () => {
               data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">interesting</span>
             </span>{' '}
-            <br /> features.
+            <br /> features
           </h1>
-          <div className="flex flex-wrap gap-4 justify-center items-center mt-10 lg:justify-start">
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 justify-center items-center mt-10 lg:justify-start">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsLock size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Make sure end-to-end encrypted</p>
+              <p className="text-black font-bold mt-2">Make sure end-to-end encrypted</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsCameraVideo size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Audio & premium live-streaming</p>
+              <p className="text-black font-bold mt-2">Audio & premium live-streaming</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BsLightning size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Barrier-free communication</p>
+              <p className="text-black font-bold mt-2">Barrier-free & smooth communication</p>
             </div>
-            <div className="w-[15rem] h-[10rem] text-center lg:text-start">
-              <div className="p-4 w-fit rounded-xl bg-accent text-white mx-auto lg:mx-0">
+            <div className="w-[15rem] h-[8rem] text-center lg:text-start">
+              <div className="p-4 w-fit rounded-xl bg-secondary text-white mx-auto lg:mx-0">
                 <BiDevices size={20} />
               </div>
-              <p className="text-neutral font-bold mt-2">Compatible with available devices </p>
+              <p className="text-black font-bold mt-2">Compatible with available devices </p>
             </div>
           </div>
         </div>

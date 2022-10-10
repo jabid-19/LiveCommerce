@@ -56,7 +56,7 @@ const ContactUsMain = () => {
         />
       </div>
       <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center max-w-4xl">
-        <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
+        <h1 className="text-5xl text-center text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
             data-aos="fade-up"
@@ -74,7 +74,7 @@ const ContactUsMain = () => {
           <form onSubmit={handleSubmit(onSubmit)} className="mt-10">
             <div className="mb-5 flex w-full gap-4">
               <div className="md:w-1/2">
-                <label className="text-xl font-semibold text-neutral pl-2 mb-4">First Name*</label>
+                <label className="font-semibold text-neutral pl-2 mb-4">First Name*</label>
                 <input
                   name="firstName"
                   placeholder="John"
@@ -98,7 +98,7 @@ const ContactUsMain = () => {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <label className="text-xl font-semibold text-neutral pl-2 mb-4">Last Name*</label>
+                <label className="font-semibold text-neutral pl-2 mb-4">Last Name*</label>
                 <input
                   name="lastName"
                   placeholder="Doe"
@@ -124,7 +124,7 @@ const ContactUsMain = () => {
             </div>
             <div className="mb-5 flex flex-col-reverse md:flex-row gap-4">
               <div className="md:w-1/2">
-                <label className="text-xl font-semibold text-neutral pl-2">Phone*</label>
+                <label className="font-semibold text-neutral pl-2">Phone*</label>
                 <input
                   name="phone"
                   placeholder="+880 111111111"
@@ -148,7 +148,7 @@ const ContactUsMain = () => {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <label className="text-xl font-semibold text-neutral pl-2">Email*</label>
+                <label className="font-semibold text-neutral pl-2">Email*</label>
                 <input
                   name="email"
                   placeholder="example@example.com"
@@ -173,7 +173,7 @@ const ContactUsMain = () => {
               </div>
             </div>
             <div className="mb-5">
-              <label className="text-xl font-semibold text-neutral pl-2">Subject*</label>
+              <label className="font-semibold text-neutral pl-2">Subject*</label>
               <input
                 name="subject"
                 placeholder="XXXXX"
@@ -197,7 +197,7 @@ const ContactUsMain = () => {
               </div>
             </div>
             <div className="mb-5">
-              <label className="text-xl font-semibold text-neutral pl-2">How can we help?*</label>
+              <label className="font-semibold text-neutral pl-2">How can we help?*</label>
               <textarea
                 name="details"
                 type="text"
@@ -220,7 +220,7 @@ const ContactUsMain = () => {
               </div>
             </div>
             <button
-              className="mt-8 w-full p-4 bg-primary text-white text-xl font-semibold rounded-md hover:cursor-pointer"
+              className="mt-8 w-full p-4 bg-primary border-2 border-primary text-white font-semibold rounded-md hover:cursor-pointer"
               type="submit">
               {status.loading ? 'Loading...' : 'Get Started'}
             </button>

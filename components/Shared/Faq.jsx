@@ -5,7 +5,7 @@ import { FaqData } from '../../assets/data/Faq'
 const Faq = () => {
   return (
     <div className="pb-12 md:pb-36 max-w-7xl px-8 mx-auto">
-      <h1 className="text-3xl md:text-5xl lg:text-6xl text-center text-black font-bold mb-4">
+      <h1 className="text-3xl md:text-5xl lg:text-6xl text-center text-black font-bold mb-4 leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
           data-aos="fade-up"
@@ -21,7 +21,7 @@ const Faq = () => {
               <AiOutlinePlus className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" />
             </span>
           </summary>
-          <p className="mt-4 leading-relaxed text-lg text-gray-700">{item.description}</p>
+          <p className="mt-4 text-black">{item.description}</p>
         </details>
       ))}
     </div>

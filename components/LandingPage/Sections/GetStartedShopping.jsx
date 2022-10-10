@@ -39,10 +39,10 @@ const GetStartedShopping = () => {
               prices and get satisfied.
             </p>
             <button
-              className="btn btn-primary text-white normal-case"
+              className="py-4 px-5 flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
               onClick={() => setGetStartedModal(!getStartedModal)}>
               Get started
-              <AiOutlineArrowRight className="w-4 h-4 ml-2 text-White" />
+              <AiOutlineArrowRight className="w-4 h-4 ml-2" />
             </button>
           </div>
         </div>
