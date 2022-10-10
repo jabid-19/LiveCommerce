@@ -22,11 +22,7 @@ const FeaturedProducts = () => {
 
   return (
     <div className="py-12 lg:py-36 w-100 overflow-hidden bg-white shadow-lg shadow-secondary">
-      {/* <div className="relative w-100 h-[60vh] max-h-[461px] block bg-black"> */}
       <div className="flex justify-center mb-12 lg:mb-24">
-        {/* <div>
-          <HiShoppingBag className="w-24 h-24 text-black" />
-        </div> */}
         <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
           Reach your{' '}
           <span
@@ -44,12 +40,12 @@ const FeaturedProducts = () => {
           effect={'coverflow'}
           grabCursor={true}
           slidesPerView={
-            (size <= 768 && 1) || (size > 768 && size <= 1320 && 3) || (size > 1320 && 5)
+            (size <= 768 && 1) || (size > 768 && size <= 1023 && 3) || (size >= 1024 && 5)
           }
           loop={true}
           coverflowEffect={{
             rotate: 50,
-            stretch: 0,
+            stretch: -50,
             depth: 100,
             modifier: 1,
             slideShadows: false,
@@ -65,7 +61,7 @@ const FeaturedProducts = () => {
             <Image
               loader={imageLoader}
               src={item1}
-              width={300}
+              width={306}
               height={500}
               alt="One to one"
               className="object-cover rounded-2xl bg-secondary"
@@ -118,7 +114,6 @@ const FeaturedProducts = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      {/* </div> */}
     </div>
   )
 }
