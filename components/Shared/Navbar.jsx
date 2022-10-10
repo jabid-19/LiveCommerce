@@ -29,11 +29,11 @@ const Navbar = () => {
           <ul
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
+            {/* <li>
               <Link href="/pricing">
                 <a>Pricing</a>
               </Link>
-            </li>
+            </li> */}
             <li tabIndex="0">
               <a className="justify-between">
                 Packages
@@ -79,7 +79,7 @@ const Navbar = () => {
             </Link> */}
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="btn btn-primary normal-case text-white mr-4 mt-2">
+              className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case mr-4 mt-2">
               Get started
             </button>
             {/* <Link href="/contact">
@@ -88,18 +88,27 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/">
-          <a className="ml-3">
-            <Image width={155} height={70} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
+          <a className="relative w-[105px] h-[20px] md:w-[155px] md:h-[70px] lg:ml-4 flex justify-center items-center">
+            <Image
+              // width={155}
+              // height={70}
+              src={Logo}
+              alt="Go Laiv's Logo"
+              loader={imageLoader}
+              layout="intrinsic"
+              // objectFit="cover"
+              // className="h-full sm:h-64"
+            />
           </a>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          <li>
+          {/* <li>
             <Link href="/pricing">
               <a>Pricing</a>
             </Link>
-          </li>
+          </li> */}
           <li tabIndex="0">
             <a>
               Packages
@@ -149,7 +158,7 @@ const Navbar = () => {
           </Link> */}
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="btn btn-primary normal-case text-white mr-4">
+            className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case mr-4">
             Get started
           </button>
           {/* <Link href="/contact">

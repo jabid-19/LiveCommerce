@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div className="mt-12 lg:mt-36 mb-16 lg:mb-44 px-8">
       <div className="max-w-7xl">
-        <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl">
+        <h1 className="text-3xl md:text-5xl text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
           <span
             className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
             data-aos="fade-up"
@@ -14,7 +14,7 @@ const Products = () => {
           </span>
         </h1>
         <br />
-        <p className="text-2xl text-black">
+        <p className="text-black">
           At GoLaiv, we are committed to nurturing our product portfolio to empower content creators
           to reach wider audiences, establish brands and assist them to spread their messages
           throughout a massive network of streamers.
@@ -26,7 +26,7 @@ const Products = () => {
             <div className="flex justify-center bg-[#e8e4d9] py-2">
               <AiOutlineVideoCamera className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
-            <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
+            <h1 className="text-2xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"
@@ -46,7 +46,7 @@ const Products = () => {
             <div className="flex justify-center bg-[#e8e4d9] py-2">
               <AiOutlineCalendar className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
-            <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
+            <h1 className="text-2xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"
@@ -66,7 +66,7 @@ const Products = () => {
             <div className="flex justify-center bg-[#e8e4d9] py-2">
               <BsChatDots className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
-            <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
+            <h1 className="text-2xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"
@@ -86,7 +86,7 @@ const Products = () => {
             <div className="flex justify-center bg-[#e8e4d9] py-2">
               <IoIosStats className="w-24 h-24 p-2 bg-accent rounded-full text-white" />
             </div>
-            <h1 className="text-2xl md:text-3xl text-black font-bold mt-10">
+            <h1 className="text-2xl text-black font-bold mt-10">
               <span
                 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
                 data-aos="fade-up"

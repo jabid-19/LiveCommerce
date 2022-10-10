@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import imageLoader from '../../../../helper/imageLoader'
-import meeting from '../../../../public/packages/meeting.jpg'
+import oneToOne from '../../../../public/packages/videocall.png'
 import React, { useState } from 'react'
 import { BsMic } from 'react-icons/bs'
 import { useContext } from 'react'
@@ -23,12 +23,12 @@ const OneToOneIndex = () => {
             </span>{' '}
             without <br /> any hassle
           </h1>
-          <p className="text-neutral text-center mt-5 text-lg lg:text-start">
+          <p className="text-black text-center mt-5  lg:text-start">
             Wherever you are, just make sure your internet connection is with a laptop or mobile and
             start a virtual meeting. This gives you comfort, minimizes your time as well as saves
             your traveling costs.
           </p>
-          <div className="mt-10 flex flex-col gap-8 md:flex-row">
+          <div className="text-black mt-10 flex flex-col gap-8 md:flex-row">
             <div className="flex items-center gap-4 mb-2 md:max-mr-28">
               <p className="text-5xl font-bold">96+</p>
               <p className="text-3xl">
@@ -44,18 +44,18 @@ const OneToOneIndex = () => {
           </div>
           <button
             onClick={() => setGetStartedModal(!getStartedModal)}
-            className="w-full mt-10 py-4  rounded-md bg-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
+            className="w-full mt-10 py-4  rounded-md bg-primary border-2 border-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
             Start free trial
           </button>
         </div>
         <div className="relative w-full h-full flex justify-center lg:w-[52%] lg:justify-end">
           <div>
             <Image
-              src={meeting}
+              src={oneToOne}
               alt="Live meeting with client"
               width={500}
               height={400}
-              className="object-cover rounded-lg bg-secondary"
+              className="object-cover rounded-lg bg-[#e8e4d9]"
               placeholder="blur"
               loader={imageLoader}
             />
@@ -77,7 +77,7 @@ const OneToOneIndex = () => {
                 </div>
               </div>
               <div className="">
-                <p className="font-bold">Start video call</p>
+                <p className="text-black font-bold">Start video call</p>
                 <p className="text-neutral text-xs">With Robert</p>
               </div>
             </div>

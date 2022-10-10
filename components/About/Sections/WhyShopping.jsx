@@ -23,8 +23,8 @@ const WhyShopping = () => {
             <div className="flex mt-8">
               <AiOutlineArrowRight className="w-8 h-8 mr-2 text-2xl text-black font-bold" />
               <div>
-                <h3 className="text-3xl text-black font-bold">Premium video quality</h3>
-                <p>
+                <h3 className="text-2xl text-black font-bold">Premium video quality</h3>
+                <p className="text-black">
                   FHD videos catch sight of the customers easily and bridge the gap between the
                   online and offline buying experience.
                 </p>
@@ -33,8 +33,8 @@ const WhyShopping = () => {
             <div className="flex mt-8">
               <AiOutlineArrowRight className="w-8 h-8 mr-2 text-2xl text-black font-bold" />
               <div>
-                <h3 className="text-3xl text-black font-bold">Unprecedented engagement</h3>
-                <p>
+                <h3 className="text-2xl text-black font-bold">Unprecedented engagement</h3>
+                <p className="text-black">
                   Outperform your competitors, Make your position in the competitive market and
                   connect with your customers easily wherever they are.
                 </p>
@@ -43,8 +43,8 @@ const WhyShopping = () => {
             <div className="flex mt-8">
               <AiOutlineArrowRight className="w-8 h-8 mr-2 text-2xl text-black font-bold" />
               <div>
-                <h3 className="text-3xl text-black font-bold">Reliable conversion</h3>
-                <p>
+                <h3 className="text-2xl text-black font-bold">Reliable conversion</h3>
+                <p className="text-black">
                   The aim of every business is to grow. So promote your products or services easily
                   with low cost and increase your sales.
                 </p>

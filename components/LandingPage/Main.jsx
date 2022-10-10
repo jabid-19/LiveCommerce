@@ -18,9 +18,9 @@ import { RiBroadcastFill } from 'react-icons/ri'
 
 const LandingPageMain = () => {
   const featuresContent = {
-    featureTitlePart1: 'Grow with us fast with more',
+    featureTitlePart1: 'Grow fast with more',
     featureTitlePart2: 'fascinating',
-    featureTitlePart3: 'features.',
+    featureTitlePart3: 'features',
     feature1: 'One to One',
     feature2: 'One to Many',
     feature3: 'Live Commerce',

@@ -22,7 +22,7 @@ const Banner = () => {
               </span>
             </h1>
             <br />
-            <p className="text-2xl text-black">
+            <p className="text-black">
               Millions of people around the world take services from GoLaiv to reach targeted
               customers, increase engagement and monetize their audiences. We have a number of
               customers including renowned companies, media agencies, entrepreneurs, politicians as
@@ -30,7 +30,7 @@ const Banner = () => {
             </p>
             <button
               onClick={() => setGetStartedModal(!getStartedModal)}
-              className="w-full mt-10 py-4  rounded-md bg-primary text-white font-bold hover:bg-black duration-500 md:w-3/5"
+              className="w-full mt-10 py-4  rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 md:w-3/5"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom">
               Start 14 days trial
