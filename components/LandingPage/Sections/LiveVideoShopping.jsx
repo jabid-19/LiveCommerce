@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { ModalContext } from '../../../pages/_app'
+import PrimaryButton from '../../Shared/PrimaryButton'
 // import video from '../../../public/video/videoplayback.mp4'
 const LiveVideoShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -66,15 +67,31 @@ const LiveVideoShopping = () => {
             </ul>
           </div>
           <div className="flex flex-wrap justify-center items-center lg:justify-start gap-4">
-            <button
-              className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case"
-              onClick={() => setGetStartedModal(!getStartedModal)}>
-              Get started
-            </button>
+            <div onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="px-5">
+                Get started
+              </PrimaryButton>
+            </div>
             <Link href="/about">
-              <a className="py-4 px-5 flex justify-center items-center rounded-md bg-[#e8e4d9] border-2 border-primary text-black font-bold hover:text-white hover:bg-black duration-500 normal-case">
-                Learn more
-                <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+              <a>
+                <PrimaryButton
+                  textClass="text-black"
+                  bgClass="bg-transparent"
+                  borderClass="border-primary"
+                  hoverText="hover:text-white"
+                  hoverBg="hover:bg-primary"
+                  hoverBorder="hover:border-primary"
+                  horizontalPadding="px-5">
+                  Learn more
+                  <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+                </PrimaryButton>
               </a>
             </Link>
           </div>

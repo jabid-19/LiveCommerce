@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import imageLoader from '../../helper/imageLoader'
 import { ModalContext } from '../../pages/_app'
 import Logo from '../../public/navbar-logo/navbar-logo.png'
+import PrimaryButton from './PrimaryButton'
 
 const Navbar = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -77,11 +78,18 @@ const Navbar = () => {
             {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary normal-case text-white mr-4 mt-2">Get started</a>
             </Link> */}
-            <button
-              onClick={() => setGetStartedModal(!getStartedModal)}
-              className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case mr-4 mt-2">
-              Get started
-            </button>
+            <div className="mt-2" onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full">
+                Get started
+              </PrimaryButton>
+            </div>
             {/* <Link href="/contact">
               <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link> */}
@@ -156,11 +164,18 @@ const Navbar = () => {
           {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary normal-case text-white mr-4">Get started</a>
           </Link> */}
-          <button
-            onClick={() => setGetStartedModal(!getStartedModal)}
-            className="py-4 px-5 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case mr-4">
-            Get started
-          </button>
+          <div onClick={() => setGetStartedModal(!getStartedModal)}>
+            <PrimaryButton
+              textClass="text-white"
+              bgClass="bg-primary"
+              borderClass="border-primary"
+              hoverText="hover:text-white"
+              hoverBg="hover:bg-accent"
+              hoverBorder="hover:border-accent"
+              horizontalPadding="px-5">
+              Get started
+            </PrimaryButton>
+          </div>
           {/* <Link href="/contact">
             <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link> */}

@@ -3,6 +3,7 @@ import { BsFillBarChartFill } from 'react-icons/bs'
 import { BiMessageDetail } from 'react-icons/bi'
 import { useContext } from 'react'
 import { ModalContext } from '../../../pages/_app'
+import PrimaryButton from '../../Shared/PrimaryButton'
 const DataStat = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
@@ -20,12 +21,19 @@ const DataStat = () => {
           business that you didn’t even dream of. We assist you chase after your competitors
           analyzing your data that generates revenue and growth of your business.
         </p>
-        <button
-          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
-          onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get started
-          <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
-        </button>
+        <div className="mt-4" onClick={() => setGetStartedModal(!getStartedModal)}>
+          <PrimaryButton
+            textClass="text-white"
+            bgClass="bg-primary"
+            borderClass="border-primary"
+            hoverText="hover:text-white"
+            hoverBg="hover:bg-accent"
+            hoverBorder="hover:border-accent"
+            horizontalPadding="w-[16rem]">
+            Get started
+            <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+          </PrimaryButton>
+        </div>
       </div>
 
       <div
@@ -41,12 +49,19 @@ const DataStat = () => {
           we ensure your virtual services are accessible to people with disabilities. We provide
           online users the ADA compliance tool.
         </p>
-        <button
-          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
-          onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get started
-          <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
-        </button>
+        <div className="mt-4" onClick={() => setGetStartedModal(!getStartedModal)}>
+          <PrimaryButton
+            textClass="text-white"
+            bgClass="bg-primary"
+            borderClass="border-primary"
+            hoverText="hover:text-white"
+            hoverBg="hover:bg-accent"
+            hoverBorder="hover:border-accent"
+            horizontalPadding="w-[16rem]">
+            Get started
+            <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+          </PrimaryButton>
+        </div>
       </div>
 
       <div
@@ -62,12 +77,19 @@ const DataStat = () => {
           are committed to making sure of your services worldwide. Our team of experts makes you a
           global presence.
         </p>
-        <button
-          className="mt-4 py-4 w-[16rem] flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
-          onClick={() => setGetStartedModal(!getStartedModal)}>
-          Get started
-          <AiOutlineArrowRight className="w-4 h-4 ml-2 text-white" />
-        </button>
+        <div className="mt-4" onClick={() => setGetStartedModal(!getStartedModal)}>
+          <PrimaryButton
+            textClass="text-white"
+            bgClass="bg-primary"
+            borderClass="border-primary"
+            hoverText="hover:text-white"
+            hoverBg="hover:bg-accent"
+            hoverBorder="hover:border-accent"
+            horizontalPadding="w-[16rem]">
+            Get started
+            <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+          </PrimaryButton>
+        </div>
       </div>
     </div>
   )

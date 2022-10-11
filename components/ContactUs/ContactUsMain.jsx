@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import capitalizeFirstLetter from '../../helper/capitalize'
 import imageLoader from '../../helper/imageLoader'
 import BigScreenContactImage from '../../public/contact/camera.avif'
+import PrimaryButton from '../Shared/PrimaryButton'
 
 const ContactUsMain = () => {
   const [status, setStatus] = useState({
@@ -64,9 +65,11 @@ const ContactUsMain = () => {
             <span className="relative text-white">Contact us</span>
           </span>
         </h1>
-        <p className="text-neutral text-center text-base mt-10">
-          Fill in the form and we&apos;ll be in touch soon
-        </p>
+        {status?.result !== 'success' && (
+          <p className="text-neutral text-center text-base mt-10">
+            Fill in the form and we&apos;ll be in touch soon
+          </p>
+        )}
         {status.result === 'error' && (
           <p className="p-4 bg-error rounded-md mt-4">{status.message}.</p>
         )}
@@ -219,15 +222,23 @@ const ContactUsMain = () => {
                 {errors.details?.message}
               </div>
             </div>
-            <button
-              className="mt-8 w-full p-4 bg-primary border-2 border-primary text-white font-semibold rounded-md hover:cursor-pointer"
-              type="submit">
-              {status.loading ? 'Loading...' : 'Get Started'}
-            </button>
+            <div className="mt-8">
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full"
+                type="submit">
+                {status.loading ? 'Loading...' : 'Get started'}
+              </PrimaryButton>
+            </div>
           </form>
         )}
         {status.result === 'success' && (
-          <div>
+          <div className="text-center mt-4">
             <h1
               className={`text-3xl font-bold ${
                 status.result === 'error' ? 'text-error' : 'text-secondary'
