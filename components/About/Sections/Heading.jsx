@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import imageLoader from '../../../helper/imageLoader'
 import { ModalContext } from '../../../pages/_app'
 import meeting from '../../../public/packages/meeting.jpg'
+import PrimaryButton from '../../Shared/PrimaryButton'
 // import videoCall from '../../../public/packages/videocall.png'
 
 const Heading = ({ headingContent }) => {
@@ -35,30 +36,57 @@ const Heading = ({ headingContent }) => {
         </button> */}
         <div className="my-4 md:my-8 flex flex-col gap-2 md:gap-4 md:flex-row justify-center items-center">
           {!headingContent.buttonContent2 && (
-            <button
+            <div
+              className="w-full"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              onClick={() => setGetStartedModal(!getStartedModal)}
-              className="py-4 w-full rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case">
-              {headingContent.buttonContent1}
-            </button>
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full">
+                {headingContent.buttonContent1}
+              </PrimaryButton>
+            </div>
           )}
           {headingContent.buttonContent2 && (
-            <button
+            <div
+              className="w-full md:w-1/2"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              onClick={() => setGetStartedModal(!getStartedModal)}
-              className="py-4 w-full md:w-1/2 rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 normal-case">
-              {headingContent.buttonContent1}
-            </button>
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full">
+                {headingContent.buttonContent1}
+              </PrimaryButton>
+            </div>
           )}
           {headingContent.buttonContent2 && (
-            <button
+            <div
+              className="w-full md:w-1/2"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className="py-4 w-full md:w-1/2 rounded-md bg-secondary border-2 border-secondary text-white font-bold hover:bg-black duration-500 normal-case">
-              {headingContent.buttonContent2}
-            </button>
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-secondary"
+                borderClass="border-secondary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-primary"
+                hoverBorder="hover:border-primary"
+                horizontalPadding="w-full">
+                {headingContent.buttonContent2}
+              </PrimaryButton>
+            </div>
           )}
         </div>
       </div>

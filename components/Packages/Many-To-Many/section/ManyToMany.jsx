@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { BiBroadcast } from 'react-icons/bi'
 import { useContext } from 'react'
 import { ModalContext } from '../../../../pages/_app'
+import PrimaryButton from '../../../Shared/PrimaryButton'
 
 const ManyToMany = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -41,11 +42,22 @@ const ManyToMany = () => {
               </p>
             </div>
           </div>
-          <button
-            onClick={() => setGetStartedModal(!getStartedModal)}
-            className="w-full mt-10 py-4  rounded-md bg-primary border-2 border-primary normal-case text-white font-bold hover:bg-black duration-500 md:w-1/2">
-            Start free trial
-          </button>
+          <div
+            className="w-full md:w-1/2 mt-10"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            onClick={() => setGetStartedModal(!getStartedModal)}>
+            <PrimaryButton
+              textClass="text-white"
+              bgClass="bg-primary"
+              borderClass="border-primary"
+              hoverText="hover:text-white"
+              hoverBg="hover:bg-accent"
+              hoverBorder="hover:border-accent"
+              horizontalPadding="w-full">
+              Start free trial
+            </PrimaryButton>
+          </div>
         </div>
         <div className="relative w-full h-full flex justify-center lg:w-[52%] lg:justify-end">
           <div>
@@ -68,8 +80,8 @@ const ManyToMany = () => {
                 <div
                   className={`px-4 py-4 rounded-full text-bold hover:cursor-pointer ${
                     iconsChange
-                      ? 'bg-black text-secondary duration-300'
-                      : 'bg-accent text-white duration-300'
+                      ? 'bg-accent text-secondary duration-300'
+                      : 'bg-secondary text-white duration-300'
                   }`}
                   onClick={() => setIconsChange(!iconsChange)}>
                   <BiBroadcast size={20} />

@@ -3,6 +3,7 @@ import videoStreaming from '../../../public/about/video-streaming.jpeg'
 import imageLoader from '../../../helper/imageLoader'
 import { useContext } from 'react'
 import { ModalContext } from '../../../pages/_app'
+import PrimaryButton from '../../Shared/PrimaryButton'
 
 const Banner = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -28,13 +29,22 @@ const Banner = () => {
               customers including renowned companies, media agencies, entrepreneurs, politicians as
               well as celebrities worldwide.
             </p>
-            <button
-              onClick={() => setGetStartedModal(!getStartedModal)}
-              className="w-full mt-10 py-4  rounded-md bg-primary border-2 border-primary text-white font-bold hover:bg-black duration-500 md:w-3/5"
+            <div
+              className="mt-10"
               data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom">
-              Start 14 days trial
-            </button>
+              data-aos-anchor-placement="top-bottom"
+              onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full md:w-3/5">
+                Start 14 days trial
+              </PrimaryButton>
+            </div>
           </div>
         </div>
         <div className="min-w-[50%] flex justify-center items-center">

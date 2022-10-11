@@ -9,10 +9,10 @@
     width: 200%;
     animation: bannerMove 50s linear infinite;
 
-    &.paused {
-      -webkit-animation-play-state: paused;
-      animation-play-state: paused;
-    }
+    // &.paused {
+    //   -webkit-animation-play-state: paused;
+    //   animation-play-state: paused;
+    // }
 
     .companyLogo {
       width: 100%;

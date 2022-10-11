@@ -4,6 +4,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 import imageLoader from '../../../helper/imageLoader'
 import { ModalContext } from '../../../pages/_app'
 import girlShopping from '../../../public/shopping/girl-shopping-online.jpeg'
+import PrimaryButton from '../../Shared/PrimaryButton'
 
 const GetStartedShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -38,12 +39,19 @@ const GetStartedShopping = () => {
               You can here sort out your desired products from a huge collection with competitive
               prices and get satisfied.
             </p>
-            <button
-              className="py-4 px-5 flex justify-center items-center rounded-md bg-primary border-2 border-primary text-white font-bold duration-500 normal-case"
-              onClick={() => setGetStartedModal(!getStartedModal)}>
-              Get started
-              <AiOutlineArrowRight className="w-4 h-4 ml-2" />
-            </button>
+            <div onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="px-5">
+                Get started
+                <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+              </PrimaryButton>
+            </div>
           </div>
         </div>
       </div>
