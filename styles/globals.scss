@@ -173,6 +173,7 @@
 
 .ReactModal__Overlay {
   position: relative;
+  z-index: 100;
 }
 
 .Modal {

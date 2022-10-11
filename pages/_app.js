@@ -20,9 +20,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
-        <div className="bg-[#e8e4d9]">
-          <Navbar />
-        </div>
+        <Navbar />
         <div className="overflow-x-hidden">
           <Component {...pageProps} />
           <ModalMain />
