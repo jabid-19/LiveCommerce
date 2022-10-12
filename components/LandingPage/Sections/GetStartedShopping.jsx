@@ -20,7 +20,7 @@ const GetStartedShopping = () => {
                 width={435}
                 height={580}
                 src={girlShopping}
-                alt="Girl Shopping"
+                alt="Girl Online Shopping"
               />
             </div>
           </div>
