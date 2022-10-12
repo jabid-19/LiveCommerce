@@ -7,7 +7,35 @@ const OneToOneMain = () => {
     <section>
       <Head>
         <title>Go Laiv | One To One</title>
-        <meta name="description" content="Live Commerce many to many section" />
+        <meta name="description" content="Go Laiv one to one section" />
+        <meta property="og:site_name" content="Go Laiv" />
+        <meta
+          property="og:title"
+          content="Go Laiv One to One - Connect easily without
+any hassle"
+        />
+        <meta
+          property="og:description"
+          content="Wherever you are, just make sure your internet connection is with a laptop or mobile and start a virtual meeting…"
+        />
+        <meta property="og:url" content="https://www.golaiv.com/packages/one-to-one" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"
+        />
+        <meta property="og:image:width" content="711" />
+        <meta property="og:image:height" content="532" />
+        <meta property="twitter:card" content="Go Laiv One to One" />
+        <meta
+          property="twitter:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"
+        />
+        <meta property="twitter:site" content="@golaiv" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative w-full">

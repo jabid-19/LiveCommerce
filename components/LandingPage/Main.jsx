@@ -11,7 +11,6 @@ import PersonalShopping from './Sections/PersonalShopping'
 // import TeamWorkSlider from './Sections/TeamWorkSlider'
 // import Companies from '../Shared/Companies'
 import Features from '../Packages/One-To-One/section/Features'
-// import SimplifyFeatures from './Sections/SimplifyFeatures'
 import { IoPeopleOutline } from 'react-icons/io5'
 import { IoIosPeople } from 'react-icons/io'
 import { MdLiveTv } from 'react-icons/md'
@@ -34,7 +33,6 @@ const LandingPageMain = () => {
   return (
     <div className="text-center bg-[#e8e4d9]">
       <Banner />
-      {/* <SimplifyFeatures featuresContent={featuresContent} /> */}
       <Features featuresContent={featuresContent} />
       {/* <div className="bg-white">
         <hr className="border-secondary"></hr>
