@@ -16,7 +16,7 @@ const Faq = () => {
       {FaqData?.map((item, index) => (
         <details className="p-6 group border-b-2 border-b-neutral" key={index}>
           <summary className="flex items-center justify-between cursor-pointer">
-            <h5 className="text-xl font-bold text-gray-900 md:text-2xl">{item.title}</h5>
+            <h2 className="text-xl font-bold text-gray-900 md:text-2xl">{item.title}</h2>
             <span className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 rounded-full sm:p-3">
               <AiOutlinePlus className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" />
             </span>

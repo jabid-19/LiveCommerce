@@ -37,7 +37,7 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li tabIndex="0">
-              <a className="justify-between">
+              <div className="justify-between">
                 Packages
                 <svg
                   className="fill-current"
@@ -48,7 +48,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24">
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
-              </a>
+              </div>
               <ul className="p-2 bg-base-100">
                 <li>
                   <Link href="/packages/one-to-one">
@@ -80,7 +80,7 @@ const Navbar = () => {
             {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary normal-case text-white mr-4 mt-2">Get started</a>
             </Link> */}
-            <div className="mt-2" onClick={() => setGetStartedModal(!getStartedModal)}>
+            <li className="mt-2" onClick={() => setGetStartedModal(!getStartedModal)}>
               <PrimaryButton
                 textClass="text-white"
                 bgClass="bg-primary"
@@ -91,7 +91,7 @@ const Navbar = () => {
                 horizontalPadding="w-full">
                 Get started
               </PrimaryButton>
-            </div>
+            </li>
             {/* <Link href="/contact">
               <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link> */}
@@ -120,7 +120,7 @@ const Navbar = () => {
             </Link>
           </li> */}
           <li tabIndex="0">
-            <a>
+            <div>
               Packages
               <svg
                 className="fill-current"
@@ -131,7 +131,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24">
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
-            </a>
+            </div>
             <ul className="p-2 bg-base-100">
               <li>
                 <Link href="/packages/one-to-one">
@@ -167,7 +167,7 @@ const Navbar = () => {
           {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary normal-case text-white mr-4">Get started</a>
           </Link> */}
-          <div onClick={() => setGetStartedModal(!getStartedModal)}>
+          <li onClick={() => setGetStartedModal(!getStartedModal)}>
             <PrimaryButton
               textClass="text-white"
               bgClass="bg-primary"
@@ -178,7 +178,7 @@ const Navbar = () => {
               horizontalPadding="px-5">
               Get started
             </PrimaryButton>
-          </div>
+          </li>
           {/* <Link href="/contact">
             <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link> */}

@@ -26,6 +26,7 @@ export default function Home() {
           property="og:image:secure_url"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
         />
+        {/* recommended dimensions 1200×630 pixels */}
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -33,7 +34,7 @@ export default function Home() {
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
         />
-        <meta property="twitter:site" content="@golaiv" />
+        {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

@@ -28,6 +28,7 @@ any hassle"
           property="og:image:secure_url"
           content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"
         />
+        {/* recommended dimensions 1200×630 pixels */}
         <meta property="og:image:width" content="711" />
         <meta property="og:image:height" content="532" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -35,7 +36,7 @@ any hassle"
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"
         />
-        <meta property="twitter:site" content="@golaiv" />
+        {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative w-full">

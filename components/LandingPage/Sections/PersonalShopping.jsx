@@ -83,9 +83,9 @@ const PersonalShopping = () => {
               goals at home
             </h1>
             <br />
-            <h3 className="text-2xl text-black font-bold">
-              We make your virtual path easier and brings success
-            </h3>
+            <h2 className="text-2xl text-black font-bold">
+              We make your virtual path easier and bring success
+            </h2>
             <div className="py-6 text-black text-left">
               <ul>
                 <li className="ml-6 list-disc">
@@ -125,7 +125,7 @@ const PersonalShopping = () => {
                     hoverBg="hover:bg-primary"
                     hoverBorder="hover:border-primary"
                     horizontalPadding="px-5">
-                    Learn more
+                    About us
                     <AiOutlineArrowRight className="w-4 h-4 ml-2" />
                   </PrimaryButton>
                 </a>

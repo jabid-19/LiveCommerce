@@ -15,7 +15,7 @@ const DataStat = () => {
         <div className="stat-value">
           <BsFillBarChartFill className="w-8 h-8 text-primary" />
         </div>
-        <h4 className="font-bold text-2xl text-black">Data and Insights</h4>
+        <h2 className="font-bold text-2xl text-black">Data and Insights</h2>
         <p className="text-black">
           We unlock powerful insights by tapping into data and bring game-changing results for your
           business that you didn’t even dream of. We assist you chase after your competitors
@@ -43,7 +43,7 @@ const DataStat = () => {
         <div className="stat-value">
           <BiMessageDetail className="w-8 h-8 text-primary" />
         </div>
-        <h4 className="font-bold text-2xl text-black">ADA Compliance</h4>
+        <h2 className="font-bold text-2xl text-black">ADA Compliance</h2>
         <p className="text-black">
           We believe in equality and abide by the rules and regulations of the country and for that
           we ensure your virtual services are accessible to people with disabilities. We provide
@@ -71,7 +71,7 @@ const DataStat = () => {
         <div className="stat-value">
           <AiOutlineGlobal className="w-8 h-8 text-primary" />
         </div>
-        <h4 className="font-bold text-2xl text-black">Global Coverage</h4>
+        <h2 className="font-bold text-2xl text-black">Global Coverage</h2>
         <p className="text-black">
           Create virtual content and make it visible to the people of the world within seconds. We
           are committed to making sure of your services worldwide. Our team of experts makes you a

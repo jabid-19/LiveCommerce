@@ -89,7 +89,7 @@ const LiveVideoShopping = () => {
                   hoverBg="hover:bg-primary"
                   hoverBorder="hover:border-primary"
                   horizontalPadding="px-5">
-                  Learn more
+                  About us
                   <AiOutlineArrowRight className="w-4 h-4 ml-2" />
                 </PrimaryButton>
               </a>

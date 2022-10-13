@@ -23,6 +23,7 @@ const About = () => {
           property="og:image:secure_url"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting.b7593bce.jpg?q=80%7D&w=1080"
         />
+        {/* recommended dimensions 1200×630 pixels */}
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -30,7 +31,7 @@ const About = () => {
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting.b7593bce.jpg?q=80%7D&w=1080"
         />
-        <meta property="twitter:site" content="@golaiv" />
+        {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
