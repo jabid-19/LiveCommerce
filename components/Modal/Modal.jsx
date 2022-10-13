@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Modal from 'react-modal'
 import capitalizeFirstLetter from '../../helper/capitalize'
 import { ModalContext } from '../../pages/_app'
+import PrimaryButton from '../Shared/PrimaryButton'
 
 const GerStartedForm = ({ closeModal }) => {
   const [status, setStatus] = useState({
@@ -96,11 +97,19 @@ const GerStartedForm = ({ closeModal }) => {
               />
               {errors.email && <p className="text-error">{errors.lastName?.message}</p>}
             </div>
-            <button
-              className="mt-8 w-full p-4 bg-primary text-white text-xl font-semibold rounded-md hover:cursor-pointer"
-              type="submit">
-              {status.loading ? 'Loading...' : 'Get Started'}
-            </button>
+            <div className="mt-8">
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full"
+                type="submit">
+                {status.loading ? 'Loading...' : 'Get started'}
+              </PrimaryButton>
+            </div>
           </form>
         </div>
       )}

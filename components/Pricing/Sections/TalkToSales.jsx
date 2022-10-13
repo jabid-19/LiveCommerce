@@ -22,7 +22,8 @@ const TalkToSales = () => {
             <br />
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block"
-              data-aos="fade-up">
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
               <span className="relative text-white">Live Shopping</span>
             </span>
           </h1>

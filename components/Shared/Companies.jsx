@@ -7,25 +7,24 @@ import Ebay from '../../public/company-logos/Ebay.svg'
 import Rakuten from '../../public/company-logos/Rakuten.svg'
 import Target from '../../public/company-logos/Target.svg'
 import Walmart from '../../public/company-logos/Walmart.svg'
-import styles from '../../styles/Companies.module.scss'
 const CompaniesIndex = () => {
   const Companies = [Alibaba, Amazon, Daraz, Ebay, Rakuten, Walmart, Target]
   return (
-    <div className={styles.sliderSection}>
-      <div className={styles.slidesContainer}>
-        <div className={styles.companyLogo}>
+    <div className="w-full overflow-hidden">
+      <div className="flex justify-between items-center w-[200%] animate-bannerMoveAnimation">
+        <div className="w-full flex justify-around gap-5">
           {Companies.map((company, index) => (
-            <div className={styles.sliderUl} key={index}>
-              <div className={styles.sliderLI}>
+            <div className="flex list-none pl-0 m-0" key={index}>
+              <div className="w-[100px] h-[100px]">
                 <Image src={company} height={100} width={100} alt="company logo" />
               </div>
             </div>
           ))}
         </div>
-        <div className={styles.companyLogo}>
+        <div className="w-full flex justify-around gap-5">
           {Companies.map((company, index) => (
-            <div className={styles.sliderUl} key={index}>
-              <div className={styles.sliderLI}>
+            <div className="flex list-none pl-0 m-0" key={index}>
+              <div className="w-[100px] h-[100px]">
                 <Image src={company} height={100} width={100} alt="company logo" />
               </div>
             </div>

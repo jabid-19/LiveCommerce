@@ -4,18 +4,18 @@ import { pricingPlans } from '../../../data/plans'
 const Pricing = () => {
   return (
     <div className="w-auto mx-6 pt-12 lg:pt-36 2xl:w-[1400px] 2xl:mx-auto">
-      <h1
-        className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl"
-        style={{ lineHeight: '4.5rem' }}>
+      <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-          data-aos="fade-up">
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
           <span className="relative text-white">Plans</span>
         </span>{' '}
         &{' '}
         <span
           className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-          data-aos="fade-up">
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
           <span className="relative text-white">Pricing</span>
         </span>
       </h1>

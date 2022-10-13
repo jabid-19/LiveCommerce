@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import { useContext } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { ModalContext } from '../../../pages/_app'
+import PrimaryButton from '../../Shared/PrimaryButton'
 // import video from '../../../public/video/videoplayback.mp4'
 const LiveVideoShopping = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
@@ -27,57 +29,71 @@ const LiveVideoShopping = () => {
           <source src="/video/live-video.mp4" type="video/mp4" />
         </video>
         <div className="lg:ml-12 text-center lg:text-left">
-          <h1
-            className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start"
-            style={{ lineHeight: '4.5rem' }}>
-            Make sure
+          <h1 className="text-3xl md:text-5xl text-center text-black font-bold lg:text-6xl lg:text-start leading-10 md:leading-[4rem] lg:leading-[4.5rem]">
+            Create relevant content
             <br />
-            your{' '}
+            to your{' '}
             <span
               className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-              data-aos="fade-up">
-              <span className="relative text-white">content</span>
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
+              <span className="relative text-white">business</span>
             </span>
             <br />
-            delivers value
-            <br />
-            to your business
+            that attracts customers
           </h1>
           <div className="py-6 text-black text-left">
             <ul>
               <li className="ml-6 list-disc">
-                Multi-stream simultaneously on a large range of platforms
+                Create video content from anywhere whenever you want
               </li>
               <li className="ml-6 list-disc">
-                No limits on time & places, create video content from anywhere
+                Multi-streaming simultaneously on a large range of platforms
               </li>
-              <li className="ml-6 list-disc">Audio & HD video calling and live streaming</li>
-              <li className="ml-6 list-disc">Compatible with any device</li>
+              <li className="ml-6 list-disc">HD video live streaming as well as Audio promo</li>
               <li className="ml-6 list-disc">
                 Playback recorded videos on any platform with scheduling and reminder options
               </li>
               <li className="ml-6 list-disc">
-                Receive analytics on your success rate and use our AI to help create a video content
-                strategy
-              </li>
-              <li className="ml-6 list-disc">
-                Translation captions will help to widen your audience reach
+                Translation options will help to widen your audience reach worldwide
               </li>
               <li className="ml-6 list-disc">
                 Solutions to make your video content scalable, reliable and secure
               </li>
+              <li className="ml-6 list-disc">
+                Receive analytics on your success rate and use our AI to create a video content
+                strategy
+              </li>
             </ul>
           </div>
-          <div>
-            <button
-              className="btn btn-primary text-white mr-4 normal-case"
-              onClick={() => setGetStartedModal(!getStartedModal)}>
-              Get started
-            </button>
-            <button className="btn btn-outline text-black normal-case">
-              Learn more
-              <AiOutlineArrowRight className="w-4 h-4 ml-2 text-black" />
-            </button>
+          <div className="flex flex-wrap justify-center items-center lg:justify-start gap-4">
+            <div onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="px-5">
+                Get started
+              </PrimaryButton>
+            </div>
+            <Link href="/about">
+              <a>
+                <PrimaryButton
+                  textClass="text-black"
+                  bgClass="bg-transparent"
+                  borderClass="border-primary"
+                  hoverText="hover:text-white"
+                  hoverBg="hover:bg-primary"
+                  hoverBorder="hover:border-primary"
+                  horizontalPadding="px-5">
+                  Learn more
+                  <AiOutlineArrowRight className="w-4 h-4 ml-2" />
+                </PrimaryButton>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

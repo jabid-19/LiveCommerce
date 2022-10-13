@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   const [getStartedModal, setGetStartedModal] = useState(false)
 
   useEffect(() => {
-    Aos.init({ duration: 1500 })
+    Aos.init({ duration: 1500, anchorPlacement: 'top-bottom' })
   }, [])
 
   return (

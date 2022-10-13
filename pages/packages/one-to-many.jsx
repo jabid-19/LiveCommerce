@@ -1,20 +1,20 @@
 import Head from 'next/head'
 import React from 'react'
-import PricingMain from '../components/Pricing/Main'
+import PackagesManyToManyMain from '../../components/Packages/Many-To-Many/Main'
 
-const pricing = () => {
+const ManyToManyMain = () => {
   return (
-    <div>
+    <section>
       <Head>
-        <title>Go Laiv | Pricing</title>
-        <meta name="description" content="Go Laiv Pricing Section" />
+        <title>Go Laiv | One To Many</title>
+        <meta name="description" content="Go Laiv one to many section" />
         <meta property="og:site_name" content="Go Laiv" />
-        <meta property="og:title" content="Go Laiv Pricing" />
+        <meta property="og:title" content="Go Laiv One to Many - Connect with anyone anytime" />
         <meta
           property="og:description"
-          content="You can choose plans according to your convenience…"
+          content="You can connect with people from any part of the world from anywhere without any hassle. This must make your business easier and smoother…"
         />
-        <meta property="og:url" content="https://www.golaiv.com/pricing" />
+        <meta property="og:url" content="https://www.golaiv.com/packages/one-to-many" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -26,7 +26,7 @@ const pricing = () => {
         />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
-        <meta property="twitter:card" content="Go Laiv Pricing" />
+        <meta property="twitter:card" content="Go Laiv One to Many" />
         <meta
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting.b7593bce.jpg?q=80%7D&w=1080"
@@ -34,9 +34,11 @@ const pricing = () => {
         <meta property="twitter:site" content="@golaiv" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PricingMain />
-    </div>
+      <div className="relative w-full">
+        <PackagesManyToManyMain />
+      </div>
+    </section>
   )
 }
 
-export default pricing
+export default ManyToManyMain

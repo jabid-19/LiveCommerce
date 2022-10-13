@@ -1,20 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import imageLoader from '../../helper/imageLoader'
-import Logo from '../../public/navbar-logo/navbar-logo.png'
 import { useContext } from 'react'
+import imageLoader from '../../helper/imageLoader'
 import { ModalContext } from '../../pages/_app'
+import Logo from '../../public/navbar-logo/navbar-logo.png'
+import PrimaryButton from './PrimaryButton'
 
 const Navbar = () => {
   const [getStartedModal, setGetStartedModal] = useContext(ModalContext)
   return (
-    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-md shadow-accent py-2 sticky top-0 z-50 2xl:px-[10%]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
+              alt="Menu icon"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -29,11 +31,11 @@ const Navbar = () => {
           <ul
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
+            {/* <li>
               <Link href="/pricing">
                 <a>Pricing</a>
               </Link>
-            </li>
+            </li> */}
             <li tabIndex="0">
               <a className="justify-between">
                 Packages
@@ -42,6 +44,7 @@ const Navbar = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
+                  alt="Dropdown icon"
                   viewBox="0 0 24 24">
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
@@ -53,8 +56,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/packages/many-to-many">
-                    <a>Many to many</a>
+                  <Link href="/packages/one-to-many">
+                    <a>One to many</a>
                   </Link>
                 </li>
               </ul>
@@ -77,29 +80,45 @@ const Navbar = () => {
             {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
               <a className="btn btn-primary normal-case text-white mr-4 mt-2">Get started</a>
             </Link> */}
-            <button
-              onClick={() => setGetStartedModal(!getStartedModal)}
-              className="btn btn-primary normal-case text-white mr-4 mt-2">
-              Get started
-            </button>
+            <div className="mt-2" onClick={() => setGetStartedModal(!getStartedModal)}>
+              <PrimaryButton
+                textClass="text-white"
+                bgClass="bg-primary"
+                borderClass="border-primary"
+                hoverText="hover:text-white"
+                hoverBg="hover:bg-accent"
+                hoverBorder="hover:border-accent"
+                horizontalPadding="w-full">
+                Get started
+              </PrimaryButton>
+            </div>
             {/* <Link href="/contact">
               <a className="btn btn-primary text-white normal-case mt-2">Contact us</a>
             </Link> */}
           </ul>
         </div>
         <Link href="/">
-          <a className="ml-3">
-            <Image width={155} height={70} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
+          <a className="relative w-[105px] h-[20px] md:w-[155px] md:h-[70px] lg:ml-4 flex justify-center items-center">
+            <Image
+              // width={155}
+              // height={70}
+              src={Logo}
+              alt="Go Laiv's Logo"
+              loader={imageLoader}
+              layout="intrinsic"
+              // objectFit="cover"
+              // className="h-full sm:h-64"
+            />
           </a>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          <li>
+          {/* <li>
             <Link href="/pricing">
               <a>Pricing</a>
             </Link>
-          </li>
+          </li> */}
           <li tabIndex="0">
             <a>
               Packages
@@ -108,6 +127,7 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
+                alt="Dropdown icon"
                 viewBox="0 0 24 24">
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
@@ -119,8 +139,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/packages/many-to-many">
-                  <a>Many to many</a>
+                <Link href="/packages/one-to-many">
+                  <a>One to many</a>
                 </Link>
               </li>
             </ul>
@@ -147,11 +167,18 @@ const Navbar = () => {
           {/* <Link href={{ pathname: 'login', query: { keyword: 'register' } }}>
             <a className="btn btn-primary normal-case text-white mr-4">Get started</a>
           </Link> */}
-          <button
-            onClick={() => setGetStartedModal(!getStartedModal)}
-            className="btn btn-primary normal-case text-white mr-4">
-            Get started
-          </button>
+          <div onClick={() => setGetStartedModal(!getStartedModal)}>
+            <PrimaryButton
+              textClass="text-white"
+              bgClass="bg-primary"
+              borderClass="border-primary"
+              hoverText="hover:text-white"
+              hoverBg="hover:bg-accent"
+              hoverBorder="hover:border-accent"
+              horizontalPadding="px-5">
+              Get started
+            </PrimaryButton>
+          </div>
           {/* <Link href="/contact">
             <a className="btn btn-primary text-white normal-case mr-4">Contact us</a>
           </Link> */}
