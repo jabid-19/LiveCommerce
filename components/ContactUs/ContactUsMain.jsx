@@ -179,7 +179,7 @@ const ContactUsMain = () => {
               <label className="font-semibold text-neutral pl-2">Subject*</label>
               <input
                 name="subject"
-                placeholder="XXXXX"
+                placeholder="What is the issue?"
                 type="text"
                 {...register('subject', { required: 'Subject is required' })}
                 className={`w-full
@@ -203,6 +203,7 @@ const ContactUsMain = () => {
               <label className="font-semibold text-neutral pl-2">How can we help?*</label>
               <textarea
                 name="details"
+                placeholder="Write details about your problem."
                 type="text"
                 {...register('details', { required: 'Details is required' })}
                 className={`w-full

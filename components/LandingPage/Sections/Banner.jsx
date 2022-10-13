@@ -87,7 +87,7 @@ const Banner = () => {
                   hoverBg="hover:bg-accent"
                   hoverBorder="hover:border-accent"
                   horizontalPadding="px-5">
-                  Learn more
+                  About us
                 </PrimaryButton>
               </a>
             </Link>
