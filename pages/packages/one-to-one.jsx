@@ -30,7 +30,7 @@ any hassle"
         />
         <meta property="og:image:width" content="711" />
         <meta property="og:image:height" content="532" />
-        <meta property="twitter:card" content="Go Laiv One to One" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/videocall.be51cfc6.png?q=80%7D&w=640"

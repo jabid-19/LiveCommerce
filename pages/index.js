@@ -28,7 +28,7 @@ export default function Home() {
         />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
-        <meta property="twitter:card" content="Go Laiv Homepage" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"

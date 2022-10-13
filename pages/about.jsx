@@ -25,7 +25,7 @@ const About = () => {
         />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
-        <meta property="twitter:card" content="Go Laiv About" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting.b7593bce.jpg?q=80%7D&w=1080"

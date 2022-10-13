@@ -22,7 +22,7 @@ const Login = () => {
         />
         <meta property="og:image:width" content="407" />
         <meta property="og:image:height" content="581" />
-        <meta property="twitter:card" content="Go Laiv Login" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/camera.3f4e1679.avif?q=80%7D&w=640"
