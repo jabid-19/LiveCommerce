@@ -33,7 +33,7 @@ const Register = () => {
               `}
       />
       <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">{errors.name?.message}</div>
-      <label className="text-sm leading-[18px] font-semibold">
+      <label className="text-sm leading-[18px] font-semibold mt-5">
         Email <span className="text-[#F0676F]">*</span>
       </label>
       <input
