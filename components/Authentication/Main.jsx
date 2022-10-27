@@ -105,7 +105,7 @@ const AuthenticationMain = () => {
             <p
               data-aos="fade-in"
               data-aos-anchor-placement="top-bottom"
-              className="text-[16px] leading-5 font-semibold max-w-xs">
+              className="text-2xl leading-5 font-semibold max-w-xs">
               Enter your login details to access your account
             </p>
           )}
@@ -113,7 +113,7 @@ const AuthenticationMain = () => {
             <p
               data-aos="fade-in"
               data-aos-anchor-placement="top-bottom"
-              className="text-[16px] leading-5 font-semibold max-w-sm">
+              className="text-2xl leading-5 font-semibold max-w-sm">
               Register your account to start using all of our services
             </p>
           )}
