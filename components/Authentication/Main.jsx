@@ -1,18 +1,17 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import LoginForm from './Sections/LoginForm'
-import RegisterForm from './Sections/RegisterForm'
 import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
-import LoginImage from '../../public/login/live-video.webp'
+import Logo from '../../public/navbar-logo/navbar-logo.png'
+import Login from './Sections/Login'
+import Register from './Sections/Register'
+import SocialLogin from './Sections/SocialLogin'
 
 const AuthenticationMain = () => {
   const router = useRouter()
   const keyword = router.query.keyword
 
   const [key, setKey] = useState(keyword)
-
-  console.log('key', key)
 
   const [visibleLoginItem, setVisibleLoginItem] = useState(true)
   const [visibleRegisterItem, setVisibleRegisterItem] = useState(false)
@@ -41,70 +40,67 @@ const AuthenticationMain = () => {
   }
 
   return (
-    <div className="bg-[#e8e4d9]">
-      <div className="flex flex-col-reverse md:flex-row bg-[#e8e4d9] md:w-[95%]">
-        <div className="md:min-w-[50%] flex justify-center items-center">
-          <div className="rainbow mx-8 my-20 lg:mx-20 lg:my-20 flex">
-            <Image
-              loader={imageLoader}
-              width={500}
-              height={750}
-              src={LoginImage}
-              alt="Woman showing product in live call"
-              priority={true}
-              className="object-cover rounded bg-sky-200"
-              placeholder="blur"
-            />
-          </div>
-        </div>
-        <div className="min-w-[90%] md:min-w-[50%] mx-auto mt-20 md:mb-20 px-8 flex flex-col justify-center">
-          <div className="mb-20 max-w-4xl">
-            {key === 'register' ? (
-              <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
-                <span
-                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom">
-                  <span className="relative text-white">Sign up</span>
-                </span>
-              </h1>
-            ) : (
-              <h1 className="text-5xl text-center text-black font-bold lg:text-6xl">
-                <span
-                  className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom">
-                  <span className="relative text-white">Login</span>
-                </span>
-              </h1>
-            )}
-          </div>
-          <div className="btn-group max-w-4xl">
-            <button
-              className={
-                key != 'register'
-                  ? 'btn btn-primary w-1/2 text-white'
-                  : 'btn bg-accent/50 text-white border-none w-1/2'
-              }
-              onClick={loadLoginForm}>
+    <div className="flex flex-col-reverse lg:flex-row py-[5%] lg:py-[2%] px-[8%] 2xl:min-h-[95vh]">
+      <div className="flex justify-center rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
+        <div className="container px-[8%]">
+          {!visibleRegisterItem && visibleLoginItem && (
+            <h1 data-aos="fade-in" className="text-[32px] leading-10 font-bold mb-[25px]">
               Login
-            </button>
-            <button
-              className={
-                key === 'register'
-                  ? 'btn btn-primary w-1/2 text-white'
-                  : 'btn bg-accent/50 text-white border-none w-1/2'
-              }
-              onClick={loadRegisterForm}>
-              Create Account
-            </button>
-          </div>
+            </h1>
+          )}
+          {visibleRegisterItem && !visibleLoginItem && (
+            <h1 data-aos="fade-in" className="text-[32px] leading-10 font-bold mb-[25px]">
+              Register
+            </h1>
+          )}
           {key === 'register' ? (
-            <div>{visibleRegisterItem && !visibleLoginItem && <RegisterForm />}</div>
+            <div>{visibleRegisterItem && !visibleLoginItem && <Register />}</div>
           ) : (
-            <div>{visibleLoginItem && !visibleRegisterItem && <LoginForm />}</div>
+            <div>{visibleLoginItem && !visibleRegisterItem && <Login />}</div>
+          )}
+          <div className="flex justify-center items-center mt-7">
+            <div className="bg-black w-[37px] h-[1px]"></div>
+            <p className="text-xs font-bold px-1.5">Or Login With</p>
+            <div className="bg-black w-[37px] h-[1px]"></div>
+          </div>
+          <SocialLogin />
+          {!visibleRegisterItem && visibleLoginItem && (
+            <p data-aos="fade-in" className="text-xs font-medium">
+              Don’t have an account?{' '}
+              <span
+                onClick={loadRegisterForm}
+                className="text-[#CC955C] cursor-pointer hover:underline">
+                Register Now
+              </span>
+            </p>
+          )}
+          {visibleRegisterItem && !visibleLoginItem && (
+            <p data-aos="fade-in" className="text-xs font-medium">
+              Already have an account?{' '}
+              <span
+                onClick={loadLoginForm}
+                className="text-[#CC955C] cursor-pointer hover:underline">
+                Login
+              </span>
+            </p>
           )}
         </div>
+      </div>
+      <div className="rounded-t-[20px] lg:rounded-l-none lg:rounded-r-[20px] py-[6%] lg:w-1/2 bg-[#CC955C]/40 px-[8%] lg:px-[4%] flex flex-col justify-between items-start lg:items-end text-start lg:text-end text-black">
+        <div className="mb-4 lg:mb-0">
+          <h1 className="text-[32px] leading-10 font-bold mb-[25px]">Welcome</h1>
+          {!visibleRegisterItem && visibleLoginItem && (
+            <p data-aos="fade-in" className="text-[16px] leading-5 font-semibold max-w-xs">
+              Enter your login details to access your account
+            </p>
+          )}
+          {visibleRegisterItem && !visibleLoginItem && (
+            <p data-aos="fade-in" className="text-[16px] leading-5 font-semibold max-w-sm">
+              Register your account to start using all of our services
+            </p>
+          )}
+        </div>
+        <Image width={142} height={62} src={Logo} alt="Go Laiv's Logo" loader={imageLoader} />
       </div>
     </div>
   )
