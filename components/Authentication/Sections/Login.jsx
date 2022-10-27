@@ -9,7 +9,11 @@ const Login = () => {
   } = useForm()
   const onSubmit = (data) => console.log(data)
   return (
-    <form data-aos="fade-in" onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+    <form
+      data-aos="fade-in"
+      data-aos-anchor-placement="top-bottom"
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col">
       <label className="text-sm leading-[18px] font-semibold">
         User Name Or Email <span className="text-[#F0676F]">*</span>
       </label>

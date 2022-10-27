@@ -44,12 +44,18 @@ const AuthenticationMain = () => {
       <div className="flex justify-center rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
         <div className="container px-[8%]">
           {!visibleRegisterItem && visibleLoginItem && (
-            <h1 data-aos="fade-in" className="text-[32px] leading-10 font-bold mb-[25px]">
+            <h1
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-[32px] leading-10 font-bold mb-[25px]">
               Login
             </h1>
           )}
           {visibleRegisterItem && !visibleLoginItem && (
-            <h1 data-aos="fade-in" className="text-[32px] leading-10 font-bold mb-[25px]">
+            <h1
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-[32px] leading-10 font-bold mb-[25px]">
               Register
             </h1>
           )}
@@ -65,7 +71,10 @@ const AuthenticationMain = () => {
           </div>
           <SocialLogin />
           {!visibleRegisterItem && visibleLoginItem && (
-            <p data-aos="fade-in" className="text-xs font-medium">
+            <p
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-xs font-medium">
               Don’t have an account?{' '}
               <span
                 onClick={loadRegisterForm}
@@ -75,7 +84,10 @@ const AuthenticationMain = () => {
             </p>
           )}
           {visibleRegisterItem && !visibleLoginItem && (
-            <p data-aos="fade-in" className="text-xs font-medium">
+            <p
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-xs font-medium">
               Already have an account?{' '}
               <span
                 onClick={loadLoginForm}
@@ -90,12 +102,18 @@ const AuthenticationMain = () => {
         <div className="mb-4 lg:mb-0">
           <h1 className="text-[32px] leading-10 font-bold mb-[25px]">Welcome</h1>
           {!visibleRegisterItem && visibleLoginItem && (
-            <p data-aos="fade-in" className="text-[16px] leading-5 font-semibold max-w-xs">
+            <p
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-[16px] leading-5 font-semibold max-w-xs">
               Enter your login details to access your account
             </p>
           )}
           {visibleRegisterItem && !visibleLoginItem && (
-            <p data-aos="fade-in" className="text-[16px] leading-5 font-semibold max-w-sm">
+            <p
+              data-aos="fade-in"
+              data-aos-anchor-placement="top-bottom"
+              className="text-[16px] leading-5 font-semibold max-w-sm">
               Register your account to start using all of our services
             </p>
           )}
