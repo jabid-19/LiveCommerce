@@ -1,6 +1,15 @@
 import Head from 'next/head'
 import LandingPageMain from '../components/LandingPage/Main'
 
+// export const getServerSideProps = async () => {
+//   const res = await fetch('http://livecommerce.local/wp-json/wp/v2/posts?_embed')
+//   const data = await res.json()
+//   return {
+//     props: { propData: data },
+//   }
+// }
+
+// export default function Home({ propData }) {
 export default function Home() {
   return (
     <div>
@@ -38,6 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        {/* <LandingPageMain propData={propData} /> */}
         <LandingPageMain />
       </main>
     </div>

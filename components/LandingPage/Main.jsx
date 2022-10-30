@@ -16,6 +16,7 @@ import { IoIosPeople } from 'react-icons/io'
 import { MdLiveTv } from 'react-icons/md'
 import { RiBroadcastFill } from 'react-icons/ri'
 
+// const LandingPageMain = ({ propData }) => {
 const LandingPageMain = () => {
   const featuresContent = {
     featureTitlePart1: 'Grow fast with more',
@@ -47,7 +48,7 @@ const LandingPageMain = () => {
       {/* <CustomerReviews /> */}
       {/* <TeamWorkSlider /> */}
       <DataStat />
-      {/* <Blogs /> */}
+      {/* <Blogs propData={propData} /> */}
       <GetStartedShopping />
       {/* <Companies /> */}
     </div>

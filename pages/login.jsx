@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Login = () => {
   return (
-    <div>
+    <div className="bg-[#F5F5F5]">
       <Head>
         <title>Go Laiv | Login</title>
         <meta name="description" content="Go Laiv Login Section" />

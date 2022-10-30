@@ -1,19 +1,24 @@
-import Image from 'next/image'
-import imageLoader from '../../../helper/imageLoader'
-import shoes from '../../../public/blogs/shoes.jpg'
-import bags from '../../../public/blogs/bags.jpg'
-import webDesign from '../../../public/shopping/girl-shopping.jpg'
+// import Image from 'next/image'
+// import imageLoader from '../../../helper/imageLoader'
+// import shoes from '../../../public/blogs/shoes.jpg'
+// import bags from '../../../public/blogs/bags.jpg'
+// import webDesign from '../../../public/shopping/girl-shopping.jpg'
+// import SingleBlog from './SingleBlog'
 
+// const Blogs = ({ propData }) => {
 const Blogs = () => {
   return (
     <div className="py-8">
       <div>
         <h3 className="text-2xl lg:text-4xl font-bold text-black">Blogs</h3>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-14 my-14">
-          <div
+          {/* {propData.map((prop) => (
+            <SingleBlog key={prop.id} prop={prop}></SingleBlog>
+          ))} */}
+          {/* <div
             data-aos="flip-left"
             data-aos-anchor-placement="top-bottom"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100 hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 hover:bg-amber-100 hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
@@ -44,7 +49,7 @@ const Blogs = () => {
           <div
             data-aos="flip-down"
             data-aos-anchor-placement="top-bottom"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
@@ -75,7 +80,7 @@ const Blogs = () => {
           <div
             data-aos="flip-right"
             data-aos-anchor-placement="top-bottom"
-            className="card card-compact lg:max-width-lg bg-base-100 shadow-lg shadow-primary hover:bg-amber-100  hover:opacity-80">
+            className="card card-compact lg:max-width-lg bg-base-100 hover:bg-amber-100  hover:opacity-80">
             <figure>
               <Image
                 loader={imageLoader}
@@ -102,7 +107,7 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
