@@ -1,19 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { getCsrfToken, signIn } from 'next-auth/react'
+import { useRouter } from 'next/router'
 
-const Login = () => {
+const Login = ({ csrfToken }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const router = useRouter()
+  const [errorMsg, setErrorMsg] = useState('')
+
+  const onSubmit = async (data) => {
+    // console.log(data)
+    const signInResponse = await signIn('credentials', {
+      redirect: false,
+      email: data.email,
+      password: data.password,
+    })
+    if (!signInResponse.ok) {
+      console.log(signInResponse.error)
+      setErrorMsg(signInResponse.error)
+    } else {
+      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+    }
+  }
   return (
     <form
       data-aos="fade-in"
       data-aos-anchor-placement="top-bottom"
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col">
+      <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
       <label className="text-sm leading-[18px] font-semibold">
         User Name Or Email <span className="text-[#F0676F]">*</span>
       </label>
@@ -60,6 +79,7 @@ const Login = () => {
               `}
       />
       <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">{errors.password?.message}</div>
+      <p style={{ color: 'red' }}>{errorMsg}</p>
       <input
         className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
@@ -70,3 +90,11 @@ const Login = () => {
 }
 
 export default Login
+
+export const getServerSideProps = async (context) => {
+  const csrfToken = await getCsrfToken(context)
+
+  return {
+    props: { csrfToken },
+  }
+}

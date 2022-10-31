@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { doRegister } from '../../../backend/authApi'
 
 const Register = () => {
+  const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState(false)
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = async (data) => {
+    console.log(data)
+    const res = await doRegister(data)
+    if (res.success) {
+      setSuccess(true)
+      setMessage(res.message)
+    } else {
+      setSuccess(false)
+      setMessage(res.message)
+    }
+  }
   return (
     <form
       data-aos="fade-in"
@@ -18,10 +31,10 @@ const Register = () => {
         Full Name <span className="text-[#F0676F]">*</span>
       </label>
       <input
-        name="name"
+        name="fullname"
         placeholder="full name"
         type="text"
-        {...register('name', { required: 'Name is required' })}
+        {...register('fullname', { required: 'Full name is required' })}
         className={`
               w-full
               mt-3
@@ -110,6 +123,7 @@ const Register = () => {
       <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">
         {errors.confirmPassword?.message}
       </div>
+      <p style={{ color: `${!success ? 'red' : 'green'}` }}>{message}</p>
       <input
         className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
