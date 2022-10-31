@@ -7,7 +7,6 @@ const ManyToManyMain = () => {
     <section>
       <Head>
         <title>Go Laiv | One To Many</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
         <meta name="description" content="Go Laiv one to many section" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv One to Many - Connect with anyone anytime" />

@@ -15,7 +15,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Go Laiv</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
+        <meta
+          name="google-site-verification"
+          content="HcyrSpbHnnH_3KiHPJqKJau4p-tpZomlKChdrLCyqTY"
+        />
         <meta name="description" content="Go Laiv Homepage" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta

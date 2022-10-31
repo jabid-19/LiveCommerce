@@ -7,7 +7,6 @@ const OneToOneMain = () => {
     <section>
       <Head>
         <title>Go Laiv | One To One</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
         <meta name="description" content="Go Laiv one to one section" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta

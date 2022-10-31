@@ -6,7 +6,6 @@ const Login = () => {
     <div className="bg-[#F5F5F5]">
       <Head>
         <title>Go Laiv | Login</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
         <meta name="description" content="Go Laiv Login Section" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Login" />

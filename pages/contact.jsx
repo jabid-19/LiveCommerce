@@ -6,7 +6,6 @@ const Contact = () => {
     <section>
       <Head>
         <title>Go Laiv | Contact</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
         <meta name="description" content="Go Laiv Contact" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Contact" />
