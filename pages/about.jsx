@@ -6,7 +6,6 @@ const About = () => {
     <section>
       <Head>
         <title>Go Laiv | About</title>
-        <meta name="google-site-verification" content="google64f0849d94428d34.html" />
         <meta name="description" content="Go Laiv about section" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv About - How we work for your business growth" />
