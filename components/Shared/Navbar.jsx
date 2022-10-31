@@ -106,6 +106,7 @@ const Navbar = () => {
               alt="Go Laiv's Logo"
               loader={imageLoader}
               layout="intrinsic"
+              priority={true}
               // objectFit="cover"
               // className="h-full sm:h-64"
             />

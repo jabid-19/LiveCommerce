@@ -3,8 +3,7 @@ import wpImageLoader from '../../../helper/wpImageLoader'
 import React from 'react'
 // import Link from 'next/link'
 
-// const SingleBlog = ({ prop }) => {
-const SingleBlog = () => {
+const SingleBlog = ({ prop }) => {
   return (
     // <Link href={`/blog/${prop['slug']}`}>
     <div
@@ -25,7 +24,6 @@ const SingleBlog = () => {
       <div className="card-body">
         <h2 className="card-title text-left text-black">
           {prop['title']['rendered']}
-          {/* New Shoes Arrived! */}
           {/* <div className="badge badge-secondary text-black">NEW</div> */}
         </h2>
         <div

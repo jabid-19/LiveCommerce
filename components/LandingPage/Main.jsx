@@ -1,5 +1,5 @@
 import Banner from './Sections/Banner'
-// import Blogs from './Sections/Blogs'
+import Blogs from './Sections/Blogs'
 import Cards from './Sections/Cards'
 // import CustomerReviews from './Sections/CustomerReviews'
 import DataStat from './Sections/DataStat'
@@ -16,8 +16,7 @@ import { IoIosPeople } from 'react-icons/io'
 import { MdLiveTv } from 'react-icons/md'
 import { RiBroadcastFill } from 'react-icons/ri'
 
-// const LandingPageMain = ({ propData }) => {
-const LandingPageMain = () => {
+const LandingPageMain = ({ propData }) => {
   const featuresContent = {
     featureTitlePart1: 'Grow fast with more',
     featureTitlePart2: 'fascinating',
@@ -48,7 +47,7 @@ const LandingPageMain = () => {
       {/* <CustomerReviews /> */}
       {/* <TeamWorkSlider /> */}
       <DataStat />
-      {/* <Blogs propData={propData} /> */}
+      <Blogs propData={propData} />
       <GetStartedShopping />
       {/* <Companies /> */}
     </div>
