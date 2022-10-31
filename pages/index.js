@@ -1,16 +1,15 @@
 import Head from 'next/head'
 import LandingPageMain from '../components/LandingPage/Main'
 
-// export const getServerSideProps = async () => {
-//   const res = await fetch('http://livecommerce.local/wp-json/wp/v2/posts?_embed')
-//   const data = await res.json()
-//   return {
-//     props: { propData: data },
-//   }
-// }
+export const getServerSideProps = async () => {
+  const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
+  const data = await res.json()
+  return {
+    props: { propData: data },
+  }
+}
 
-// export default function Home({ propData }) {
-export default function Home() {
+export default function Home({ propData }) {
   return (
     <div>
       <Head>
@@ -51,8 +50,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <LandingPageMain propData={propData} /> */}
-        <LandingPageMain />
+        <LandingPageMain propData={propData} />
       </main>
     </div>
   )
