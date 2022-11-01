@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import imageLoader from '../../helper/imageLoader'
 import Logo from '../../public/navbar-logo/navbar-logo.png'
+import ForgotPass from './Sections/ForgotPass'
 import Login from './Sections/Login'
 import Register from './Sections/Register'
 import SocialLogin from './Sections/SocialLogin'
@@ -41,6 +43,10 @@ const AuthenticationMain = () => {
     router.push('/login')
   }
 
+  if (keyword === 'forgot-password') {
+    return <ForgotPass />
+  }
+
   return (
     <div className="flex flex-col-reverse lg:flex-row py-[5%] lg:py-[2%] md:px-[15%] 2xl:min-h-[80vh]">
       <div className="flex justify-center md:rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
@@ -66,6 +72,13 @@ const AuthenticationMain = () => {
           ) : (
             <div>{visibleLoginItem && !visibleRegisterItem && <Login />}</div>
           )}
+          <div className="text-xs flex items-center mt-4">
+            <p className="mr-1">Forgot your account?</p>
+            <Link href="/login?keyword=forgot-password">
+              <a className="text-[#CC955C]">Find Now</a>
+            </Link>
+          </div>
+
           <div className="flex justify-center items-center mt-7">
             <div className="bg-black w-[37px] h-[1px]"></div>
             <p className="text-xs font-bold px-1.5">Or Login With</p>
