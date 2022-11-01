@@ -7,10 +7,11 @@ import ModalMain from '../components/Modal/Modal'
 import Footer from '../components/Shared/Footer'
 import Navbar from '../components/Shared/Navbar'
 import '../styles/globals.scss'
+import { SessionProvider } from 'next-auth/react'
 
 export const ModalContext = createContext()
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [getStartedModal, setGetStartedModal] = useState(false)
 
   useEffect(() => {
@@ -22,7 +23,9 @@ function MyApp({ Component, pageProps }) {
       <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
         <Navbar />
         <div className="overflow-x-hidden">
-          <Component {...pageProps} />
+          <SessionProvider session={session}>
+            <Component {...pageProps} />
+          </SessionProvider>
           <ModalMain />
         </div>
       </ModalContext.Provider>
