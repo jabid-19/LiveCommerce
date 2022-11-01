@@ -48,4 +48,6 @@ const PasswordField = forwardRef((props, ref) => {
   )
 })
 
+PasswordField.displayName = 'PasswordField'
+
 export default PasswordField

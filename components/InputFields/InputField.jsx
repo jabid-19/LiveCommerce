@@ -37,4 +37,6 @@ const InputField = forwardRef(
   }
 )
 
+InputField.displayName = 'InputField'
+
 export default InputField
