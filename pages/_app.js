@@ -1,5 +1,6 @@
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Script from 'next/script'
 import { createContext, useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -20,6 +21,24 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   return (
     <div>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-QNJEF70917"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QNJEF70917', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
       <ModalContext.Provider value={[getStartedModal, setGetStartedModal]}>
         <Navbar />
         <div className="overflow-x-hidden">

@@ -1,16 +1,16 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import LandingPageMain from '../components/LandingPage/Main'
 
-// export const getServerSideProps = async () => {
-//   const res = await fetch('http://livecommerce.local/wp-json/wp/v2/posts?_embed')
-//   const data = await res.json()
-//   return {
-//     props: { propData: data },
-//   }
-// }
+export const getServerSideProps = async () => {
+  const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
+  const data = await res.json()
+  return {
+    props: { propData: data },
+  }
+}
 
-// export default function Home({ propData }) {
-export default function Home() {
+export default function Home({ propData }) {
   return (
     <div>
       <Head>
@@ -19,7 +19,10 @@ export default function Home() {
           name="google-site-verification"
           content="HcyrSpbHnnH_3KiHPJqKJau4p-tpZomlKChdrLCyqTY"
         />
-        <meta name="description" content="Go Laiv Homepage" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta
           property="og:title"
@@ -27,7 +30,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business…"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
         <meta property="og:url" content="https://www.golaiv.com/" />
         <meta property="og:type" content="website" />
@@ -51,8 +54,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <LandingPageMain propData={propData} /> */}
-        <LandingPageMain />
+        <LandingPageMain propData={propData} />
       </main>
     </div>
   )

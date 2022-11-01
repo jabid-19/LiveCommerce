@@ -6,12 +6,15 @@ const About = () => {
     <section>
       <Head>
         <title>Go Laiv | About</title>
-        <meta name="description" content="Go Laiv about section" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv About - How we work for your business growth" />
         <meta
           property="og:description"
-          content="Connect with unlimited customers by hosting shoppable live streams or pre-recorded videos on your native website. This doesn't matter where they are…"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
         <meta property="og:url" content="https://www.golaiv.com/about" />
         <meta property="og:type" content="website" />

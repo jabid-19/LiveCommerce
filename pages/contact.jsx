@@ -6,10 +6,16 @@ const Contact = () => {
     <section>
       <Head>
         <title>Go Laiv | Contact</title>
-        <meta name="description" content="Go Laiv Contact" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Contact" />
-        <meta property="og:description" content="Fill in the form and we'll be in touch soon…" />
+        <meta
+          property="og:description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:url" content="https://www.golaiv.com/contact" />
         <meta property="og:type" content="website" />
         <meta
