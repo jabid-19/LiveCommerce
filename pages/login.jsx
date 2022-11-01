@@ -6,10 +6,16 @@ const Login = () => {
     <div className="bg-[#F5F5F5]">
       <Head>
         <title>Go Laiv | Login</title>
-        <meta name="description" content="Go Laiv Login Section" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Login" />
-        <meta property="og:description" content="Login/Register to get started…" />
+        <meta
+          property="og:description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:url" content="https://www.golaiv.com/login" />
         <meta property="og:type" content="website" />
         <meta

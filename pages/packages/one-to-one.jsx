@@ -7,7 +7,10 @@ const OneToOneMain = () => {
     <section>
       <Head>
         <title>Go Laiv | One To One</title>
-        <meta name="description" content="Go Laiv one to one section" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta
           property="og:title"
@@ -16,7 +19,7 @@ any hassle"
         />
         <meta
           property="og:description"
-          content="Wherever you are, just make sure your internet connection is with a laptop or mobile and start a virtual meeting…"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
         <meta property="og:url" content="https://www.golaiv.com/packages/one-to-one" />
         <meta property="og:type" content="website" />
