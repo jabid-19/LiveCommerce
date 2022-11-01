@@ -1,8 +1,8 @@
-import AuthenticationMain from '../components/Authentication/Main'
-import Head from 'next/head'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import AuthenticationLogin from '../components/Authentication/AuthenticationLogin'
 
 const Login = () => {
   const { data: session, status } = useSession()
@@ -50,7 +50,7 @@ const Login = () => {
           {/* <meta property="twitter:site" content="@golaiv" /> */}
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <AuthenticationMain />
+        <AuthenticationLogin />
       </div>
     )
 }
