@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import imageLoader from '../../helper/imageLoader'
 import Logo from '../../public/navbar-logo/navbar-logo.png'
 import Login from './Sections/Login'
@@ -31,18 +31,20 @@ const AuthenticationMain = () => {
     setVisibleLoginItem(false)
     setVisibleRegisterItem(true)
     setKey('register')
+    router.push('/login?keyword=register')
   }
 
   const loadLoginForm = () => {
     setVisibleRegisterItem(false)
     setVisibleLoginItem(true)
     setKey('login')
+    router.push('/login')
   }
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row py-[5%] lg:py-[2%] px-[8%] 2xl:min-h-[95vh]">
-      <div className="flex justify-center rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
-        <div className="container px-[8%]">
+    <div className="flex flex-col-reverse lg:flex-row py-[5%] lg:py-[2%] md:px-[15%] 2xl:min-h-[80vh]">
+      <div className="flex justify-center md:rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
+        <div className="container px-[10%]">
           {!visibleRegisterItem && visibleLoginItem && (
             <h1
               data-aos="fade-in"
@@ -98,14 +100,14 @@ const AuthenticationMain = () => {
           )}
         </div>
       </div>
-      <div className="rounded-t-[20px] lg:rounded-l-none lg:rounded-r-[20px] py-[6%] lg:w-1/2 bg-[#CC955C]/40 px-[8%] lg:px-[4%] flex flex-col justify-between items-start lg:items-end text-start lg:text-end text-black">
+      <div className="md:rounded-t-[20px] lg:rounded-l-none lg:rounded-r-[20px] py-[8%] lg:w-1/2 bg-[#CC955C]/40 px-[8%] lg:px-[4%] flex flex-col justify-between items-start lg:items-end text-start lg:text-end text-black">
         <div className="mb-4 lg:mb-0">
           <h1 className="text-[32px] leading-10 font-bold mb-[25px]">Welcome</h1>
           {!visibleRegisterItem && visibleLoginItem && (
             <p
               data-aos="fade-in"
               data-aos-anchor-placement="top-bottom"
-              className="text-2xl leading-5 font-semibold max-w-xs">
+              className="text-lg leading-5 font-medium max-w-xs">
               Enter your login details to access your account
             </p>
           )}
@@ -113,7 +115,7 @@ const AuthenticationMain = () => {
             <p
               data-aos="fade-in"
               data-aos-anchor-placement="top-bottom"
-              className="text-2xl leading-5 font-semibold max-w-sm">
+              className="text-lg leading-5 font-medium max-w-sm">
               Register your account to start using all of our services
             </p>
           )}
