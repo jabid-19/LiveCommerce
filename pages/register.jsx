@@ -1,22 +1,16 @@
-import ContactUsMain from '../components/ContactUs/ContactUsMain'
 import Head from 'next/head'
+import AuthenticationRegister from '../components/Authentication/AuthenticationRegister'
 
-const Contact = () => {
+const Register = () => {
   return (
-    <section>
+    <div className="bg-[#F5F5F5]">
       <Head>
-        <title>Go Laiv | Contact</title>
-        <meta
-          name="description"
-          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
-        />
+        <title>Go Laiv | Register</title>
+        <meta name="description" content="Go Laiv Register Section" />
         <meta property="og:site_name" content="Go Laiv" />
-        <meta property="og:title" content="Go Laiv Contact" />
-        <meta
-          property="og:description"
-          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
-        />
-        <meta property="og:url" content="https://www.golaiv.com/contact" />
+        <meta property="og:title" content="Go Laiv Register" />
+        <meta property="og:description" content="Register to get started…" />
+        <meta property="og:url" content="https://www.golaiv.com/register" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -37,11 +31,9 @@ const Contact = () => {
         {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <ContactUsMain />
-      </div>
-    </section>
+      <AuthenticationRegister />
+    </div>
   )
 }
 
-export default Contact
+export default Register

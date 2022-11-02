@@ -7,12 +7,15 @@ const pricing = () => {
     <div>
       <Head>
         <title>Go Laiv | Pricing</title>
-        <meta name="description" content="Go Laiv Pricing Section" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Pricing" />
         <meta
           property="og:description"
-          content="You can choose plans according to your convenience…"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
         <meta property="og:url" content="https://www.golaiv.com/pricing" />
         <meta property="og:type" content="website" />

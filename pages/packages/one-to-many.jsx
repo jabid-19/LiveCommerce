@@ -7,12 +7,15 @@ const ManyToManyMain = () => {
     <section>
       <Head>
         <title>Go Laiv | One To Many</title>
-        <meta name="description" content="Go Laiv one to many section" />
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv One to Many - Connect with anyone anytime" />
         <meta
           property="og:description"
-          content="You can connect with people from any part of the world from anywhere without any hassle. This must make your business easier and smoother…"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
         <meta property="og:url" content="https://www.golaiv.com/packages/one-to-many" />
         <meta property="og:type" content="website" />
