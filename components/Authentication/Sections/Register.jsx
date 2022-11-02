@@ -10,6 +10,7 @@ const Register = () => {
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors },
   } = useForm()
 
@@ -17,7 +18,15 @@ const Register = () => {
     console.log(data)
 
     if (data.password !== data.confirmPassword) {
-      setMessage('Password and Confirm Password do not match!')
+      setError('confirmPassword', {
+        type: 'manual',
+        message: 'Password and Confirm Password do not match!',
+      })
+      setError('password', {
+        type: 'manual',
+        message: 'Password and Confirm Password do not match!',
+      })
+
       return
     }
 

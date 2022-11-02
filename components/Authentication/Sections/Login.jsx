@@ -1,3 +1,4 @@
+import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -10,8 +11,10 @@ const Login = ({ csrfToken }) => {
     handleSubmit,
     formState: { errors },
   } = useForm()
+
   const router = useRouter()
   const [errorMsg, setErrorMsg] = useState('')
+  const [success, setSuccess] = useState(false)
 
   const onSubmit = async (data) => {
     // console.log(data)
@@ -27,6 +30,7 @@ const Login = ({ csrfToken }) => {
       router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }
+
   return (
     <form
       data-aos="fade-in"
