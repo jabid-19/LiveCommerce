@@ -22,11 +22,12 @@ const PersonalShopping = () => {
                 <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
-                    className="object-fill"
+                    className="object-fill bg-secondary"
                     width={580}
                     height={580}
                     src={businessDeal}
                     alt="Business Deal"
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -34,11 +35,12 @@ const PersonalShopping = () => {
                 <div className="w-72 lg:w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
-                    className="object-fill"
+                    className="object-fill bg-secondary"
                     width={580}
                     height={580}
                     src={chart}
                     alt="Business Chart"
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -48,11 +50,12 @@ const PersonalShopping = () => {
                 <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
-                    className="object-fill"
+                    className="object-fill bg-secondary"
                     width={580}
                     height={580}
                     src={businessTeam}
                     alt="Business Team"
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -60,11 +63,12 @@ const PersonalShopping = () => {
                 <div className="w-52 rounded-lg">
                   <Image
                     loader={imageLoader}
-                    className="object-fill"
+                    className="object-fill bg-secondary"
                     width={580}
                     height={580}
                     src={presentation}
                     alt="Business Presentation"
+                    placeholder="blur"
                   />
                 </div>
               </div>
