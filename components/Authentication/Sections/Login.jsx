@@ -32,7 +32,7 @@ const Login = ({ csrfToken }) => {
       data-aos="fade-in"
       data-aos-anchor-placement="top-bottom"
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col space-y-4">
+      className="flex flex-col space-y-5">
       <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
 
       <InputField
@@ -54,9 +54,18 @@ const Login = ({ csrfToken }) => {
         {...register('password', { required: 'Password is required' })}
       />
 
-      {errorMsg && <p style={{ color: '#F0676F' }}>{errorMsg}</p>}
+      {errorMsg && (
+        <p
+          style={{ marginTop: '.5rem' }}
+          className={`text-sm tracking-wide font-bold ${
+            !success ? 'text-[#F0676F]' : 'text-green-500'
+          }`}>
+          {errorMsg}
+        </p>
+      )}
 
       <input
+        style={{ marginTop: '2rem' }}
         className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
         value="Login"
