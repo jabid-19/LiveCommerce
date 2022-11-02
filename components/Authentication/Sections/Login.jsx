@@ -1,3 +1,4 @@
+import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -24,7 +25,8 @@ const Login = ({ csrfToken }) => {
       console.log(signInResponse.error)
       setErrorMsg(signInResponse.error)
     } else {
-      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+      console.log(true)
     }
   }
   return (
