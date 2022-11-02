@@ -2,6 +2,7 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import LoadingButton from '../../Buttons/LoadingButton'
 import InputField from '../../InputFields/InputField'
 import PasswordField from '../../InputFields/PasswordField'
 
@@ -11,10 +12,14 @@ const Login = ({ csrfToken }) => {
     handleSubmit,
     formState: { errors },
   } = useForm()
+
   const router = useRouter()
   const [errorMsg, setErrorMsg] = useState('')
+  const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const onSubmit = async (data) => {
+    setSubmitting(true)
     // console.log(data)
     const signInResponse = await signIn('credentials', {
       redirect: false,
@@ -22,19 +27,23 @@ const Login = ({ csrfToken }) => {
       password: data.password,
     })
     if (!signInResponse.ok) {
+      setSuccess(false)
+      setSubmitting(false)
       console.log(signInResponse.error)
       setErrorMsg(signInResponse.error)
     } else {
-      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
-      console.log(true)
+      setSuccess(true)
+      setSubmitting(false)
+      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }
+
   return (
     <form
       data-aos="fade-in"
       data-aos-anchor-placement="top-bottom"
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col space-y-4">
+      className="flex flex-col space-y-5">
       <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
 
       <InputField
@@ -56,12 +65,23 @@ const Login = ({ csrfToken }) => {
         {...register('password', { required: 'Password is required' })}
       />
 
-      {errorMsg && <p style={{ color: '#F0676F' }}>{errorMsg}</p>}
+      {errorMsg && (
+        <p
+          style={{ marginTop: '.5rem' }}
+          className={`text-sm tracking-wide font-bold ${
+            !success ? 'text-[#F0676F]' : 'text-green-500'
+          }`}>
+          {errorMsg}
+        </p>
+      )}
 
-      <input
+      <LoadingButton
+        style={{ marginTop: '2rem' }}
         className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
         value="Login"
+        disabled={submitting}
+        loading={submitting}
       />
     </form>
   )

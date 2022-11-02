@@ -7,7 +7,7 @@ import SocialLogin from './Sections/SocialLogin'
 const AuthenticationRegister = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row py-[5%] lg:py-[2%] md:px-[15%] 2xl:min-h-[80vh]">
-      <div className="flex justify-center md:rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[6%] lg:w-1/2 text-black bg-white">
+      <div className="flex justify-center md:rounded-b-[20px] lg:rounded-r-none lg:rounded-l-[20px] py-[5%] lg:w-1/2 text-black bg-white">
         <div className="container px-[10%]">
           <h1
             data-aos="fade-in"

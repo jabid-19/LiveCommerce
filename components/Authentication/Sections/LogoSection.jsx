@@ -4,7 +4,7 @@ import Logo from '../../../public/navbar-logo/navbar-logo.png'
 
 const LogoSection = ({ message }) => {
   return (
-    <div className="md:rounded-t-[20px] lg:rounded-l-none lg:rounded-r-[20px] py-[8%] lg:w-1/2 bg-[#CC955C]/40 px-[8%] lg:px-[4%] flex flex-col justify-between items-start lg:items-end text-start lg:text-end text-black">
+    <div className="md:rounded-t-[20px] lg:rounded-l-none lg:rounded-r-[20px] py-[6%] lg:w-1/2 bg-[#CC955C]/40 px-[8%] lg:px-[4%] flex flex-col justify-between items-start lg:items-end text-start lg:text-end text-black">
       <div className="mb-4 lg:mb-0">
         <h1 className="text-[32px] leading-10 font-bold mb-[25px]">Welcome</h1>
 
