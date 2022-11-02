@@ -18,34 +18,21 @@ const Blogs = ({ propData }) => {
                 <figure>
                   <Image
                     loader={wpImageLoader}
-                    className="object-cover w-full bg-secondary"
+                    className="object-cover w-full"
                     width={826}
                     height={468}
-                    priority={true}
+                    priority="true"
                     src={prop['_embedded']['wp:featuredmedia'][0]['source_url']}
                     alt={prop['_embedded']['wp:featuredmedia'][0]['alt_text']}
-                    placeholder="blur"
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title text-left text-black">
-                    {prop['title']['rendered']}
-                    {/* <div className="badge badge-secondary text-black">NEW</div> */}
-                  </h2>
+                  <h2 className="card-title text-left text-black">{prop['title']['rendered']}</h2>
                   <div
                     className="text-left text-black"
                     dangerouslySetInnerHTML={{ __html: prop['excerpt']['rendered'] }}></div>
-                  {/* <div className="card-actions justify-start">
-          <div className="badge badge-outline hover:bg-primary hover:text-white hover:border-accent text-black">
-            Article
-          </div>
-          <div className="badge badge-outline hover:bg-primary hover:text-white hover:border-accent text-black">
-            Product
-          </div>
-        </div> */}
                 </div>
               </div>
-              {/* <SingleBlog key={prop.id} prop={prop}></SingleBlog> */}
             </Link>
           ))}
         </div>

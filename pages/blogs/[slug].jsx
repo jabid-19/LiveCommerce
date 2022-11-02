@@ -6,7 +6,7 @@ export const getStaticPaths = async () => {
   const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
   const data = await res.json()
 
-  // map data to an array of path objects with params (id)
+  // map data to an array of path objects with params (slug)
   const paths = data.map((prop) => {
     return {
       params: { slug: prop.slug.toString() },

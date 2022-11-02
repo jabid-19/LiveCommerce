@@ -10,7 +10,6 @@ export const getStaticProps = async () => {
 }
 
 const blogs = ({ propData }) => {
-  console.log('propData', propData)
   return (
     <div className="text-center bg-[#e8e4d9]">
       <Blogs propData={propData} />
