@@ -5,7 +5,7 @@ const LoadingButton = ({ value, loading, ...rest }) => {
     <button {...rest}>
       {loading ? (
         <p className="flex items-center justify-center w-full">
-          <BiLoaderAlt className="animate-spin mr-2 text-xl" /> loading...
+          <BiLoaderAlt className="animate-spin mr-2 text-xl" /> Loading...
         </p>
       ) : (
         value
