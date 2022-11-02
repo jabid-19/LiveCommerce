@@ -18,7 +18,7 @@ const Login = () => {
     return () => {}
   }, [session])
 
-  if (status !== 'loading') {
+  if (status === 'loading') {
     return (
       <LoadingLayout>
         <div className="flex items-center justify-center space-x-2">
