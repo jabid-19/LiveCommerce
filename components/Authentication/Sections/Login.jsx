@@ -34,7 +34,7 @@ const Login = ({ csrfToken }) => {
     } else {
       setSuccess(true)
       setSubmitting(false)
-      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }
 

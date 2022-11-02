@@ -1,11 +1,9 @@
-import Cookies from 'js-cookie'
+import Cookie from 'js-cookie'
 import { useSession } from 'next-auth/react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { FiLoader } from 'react-icons/fi'
 import AuthenticationLogin from '../components/Authentication/AuthenticationLogin'
-import LoadingLayout from '../components/Layout/LoadingLayout'
 
 const Login = () => {
   const { data: session, status } = useSession()
@@ -13,24 +11,33 @@ const Login = () => {
 
   useEffect(() => {
     if (session) {
-      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
-      Cookies.set('email', session.user.email, {
-        expires: session?.expires,
+      Cookie.set('userDetails', session.user.email, {
+        domain: 'golaiv.com',
+        path: '/',
       })
     }
-    return () => {}
   }, [session])
 
-  if (status === 'loading') {
-    return (
-      <LoadingLayout>
-        <div className="flex items-center justify-center space-x-2">
-          <FiLoader className="animate-spin text-[#CC955C] text-[50px]" />
-          <h1 className="text-2xl text-[#CC955C]">Authenticating...</h1>
-        </div>
-      </LoadingLayout>
-    )
-  }
+  useEffect(() => {
+    if (
+      Cookie.get('userDetails', {
+        domain: 'golaiv.com',
+      })
+    ) {
+      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+    }
+  }, [router])
+
+  // if (status === 'loading') {
+  //   return (
+  //     <LoadingLayout>
+  //       <div className="flex items-center justify-center space-x-2">
+  //         <FiLoader className="animate-spin text-[#CC955C] text-[50px]" />
+  //         <h1 className="text-2xl text-[#CC955C]">Authenticating...</h1>
+  //       </div>
+  //     </LoadingLayout>
+  //   )
+  // }
 
   return (
     <div className="bg-[#F5F5F5]">
