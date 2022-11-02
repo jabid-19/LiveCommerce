@@ -2,7 +2,9 @@ import { useSession } from 'next-auth/react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { FiLoader } from 'react-icons/fi'
 import AuthenticationLogin from '../components/Authentication/AuthenticationLogin'
+import LoadingLayout from '../components/Layout/LoadingLayout'
 
 const Login = () => {
   const { data: session, status } = useSession()
@@ -16,8 +18,15 @@ const Login = () => {
     return () => {}
   }, [session])
 
-  if (status == 'loading') {
-    return <h1>Loding...</h1>
+  if (status !== 'loading') {
+    return (
+      <LoadingLayout>
+        <div className="flex items-center justify-center space-x-2">
+          <FiLoader className="animate-spin text-[#CC955C] text-[50px]" />
+          <h1 className="text-2xl text-[#CC955C]">Authenticating...</h1>
+        </div>
+      </LoadingLayout>
+    )
   }
 
   if (!session)
