@@ -1,21 +1,26 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { doRegister } from '../../../backend/authApi'
+import LoadingButton from '../../Buttons/LoadingButton'
 import InputField from '../../InputFields/InputField'
 import PasswordField from '../../InputFields/PasswordField'
 
 const Register = () => {
   const [message, setMessage] = useState('')
   const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+
   const {
     register,
     handleSubmit,
     setError,
+    reset,
     formState: { errors },
   } = useForm()
 
   const onSubmit = async (data) => {
     console.log(data)
+    setSubmitting(true)
 
     if (data.password !== data.confirmPassword) {
       setError('confirmPassword', {
@@ -33,8 +38,11 @@ const Register = () => {
     const res = await doRegister(data)
     if (res.success) {
       setSuccess(true)
+      setSubmitting(false)
       setMessage(res.message)
+      reset()
     } else {
+      setSubmitting(false)
       setSuccess(false)
       setMessage(res.message)
     }
@@ -95,11 +103,13 @@ const Register = () => {
         </p>
       )}
 
-      <input
+      <LoadingButton
         style={{ marginTop: '2rem' }}
         className="text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
         value="Register"
+        loading={submitting}
+        disabled={submitting}
       />
     </form>
   )

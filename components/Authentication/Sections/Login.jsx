@@ -2,6 +2,7 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import LoadingButton from '../../Buttons/LoadingButton'
 import InputField from '../../InputFields/InputField'
 import PasswordField from '../../InputFields/PasswordField'
 
@@ -15,8 +16,10 @@ const Login = ({ csrfToken }) => {
   const router = useRouter()
   const [errorMsg, setErrorMsg] = useState('')
   const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const onSubmit = async (data) => {
+    setSubmitting(true)
     // console.log(data)
     const signInResponse = await signIn('credentials', {
       redirect: false,
@@ -24,9 +27,13 @@ const Login = ({ csrfToken }) => {
       password: data.password,
     })
     if (!signInResponse.ok) {
+      setSuccess(false)
+      setSubmitting(false)
       console.log(signInResponse.error)
       setErrorMsg(signInResponse.error)
     } else {
+      setSuccess(true)
+      setSubmitting(false)
       router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }
@@ -68,11 +75,13 @@ const Login = ({ csrfToken }) => {
         </p>
       )}
 
-      <input
+      <LoadingButton
         style={{ marginTop: '2rem' }}
         className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
         value="Login"
+        disabled={submitting}
+        loading={submitting}
       />
     </form>
   )
