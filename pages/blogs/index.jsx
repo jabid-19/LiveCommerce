@@ -1,7 +1,7 @@
 import React from 'react'
 import Blogs from '../../components/LandingPage/Sections/Blogs'
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
   const data = await res.json()
   return {
