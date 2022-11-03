@@ -20,7 +20,6 @@ const Register = () => {
 
   const onSubmit = async (data) => {
     console.log(data)
-    setSubmitting(true)
 
     if (data.password !== data.confirmPassword) {
       setError('confirmPassword', {
@@ -35,6 +34,7 @@ const Register = () => {
       return
     }
 
+    setSubmitting(true)
     const res = await doRegister(data)
     if (res.success) {
       setSuccess(true)
