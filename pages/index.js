@@ -11,6 +11,7 @@ export const getServerSideProps = async () => {
 }
 
 export default function Home({ propData }) {
+  const slicedPropData = propData.slice(0, 3)
   return (
     <div>
       <Head>
@@ -54,7 +55,7 @@ export default function Home({ propData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <LandingPageMain propData={propData} />
+        <LandingPageMain propData={slicedPropData} />
       </main>
     </div>
   )

@@ -16,11 +16,12 @@ const GetStartedShopping = () => {
             <div className="w-50 lg:w-80 lg:ml-12">
               <Image
                 loader={imageLoader}
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg bg-secondary"
                 width={435}
                 height={580}
                 src={girlShopping}
                 alt="Girl Online Shopping"
+                placeholder="blur"
               />
             </div>
           </div>
