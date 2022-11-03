@@ -12,21 +12,11 @@ const Login = () => {
   useEffect(() => {
     if (session) {
       Cookie.set('userDetails', session.user.email, {
-        domain: 'golaiv.com',
         path: '/',
       })
-    }
-  }, [session])
-
-  useEffect(() => {
-    if (
-      Cookie.get('userDetails', {
-        domain: 'golaiv.com',
-      })
-    ) {
       router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
-  }, [router])
+  }, [session])
 
   // if (status === 'loading') {
   //   return (
