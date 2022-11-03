@@ -2,12 +2,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import wpImageLoader from '../../../helper/wpImageLoader'
+import { useRouter } from 'next/router'
 
 const Blogs = ({ propData }) => {
+  const router = useRouter()
+  console.log('router', router.pathname)
   return (
     <div className="py-8">
       <div>
-        <h3 className="text-2xl lg:text-4xl font-bold text-black">Blogs</h3>
+        {router.pathname === '/' && (
+          <h3 className="text-2xl lg:text-4xl font-bold text-black">Latest blogs</h3>
+        )}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-8 md:mx-14 my-14">
           {propData.map((prop) => (
             <Link key={prop.id} href={`/blogs/${prop['slug']}`}>

@@ -32,10 +32,9 @@ export const getStaticProps = async (context) => {
 }
 
 const Details = ({ singleProp }) => {
-  console.log('single prop', singleProp)
   return (
     <div className="bg-[#e8e4d9]">
-      <div className="p-4 lg:p-8">
+      <div className="p-4 lg:py-20">
         <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-8 py-4 lg:py-10 bg-white rounded-2xl">
           <h1 className="text-left lg:text-center text-black text-4xl lg:text-5xl mb-8">
             {singleProp[0]['title']['rendered']}
