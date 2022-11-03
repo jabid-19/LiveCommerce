@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { doResetPassword } from '../../../backend/authApi'
 import InputField from '../../InputFields/InputField'
 
 const ForgotPass = () => {
+  const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState(false)
+
   const {
     register,
     handleSubmit,
@@ -10,7 +15,14 @@ const ForgotPass = () => {
   } = useForm()
 
   const onSubmit = async (data) => {
-    console.log(data)
+    // console.log(data)
+    const res = await doResetPassword(data)
+    if (res.success) {
+      setSuccess(true)
+    } else {
+      setSuccess(false)
+    }
+    setMessage(res.message)
   }
 
   return (
@@ -30,12 +42,23 @@ const ForgotPass = () => {
             errorMsg={errors.email?.message}
             {...register('email', { required: 'Email is required' })}
           />
+          {message && (
+            <p
+              style={{ marginTop: '.5rem' }}
+              className={`text-sm tracking-wide font-bold ${
+                !success ? 'text-[#F0676F]' : 'text-green-500'
+              }`}>
+              {message}
+            </p>
+          )}
 
-          <button
-            type="submit"
-            className="mt-6 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer">
-            Find Now
-          </button>
+          {
+            <button
+              type="submit"
+              className="mt-6 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer">
+              Find Now
+            </button>
+          }
         </form>
 
         <div className="text-xs flex items-center mt-4">

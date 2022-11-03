@@ -103,6 +103,44 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 110, 103)'><polygon points='0,0 0,100 50,50'/></svg>");
 }
 
+.wordpress-content {
+  h2 {
+    font-size: 38px;
+    margin: 10px 0 10px 0;
+    line-height: 1;
+    @media screen and (max-width: 623px) {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+  h3 {
+    font-size: 38px;
+    margin: 10px 0 10px 0;
+    @media screen and (max-width: 624px) {
+      font-size: 28px;
+    }
+  }
+  p {
+    padding: 10px 0 10px 0;
+    text-align: justify;
+  }
+  a {
+    text-decoration: underline;
+    color: #cc955c;
+    &:active {
+      color: #926c43;
+    }
+    &:focus {
+      color: #926c43;
+    }
+  }
+  figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 640px;
+  }
+}
+
 .rainbow {
   position: relative;
   z-index: 0;
