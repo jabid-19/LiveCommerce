@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 
 const blogs = ({ propData }) => {
   return (
-    <div className="text-center bg-[#e8e4d9]">
+    <div className="text-center bg-[#e8e4d9] 2xl:min-h-screen">
       <Blogs propData={propData} />
     </div>
   )
