@@ -1,8 +1,7 @@
 import NextAuth from 'next-auth'
-import GoogleProvider from 'next-auth/providers/google'
-import FacebookProvider from 'next-auth/providers/facebook'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { axiosInstance } from '../../../backend/axiosInstance'
+import FacebookProvider from 'next-auth/providers/facebook'
+import GoogleProvider from 'next-auth/providers/google'
 import { doLogin } from '../../../backend/authApi'
 
 export const authOptions = {
@@ -39,13 +38,13 @@ export const authOptions = {
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async signIn(user) {
       console.log('user:', {
         username: user.user.name,
         email: user.user.email,
       })
-
       return true
     },
   },
