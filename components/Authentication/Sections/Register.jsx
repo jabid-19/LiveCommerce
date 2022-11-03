@@ -19,7 +19,7 @@ const Register = () => {
   } = useForm()
 
   const onSubmit = async (data) => {
-    console.log(data)
+    // console.log(data)
 
     if (data.password !== data.confirmPassword) {
       setError('confirmPassword', {
