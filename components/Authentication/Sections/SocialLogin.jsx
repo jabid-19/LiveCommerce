@@ -1,6 +1,6 @@
+import { getSession, signIn } from 'next-auth/react'
 import React from 'react'
 import { BsFacebook, BsGoogle, BsTwitter } from 'react-icons/bs'
-import { signIn, getSession } from 'next-auth/react'
 
 const SocialLogin = () => {
   return (
@@ -35,11 +35,4 @@ export const getServerSideProps = async (context) => {
       redirect: { destination: '/' },
     }
   }
-
-  // const providers = await getProviders();
-  // return {
-  //   props: {
-  //     providers,
-  //   },
-  // };
 }

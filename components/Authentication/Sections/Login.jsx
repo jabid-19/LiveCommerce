@@ -91,7 +91,6 @@ export default Login
 
 export const getServerSideProps = async (context) => {
   const csrfToken = await getCsrfToken(context)
-
   return {
     props: { csrfToken },
   }
