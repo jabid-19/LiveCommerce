@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import wpImageLoader from '../../helper/wpImageLoader'
@@ -33,28 +34,63 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ singleProp }) => {
   return (
-    <div className="bg-[#e8e4d9]">
-      <div className="p-4 lg:py-20">
-        <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-8 py-4 lg:py-10 bg-white rounded-2xl">
-          <h1 className="text-left lg:text-center text-black text-4xl lg:text-5xl mb-8">
-            {singleProp[0]['title']['rendered']}
-          </h1>
-          <div className="flex justify-center items-center">
-            <Image
-              loader={wpImageLoader}
-              // className="object-cover w-full"
-              width={1024}
-              height={538}
-              // layout="fill"
-              objectFit="contain"
-              src={singleProp[0]['_embedded']['wp:featuredmedia'][0]['source_url']}
-              alt={singleProp[0]['_embedded']['wp:featuredmedia'][0]['alt_text']}
-            />
+    <div>
+      <Head>
+        <title>{`Go Laiv | Blogs | ${singleProp[0].slug}`}</title>
+        <meta
+          name="description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
+        <meta property="og:site_name" content="Go Laiv" />
+        <meta property="og:title" content="Go Laiv Blogs" />
+        <meta
+          property="og:description"
+          content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
+        />
+        <meta property="og:url" content={`https://www.golaiv.com/blogs/${singleProp[0].slug}`} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
+        />
+        {/* recommended dimensions 1200×630 pixels */}
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="667" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
+        />
+        {/* <meta property="twitter:site" content="@golaiv" /> */}
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="bg-[#e8e4d9]">
+        <div className="p-4 lg:py-20">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-8 py-4 lg:py-10 bg-white rounded-2xl">
+            <h1 className="text-left lg:text-center text-black text-4xl lg:text-5xl mb-8">
+              {singleProp[0]['title']['rendered']}
+            </h1>
+            <div className="flex justify-center items-center">
+              <Image
+                loader={wpImageLoader}
+                // className="object-cover w-full"
+                width={1024}
+                height={538}
+                // layout="fill"
+                objectFit="contain"
+                src={singleProp[0]['_embedded']['wp:featuredmedia'][0]['source_url']}
+                alt={singleProp[0]['_embedded']['wp:featuredmedia'][0]['alt_text']}
+              />
+            </div>
+            <hr className="bg-black border-black border-[1px] mt-4" />
+            <div
+              className="text-black wordpress-content mt-4"
+              dangerouslySetInnerHTML={{ __html: singleProp[0]['content']['rendered'] }}></div>
           </div>
-          <hr className="bg-black border-black border-[1px] mt-4" />
-          <div
-            className="text-black wordpress-content mt-4"
-            dangerouslySetInnerHTML={{ __html: singleProp[0]['content']['rendered'] }}></div>
         </div>
       </div>
     </div>

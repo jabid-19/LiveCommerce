@@ -6,7 +6,6 @@ import { useRouter } from 'next/router'
 
 const Blogs = ({ propData }) => {
   const router = useRouter()
-  console.log('router', router.pathname)
   return (
     <div className="py-8 2xl:max-w-[1536px] mx-auto">
       {router.pathname === '/' && (
