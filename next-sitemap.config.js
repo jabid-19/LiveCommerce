@@ -1,6 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
+const siteUrl = process.env.NEXT_PUBLIC_DOMAIN_URL
 module.exports = {
-  siteUrl: 'https://www.golaiv.com',
+  siteUrl,
   exclude: ['/server-sitemap.xml'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
@@ -15,9 +16,7 @@ module.exports = {
     //   },
     //   { userAgent: '*', allow: '/' },
     // ],
-    additionalSitemaps: [
-      `https://www.golaiv.com/sitemap.xml`,
-      `https://www.golaiv.com/server-sitemap.xml`,
-    ],
+
+    additionalSitemaps: [`${siteUrl}sitemap.xml`, `${siteUrl}server-sitemap.xml`],
   },
 }

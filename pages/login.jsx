@@ -16,7 +16,7 @@ const Login = () => {
       })
       router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
-  }, [session])
+  }, [session, router])
 
   // if (status === 'loading') {
   //   return (

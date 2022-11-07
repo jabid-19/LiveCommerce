@@ -17,10 +17,6 @@ export default function Home({ propData }) {
       <Head>
         <title>Go Laiv</title>
         <meta
-          name="google-site-verification"
-          content="HcyrSpbHnnH_3KiHPJqKJau4p-tpZomlKChdrLCyqTY"
-        />
-        <meta
           name="description"
           content="Trusted video platform for growing business. No matter where you are or what your customer demands, our straightforward and intuitive interface as well as features must assist you grow your business."
         />
