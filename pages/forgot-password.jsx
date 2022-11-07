@@ -1,38 +1,11 @@
-import Cookie from 'js-cookie'
-import { useSession } from 'next-auth/react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-import AuthenticationLogin from '../components/Authentication/AuthenticationLogin'
+import ForgotPass from '../components/Authentication/Sections/ForgotPass'
 
-const Login = () => {
-  const { data: session, status } = useSession()
-  const router = useRouter()
-
-  useEffect(() => {
-    if (session) {
-      Cookie.set('userDetails', session.user.email, {
-        path: '/',
-      })
-      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
-    }
-  }, [session])
-
-  // if (status === 'loading') {
-  //   return (
-  //     <LoadingLayout>
-  //       <div className="flex items-center justify-center space-x-2">
-  //         <FiLoader className="animate-spin text-[#CC955C] text-[50px]" />
-  //         <h1 className="text-2xl text-[#CC955C]">Authenticating...</h1>
-  //       </div>
-  //     </LoadingLayout>
-  //   )
-  // }
-
+const ResetPassword = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <Head>
-        <title>Go Laiv | Login</title>
+        <title>Go Laiv | Forgot Password</title>
         <meta name="description" content="Go Laiv Login Section" />
         <meta property="og:site_name" content="Go Laiv" />
         <meta property="og:title" content="Go Laiv Login" />
@@ -58,9 +31,9 @@ const Login = () => {
         {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AuthenticationLogin />
+      <ForgotPass />
     </div>
   )
 }
 
-export default Login
+export default ResetPassword

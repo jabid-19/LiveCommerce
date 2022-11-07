@@ -1,0 +1,39 @@
+import Head from 'next/head'
+import AuthenticationRegister from '../components/Authentication/AuthenticationRegister'
+
+const Register = () => {
+  return (
+    <div className="bg-[#F5F5F5]">
+      <Head>
+        <title>Go Laiv | Register</title>
+        <meta name="description" content="Go Laiv Register Section" />
+        <meta property="og:site_name" content="Go Laiv" />
+        <meta property="og:title" content="Go Laiv Register" />
+        <meta property="og:description" content="Register to get started…" />
+        <meta property="og:url" content="https://www.golaiv.com/register" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/camera.3f4e1679.avif?q=80%7D&w=640"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/camera.3f4e1679.avif?q=80%7D&w=640"
+        />
+        {/* recommended dimensions 1200×630 pixels */}
+        <meta property="og:image:width" content="407" />
+        <meta property="og:image:height" content="581" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:image"
+          content="https://live-commerce-jade.vercel.app/_next/static/media/camera.3f4e1679.avif?q=80%7D&w=640"
+        />
+        {/* <meta property="twitter:site" content="@golaiv" /> */}
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <AuthenticationRegister />
+    </div>
+  )
+}
+
+export default Register

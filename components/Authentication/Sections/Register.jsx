@@ -1,119 +1,115 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { doRegister } from '../../../backend/authApi'
+import LoadingButton from '../../Buttons/LoadingButton'
+import InputField from '../../InputFields/InputField'
+import PasswordField from '../../InputFields/PasswordField'
 
 const Register = () => {
+  const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+
   const {
     register,
     handleSubmit,
+    setError,
+    reset,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+
+  const onSubmit = async (data) => {
+    // console.log(data)
+
+    if (data.password !== data.confirmPassword) {
+      setError('confirmPassword', {
+        type: 'manual',
+        message: 'Password and Confirm Password do not match!',
+      })
+      setError('password', {
+        type: 'manual',
+        message: 'Password and Confirm Password do not match!',
+      })
+
+      return
+    }
+
+    setSubmitting(true)
+    const res = await doRegister(data)
+    if (res.success) {
+      setSuccess(true)
+      setSubmitting(false)
+      setMessage(res.message)
+      reset()
+    } else {
+      setSubmitting(false)
+      setSuccess(false)
+      setMessage(res.message)
+    }
+  }
   return (
     <form
       data-aos="fade-in"
       data-aos-anchor-placement="top-bottom"
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col">
-      <label className="text-sm leading-[18px] font-semibold">
-        Full Name <span className="text-[#F0676F]">*</span>
-      </label>
-      <input
-        name="name"
-        placeholder="full name"
+      className="flex flex-col space-y-5">
+      <InputField
         type="text"
-        {...register('name', { required: 'Name is required' })}
-        className={`
-              w-full
-              mt-3
-              pl-[14px]
-              h-11
-              border-[0.5px]
-              border-[#EAEBEB]
-              rounded-[10px]
-              outline-[0.5px]
-              outline-[#CC955C]/40
-              min-w-xs
-              ${errors.name?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
-              `}
+        name="fullname"
+        label="Full Name"
+        placeholder="John Doe"
+        className={errors.fullname?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
+        errorMsg={errors.fullname?.message}
+        {...register('fullname', { required: 'Full name is required' })}
       />
-      <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">{errors.name?.message}</div>
-      <label className="text-sm leading-[18px] font-semibold mt-5">
-        Email <span className="text-[#F0676F]">*</span>
-      </label>
-      <input
-        name="email"
-        placeholder="email@email.com"
+
+      <InputField
         type="email"
+        name="email"
+        label="Email"
+        placeholder="user@email.com"
+        className={errors.email?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
+        errorMsg={errors.email?.message}
         {...register('email', { required: 'Email is required' })}
-        className={`
-              w-full
-              mt-3
-              pl-[14px]
-              h-11
-              border-[0.5px]
-              border-[#EAEBEB]
-              rounded-[10px]
-              outline-[0.5px]
-              outline-[#CC955C]/40
-              min-w-xs
-              ${errors.email?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
-              `}
       />
-      <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">{errors.email?.message}</div>
-      <label className="text-sm leading-[18px] font-semibold mt-5">
-        Password <span className="text-[#F0676F]">*</span>
-      </label>
-      <input
+
+      <PasswordField
         name="password"
+        label="Password"
         placeholder="********"
-        type="password"
+        className={errors.password?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
+        errorMsg={errors.password?.message}
         {...register('password', { required: 'Password is required' })}
-        className={`
-              w-full
-              mt-3
-              pl-[14px]
-              h-11
-              border-[0.5px]
-              border-[#EAEBEB]
-              rounded-[10px]
-              outline-[0.5px]
-              outline-[#CC955C]/40
-              min-w-xs
-              ${errors.password?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'}
-              `}
       />
-      <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">{errors.password?.message}</div>
-      <label className="text-sm leading-[18px] font-semibold mt-5">
-        Confirm Password <span className="text-[#F0676F]">*</span>
-      </label>
-      <input
+
+      <PasswordField
         name="confirmPassword"
+        label="Confirm Password"
         placeholder="********"
-        type="password"
+        className={
+          errors.confirmPassword?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'
+        }
+        errorMsg={errors.confirmPassword?.message}
         {...register('confirmPassword', { required: 'Confirm password is required' })}
-        className={`
-              w-full
-              mt-3
-              pl-[14px]
-              h-11
-              border-[0.5px]
-              border-[#EAEBEB]
-              rounded-[10px]
-              outline-[0.5px]
-              outline-[#CC955C]/40
-              min-w-xs
-              ${
-                errors.confirmPassword?.message && 'border-[0.5] border-[#F0676F] outline-[#F0676F]'
-              }
-              `}
       />
-      <div className="text-[#F0676F] text-xs font-bold pl-2 pt-2">
-        {errors.confirmPassword?.message}
-      </div>
-      <input
-        className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
+
+      {message && (
+        <p
+          style={{ marginTop: '.5rem' }}
+          className={`text-sm tracking-wide font-bold ${
+            !success ? 'text-[#F0676F]' : 'text-green-500'
+          }`}>
+          {message}
+        </p>
+      )}
+
+      <LoadingButton
+        style={{ marginTop: '2rem' }}
+        className="text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
         type="submit"
         value="Register"
+        loading={submitting}
+        disabled={submitting}
       />
     </form>
   )
