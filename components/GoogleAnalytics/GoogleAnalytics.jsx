@@ -2,12 +2,13 @@ import Script from 'next/script'
 import React from 'react'
 
 const GoogleAnalytics = () => {
+  const googleID = process.env.GOOGLE_ID
   return (
     <>
-      <meta name="google-site-verification" content="HcyrSpbHnnH_3KiHPJqKJau4p-tpZomlKChdrLCyqTY" />
+      <meta name="google-site-verification" content={`${process.env.GOOGLE_VERIFICATION_ID}`} />
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-QNJEF70917"
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleID}`}
       />
       <Script
         id="google-analytics"
@@ -17,7 +18,7 @@ const GoogleAnalytics = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-QNJEF70917', {
+          gtag('config', '${googleID}', {
             page_path: window.location.pathname,
           });
         `,
