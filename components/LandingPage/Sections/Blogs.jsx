@@ -18,11 +18,11 @@ const Blogs = ({ propData }) => {
               <div
                 data-aos="zoom-in"
                 data-aos-anchor-placement="top-bottom"
-                className="card card-compact lg:max-width-lg bg-base-100 hover:bg-amber-100 hover:opacity-80 cursor-pointer h-full">
+                className="card card-compact lg:max-width-lg bg-base-100 hover:bg-secondary [&>*]:hover:opacity-80 cursor-pointer h-full text-black [&>*]:hover:text-white">
                 <figure>
                   <Image
                     loader={wpImageLoader}
-                    className="object-cover w-full"
+                    className="object-cover"
                     width={826}
                     height={468}
                     priority="true"
@@ -30,11 +30,11 @@ const Blogs = ({ propData }) => {
                     alt={prop['_embedded']['wp:featuredmedia'][0]['alt_text']}
                   />
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title text-left text-black">{prop['title']['rendered']}</h2>
-                  <div
-                    className="text-left text-black"
-                    dangerouslySetInnerHTML={{ __html: prop['excerpt']['rendered'] }}></div>
+                <div className="card-body hover:opacity-100">
+                  <h2 className="card-title text-left">{prop['title']['rendered']}</h2>
+                  {/* <div
+                    className="text-left"
+                    dangerouslySetInnerHTML={{ __html: prop['excerpt']['rendered'] }}></div> */}
                 </div>
               </div>
             </a>

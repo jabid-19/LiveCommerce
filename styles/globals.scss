@@ -105,7 +105,9 @@
 
 .wordpress-content {
   h2 {
+    color: #cc955c;
     font-size: 38px;
+    font-weight: 600;
     margin: 10px 0 10px 0;
     line-height: 1;
     @media screen and (max-width: 623px) {
@@ -114,6 +116,7 @@
     }
   }
   h3 {
+    color: #cc955c;
     font-size: 38px;
     margin: 10px 0 10px 0;
     @media screen and (max-width: 624px) {

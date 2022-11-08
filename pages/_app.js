@@ -2,8 +2,6 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Head from 'next/head'
 import { createContext, useEffect, useState } from 'react'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import GoogleAnalytics from '../components/GoogleAnalytics/GoogleAnalytics'
 import ModalMain from '../components/Modal/Modal'
 import Footer from '../components/Shared/Footer'
@@ -35,7 +33,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         </div>
       </ModalContext.Provider>
       <Footer />
-      <ToastContainer />
     </div>
   )
 }
