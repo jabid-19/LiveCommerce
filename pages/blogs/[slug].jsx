@@ -71,7 +71,7 @@ const Details = ({ singleProp }) => {
       <div className="bg-[#e8e4d9]">
         <div className="p-4 lg:py-20">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-8 py-4 lg:py-10 bg-white rounded-2xl">
-            <h1 className="text-left lg:text-center text-black text-4xl lg:text-5xl mb-8">
+            <h1 className="text-left lg:text-center text-secondary font-bold text-4xl lg:text-5xl mb-8">
               {singleProp[0]['title']['rendered']}
             </h1>
             <div className="flex justify-center items-center">
@@ -86,7 +86,7 @@ const Details = ({ singleProp }) => {
                 alt={singleProp[0]['_embedded']['wp:featuredmedia'][0]['alt_text']}
               />
             </div>
-            <hr className="bg-black border-black border-[1px] mt-4" />
+            <hr className="bg-secondary border-secondary border-[1px] mt-8" />
             <div
               className="text-black wordpress-content mt-4"
               dangerouslySetInnerHTML={{ __html: singleProp[0]['content']['rendered'] }}></div>
