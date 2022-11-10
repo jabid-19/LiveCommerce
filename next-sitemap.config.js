@@ -5,18 +5,17 @@ module.exports = {
   exclude: ['/server-sitemap.xml'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    // policies: [
-    //   {
-    //     userAgent: '*',
-    //     disallow: ['/server-sitemap.xml'],
-    //   },
-    //   {
-    //     userAgent: '*',
-    //     disallow: ['/api'],
-    //   },
-    //   { userAgent: '*', allow: '/' },
-    // ],
-
+    policies: [
+      //   {
+      //     userAgent: '*',
+      //     disallow: ['/server-sitemap.xml'],
+      //   },
+      //   {
+      //     userAgent: '*',
+      //     disallow: ['/api'],
+      //   },
+      { userAgent: '*', allow: '/' },
+    ],
     additionalSitemaps: [`${siteUrl}sitemap.xml`, `${siteUrl}server-sitemap.xml`],
   },
 }
