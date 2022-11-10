@@ -1,38 +1,62 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
 import wpImageLoader from '../../helper/wpImageLoader'
 
-export const getStaticPaths = async () => {
-  const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
-  const data = await res.json()
+// export const getStaticPaths = async () => {
+//   const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
+//   const data = await res.json()
 
-  // map data to an array of path objects with params (slug)
-  const paths = data.map((prop) => {
-    return {
-      params: { slug: prop.slug.toString() },
-    }
-  })
+//   // map data to an array of path objects with params (slug)
+//   const paths = data.map((prop) => {
+//     return {
+//       params: { slug: prop.slug.toString() },
+//     }
+//   })
 
-  return {
-    paths,
-    fallback: false,
-  }
-}
+//   return {
+//     paths,
+//     fallback: false,
+//   }
+// }
 
-export const getStaticProps = async (context) => {
+// export const getStaticProps = async (context) => {
+//   const slug = context.params.slug
+//   const res = await fetch(
+//     'https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug
+//   )
+//   const data = await res.json()
+
+//   return {
+//     props: { singleProp: data },
+//   }
+// }
+
+export const getServerSideProps = async (context) => {
   const slug = context.params.slug
   const res = await fetch(
     'https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug
   )
   const data = await res.json()
-
   return {
     props: { singleProp: data },
   }
 }
 
 const Details = ({ singleProp }) => {
+  // const Details = () => {
+  //   const [singleProp, setSingleProp] = useState([])
+  //   const router = useRouter()
+  //   const slug = router.query.slug
+  //   console.log('router', router.query.slug)
+  //   useEffect(() => {
+  //     fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug)
+  //       .then((res) => res.json())
+  //       .then((data) => setSingleProp(data))
+  //   }, [slug])
+  //   console.log('props', singleProp)
+
   return (
     <div>
       <Head>
@@ -57,7 +81,6 @@ const Details = ({ singleProp }) => {
           property="og:image:secure_url"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
         />
-        {/* recommended dimensions 1200×630 pixels */}
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="667" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -65,7 +88,6 @@ const Details = ({ singleProp }) => {
           property="twitter:image"
           content="https://live-commerce-jade.vercel.app/_next/static/media/meeting_2.a1e6f87d.jpg?q=80&w=640"
         />
-        {/* <meta property="twitter:site" content="@golaiv" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#e8e4d9]">
