@@ -21,7 +21,6 @@ export const authOptions = {
               username: res.data.user.fullname,
               ...res.data.user,
             }
-            console.log(user)
             return user
           }
         } catch (err) {
@@ -46,6 +45,14 @@ export const authOptions = {
         email: user.user.email,
       })
       return true
+    },
+    jwt: async ({ token, user }) => {
+      user && (token.user = user)
+      return token
+    },
+    session: async ({ session, token }) => {
+      session.user = token.user
+      return session
     },
   },
   pages: {

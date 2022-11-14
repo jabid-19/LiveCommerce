@@ -11,10 +11,10 @@ const Login = () => {
 
   useEffect(() => {
     if (session) {
-      Cookie.set('userDetails', session.user.email, {
+      Cookie.set('userDetails', JSON.stringify(session.user), {
         path: '/',
       })
-      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }, [session, router])
 
