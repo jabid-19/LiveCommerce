@@ -2,11 +2,13 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { doResetPassword } from '../../../backend/authApi'
+import LoadingButton from '../../Buttons/LoadingButton'
 import InputField from '../../InputFields/InputField'
 
 const ForgotPass = () => {
   const [message, setMessage] = useState('')
   const [success, setSuccess] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const {
     register,
@@ -15,16 +17,17 @@ const ForgotPass = () => {
   } = useForm()
 
   const onSubmit = async (data) => {
-    // console.log(data)
+    setSubmitting(true)
     const res = await doResetPassword(data)
     if (res.success) {
       setSuccess(true)
+      setSubmitting(false)
     } else {
       setSuccess(false)
+      setSubmitting(false)
     }
     setMessage(res.message)
   }
-
   return (
     <div className="flex flex-col items-center justify-center min-h-[40vh] md:min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[75vh]">
       <div className="w-full md:w-2/3 lg:w-1/3 p-10 py-16 mx-auto bg-white rounded-2xl">
@@ -52,13 +55,14 @@ const ForgotPass = () => {
             </p>
           )}
 
-          {
-            <button
-              type="submit"
-              className="mt-6 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer">
-              Find Now
-            </button>
-          }
+          <LoadingButton
+            style={{ marginTop: '2rem' }}
+            className="mt-8 text-[16px] font-bold rounded-[10px] w-full h-11 bg-[#CC955C]/40 cursor-pointer"
+            type="submit"
+            value="Find Now"
+            disabled={submitting}
+            loading={submitting}
+          />
         </form>
 
         <div className="text-xs flex items-center mt-4">

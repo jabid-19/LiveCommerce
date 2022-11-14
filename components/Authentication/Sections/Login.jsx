@@ -32,6 +32,7 @@ const Login = ({ csrfToken }) => {
       console.log(signInResponse.error)
       setErrorMsg(signInResponse.error)
     } else {
+      console.log(signInResponse)
       setSuccess(true)
       setSubmitting(false)
       // router.push('https://golaiv-dashboard-ebbo.vercel.app/')

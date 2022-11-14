@@ -14,9 +14,10 @@ const Login = () => {
       Cookie.set('userDetails', session.user.email, {
         path: '/',
       })
-      router.push('https://golaiv-dashboard-ebbo.vercel.app/')
+      // router.push('https://golaiv-dashboard-ebbo.vercel.app/')
     }
   }, [session])
+  console.log(session)
 
   // if (status === 'loading') {
   //   return (
