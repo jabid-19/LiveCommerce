@@ -21,6 +21,7 @@ export const getStaticPaths = async () => {
   }
 }
 
+// this one is needed when getStaticPaths is used
 export const getStaticProps = async (context) => {
   const slug = context.params.slug
   const res = await fetch(
@@ -33,6 +34,7 @@ export const getStaticProps = async (context) => {
   }
 }
 
+// for getting props from server side, this one doesn't need to build
 // export const getServerSideProps = async (context) => {
 //   const slug = context.params.slug
 //   const res = await fetch(
@@ -56,6 +58,7 @@ const Details = ({ singleProp }) => {
   //       .then((data) => setSingleProp(data))
   //   }, [slug])
   //   console.log('props', singleProp)
+  // useEffect gets an error here
 
   return (
     <div>
