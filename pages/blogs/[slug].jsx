@@ -1,65 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import { useRouter } from 'next/router'
-// import React, { useEffect, useState } from 'react'
 import wpImageLoader from '../../helper/wpImageLoader'
 
-export const getStaticPaths = async () => {
-  const res = await fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed')
-  const data = await res.json()
-
-  // map data to an array of path objects with params (slug)
-  const paths = data.map((prop) => {
-    return {
-      params: { slug: prop.slug.toString() },
-    }
-  })
-
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-// this one is needed when getStaticPaths is used
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const slug = context.params.slug
   const res = await fetch(
     'https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug
   )
   const data = await res.json()
-
   return {
     props: { singleProp: data },
   }
 }
 
-// for getting props from server side, this one doesn't need to build
-// export const getServerSideProps = async (context) => {
-//   const slug = context.params.slug
-//   const res = await fetch(
-//     'https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug
-//   )
-//   const data = await res.json()
-//   return {
-//     props: { singleProp: data },
-//   }
-// }
-
 const Details = ({ singleProp }) => {
-  // const Details = () => {
-  //   const [singleProp, setSingleProp] = useState([])
-  //   const router = useRouter()
-  //   const slug = router.query.slug
-  //   console.log('router', router.query.slug)
-  //   useEffect(() => {
-  //     fetch('https://dev-golaiv.pantheonsite.io/wp-json/wp/v2/posts?_embed&slug=' + slug)
-  //       .then((res) => res.json())
-  //       .then((data) => setSingleProp(data))
-  //   }, [slug])
-  //   console.log('props', singleProp)
-  // useEffect gets an error here
-
   return (
     <div>
       <Head>
